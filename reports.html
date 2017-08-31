@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-part">
+            <a href="#" class="logo">Univery logo</a>
+        </div>
+        <ul class="right-navigation">
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path fill-rule="evenodd" fill="rgb(255, 219, 77)" d="M23.690,22.276 L18.301,16.887 C19.823,15.041 20.651,12.746 20.651,10.328 C20.651,7.567 19.579,4.978 17.626,3.025 C15.678,1.072 13.084,-0.000 10.328,-0.000 C7.572,-0.000 4.978,1.072 3.025,3.025 C1.072,4.973 -0.000,7.567 -0.000,10.328 C-0.000,13.083 1.072,15.678 3.025,17.631 C4.973,19.579 7.567,20.655 10.328,20.655 C12.751,20.655 15.046,19.828 16.887,18.306 L22.276,23.690 C22.667,24.082 23.299,24.082 23.690,23.690 C24.082,23.299 24.082,22.667 23.690,22.276 ZM4.439,16.211 C2.863,14.640 1.997,12.550 1.997,10.328 C1.997,8.105 2.863,6.011 4.435,4.439 C6.006,2.868 8.096,2.002 10.323,2.002 C12.545,2.002 14.640,2.868 16.211,4.439 C17.782,6.011 18.649,8.101 18.649,10.328 C18.649,12.550 17.782,14.645 16.211,16.216 C14.640,17.787 12.545,18.654 10.323,18.654 C8.101,18.654 6.011,17.787 4.439,16.211 Z" />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path fill-rule="evenodd" fill="rgb(255, 219, 77)" d="M23.045,18.070 C20.888,16.196 18.891,13.550 18.891,6.946 C18.891,3.121 15.795,0.010 11.989,0.010 C8.182,0.010 5.085,3.121 5.085,6.946 C5.085,13.556 3.090,16.199 0.930,18.072 C0.332,18.596 -0.012,19.351 -0.012,20.143 C-0.012,20.578 0.340,20.932 0.773,20.932 L8.225,20.932 C8.589,22.685 10.138,24.006 11.988,24.006 C13.839,24.006 15.388,22.685 15.751,20.932 L23.203,20.932 C23.637,20.932 23.988,20.578 23.988,20.143 C23.988,19.344 23.644,18.589 23.045,18.070 ZM11.988,22.428 C11.010,22.428 10.175,21.804 9.854,20.932 L14.122,20.932 C13.802,21.804 12.966,22.428 11.988,22.428 ZM1.868,19.353 C1.896,19.322 1.927,19.293 1.959,19.265 C5.251,16.409 6.655,12.725 6.655,6.946 C6.655,3.992 9.048,1.588 11.989,1.588 C14.929,1.588 17.321,3.992 17.321,6.946 C17.321,12.719 18.725,16.403 22.019,19.265 C22.051,19.293 22.082,19.322 22.110,19.353 L1.868,19.353 Z" />
+                    </svg>
+                    <span class="badges">50</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="user-pic"><img src="images/user.png" alt="user"/></span>
+                    <span class="up-arrow">
+                     <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="18px" height="11px">
+                        <path fill-rule="evenodd"  fill="rgb(255, 219, 77)"
+                           d="M18.000,1.290 C18.000,1.428 17.947,1.569 17.849,1.674 L9.385,10.785 C9.186,10.999 8.866,10.999 8.667,10.785 L0.199,1.674 C0.011,1.472 0.015,1.160 0.183,0.944 C0.015,0.729 0.011,0.416 0.199,0.214 C0.398,-0.001 0.718,-0.001 0.918,0.214 L9.024,8.936 L17.131,0.218 C17.330,0.003 17.650,0.003 17.849,0.218 C17.951,0.323 18.000,0.465 18.000,0.602 C18.000,0.725 17.944,0.846 17.865,0.946 C17.946,1.047 18.000,1.167 18.000,1.290 Z"/>
+                     </svg>
+                  </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <aside class="sidebar">
+        <nav class="menu">
+            <ul class="sidebar-menu" id="sidebar-menu">
+                <li><a href="dashboard.html" class=" waves-effect waves-dark"><span class="icon-list"></span>Dashboard</a></li>
+                <li><a href="uni-profile.html" class=" waves-effect waves-dark"><span class="icon-list"></span>University Profile</a></li>
+                <li><a href="drive-management.html" class="  waves-effect waves-dark"><span class="icon-list"></span>Drive Management</a></li>
+                <li><a href="companies.html" class="waves-effect waves-dark"><span class="icon-list"></span>Companies</a></li>
+                <li><a href="students.html" class="  waves-effect waves-dark"><span class="icon-list"></span>Students</a></li>
+                <li><a href="manage-role.html" class="waves-effect waves-dark"><span class="icon-list"></span>Manage Users</a></li>
+                <li><a href="tasks.html" class="waves-effect waves-dark"><span class="icon-list"></span>Tasks</a></li>
+                <li><a href="announcement.html" class="waves-effect waves-dark"><span class="icon-list"></span>Announcements</a></li>
+                <li><a href="reports.html" class="active waves-effect waves-dark"><span class="icon-list"></span>Reports</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <section class="main-content reports">
+        <div class="panel">
+            <ul class="tabs">
+                <li class="tab"><a href="#Report" class="active">Overall Report</a></li>
+                <li class="tab"><a href="#Students">Students</a></li>
+                <li class="tab"><a href="#Companies">Companies</a></li>
+            </ul>
+            <div id="Report" class="tab-part reports">
+                <div class="report-panel">
+                    <div class="custom-row row">
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Stream</option>
+                                <option>Stream</option>
+                                <option>Stream</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                            </select>
+                        </div>
+                        <div class="report-btn-box">
+                            <button type="submit" class="waves-effect waves-light my-btn save-btn">View Report</button>
+                        </div>
+                    </div>
+                    <div class="chip-section-area">
+                        <h5>School of Engineering</h5>
+                        <div class="chip">MCA <i class="close material-icons">close</i></div>
+                        <div class="chip">B.Tech <i class="close material-icons">close</i></div>
+                        <div class="chip">M.Tech <i class="close material-icons">close</i></div>
+                        <div class="chip">MBA <i class="close material-icons">close</i></div>
+                    </div>
+                </div>
+                <div class="batch-year">
+                    <div class="batch-year-info">
+                        <label>One Year:</label>
+                        <select class="year-select">
+                            <option>2017</option>
+                            <option>2017</option>
+                        </select>
+                        <a href="#" class="multiple-year">Switch to Multiple Year</a>
+                    </div>
+                </div>
+                <ul class="old-record-list">
+                    <li>
+                        <div class="cont">
+                            <h6>19.67% <span>Placed Students</span></h6>
+                            <p>168 Students placed out of 854</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>12.7 LPA<span>Highest Package</span></h6>
+                            <p>12 Studensts received this backage</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>6.29 LPA <span>Average Pakage</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>252 <span>Total Offers</span></h6>
+                            <p>46 Students received multiple offers</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>20 <span>Company Offers</span></h6>
+                            <p>29 Companies visited</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="report-section">
+                    <div class="row my-row">
+                        <div class="col l6 m6 s12">
+                            <h4 class="title">Overall Placement Summary</h4>
+                            <div class="report-view">
+                                <figure><img src="images/graph1.png" />
+                                    <figure>
+                                        <span class="view-report"><a href="category-wise.html">View Detailed Report</a></span>
+                            </div>
+                        </div>
+                        <div class="col l6 m6 s12">
+                            <h4 class="title">Functional Placement</h4>
+                            <div class="report-view">
+                                <figure><img src="images/graph2.png" />
+                                    <figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l12 m12 full-width">
+                            <h4 class="title">Overall Placement Summary</h4>
+                            <div class="report-view">
+                                <figure><img src="images/graph3.png" />
+                                    <figure>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12 l12 m12 ">
+                            <h4 class="title">Degrees/Courses
+                                 <ul class="icons-list">
+                                    <li class="search-list">
+                                        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                                        <input type="search" class="search-field " placeholder="Search here">
+                                     </li>
+                                 </ul>
+                              </h4>
+                            <div class="table-content">
+                                <table class="table custom-table responsive-table highlight bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Course Name</th>
+                                            <th>Placed Students | Total Students.</th>
+                                            <th>Highest package</th>
+                                            <th>Avg package</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td> B.Tech - ECE</td>
+                                            <td>
+                                                <ul class="marks">
+                                                    <li>23.6 %</li>
+                                                    <li>52/<sub>240</sub></li>
+                                            </td>
+                                            <td>12.7 LPA</td>
+                                            <td>7.5LPA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td> B.Tech - ECE</td>
+                                            <td>
+                                                <ul class="marks">
+                                                    <li>23.6 %</li>
+                                                    <li>52/<sub>240</sub></li>
+                                            </td>
+                                            <td>12.7 LPA</td>
+                                            <td>7.5LPA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td> B.Tech - ECE</td>
+                                            <td>
+                                                <ul class="marks">
+                                                    <li>23.6 %</li>
+                                                    <li>52/<sub>240</sub></li>
+                                            </td>
+                                            <td>12.7 LPA</td>
+                                            <td>7.5LPA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td> B.Tech - ECE</td>
+                                            <td>
+                                                <ul class="marks">
+                                                    <li>23.6 %</li>
+                                                    <li>52/<sub>240</sub></li>
+                                            </td>
+                                            <td>12.7 LPA</td>
+                                            <td>7.5LPA</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td> B.Tech - ECE</td>
+                                            <td>
+                                                <ul class="marks">
+                                                    <li>23.6 %</li>
+                                                    <li>52/<sub>240</sub></li>
+                                            </td>
+                                            <td>12.7 LPA</td>
+                                            <td>7.5LPA</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="custom-pagination my-pager">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" class="btn prev disabled"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                        <span class="pages">1/25</span>
+                                        <a href="javascript:void(0)" class="btn next"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <select class="pager-select ">
+                                            <option>15 per pages</option>
+                                            <option>25 per pages</option>
+                                            <option>50 per pages</option>
+
+                                        </select>
+                                    </li>
+                                </ul>
+                                <span class="pages-count">1-25 of 1250 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Students" class="tab-part Students">
+                <div class="report-panel">
+                    <div class="custom-row row">
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Stream</option>
+                                <option>Stream</option>
+                                <option>Stream</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                            </select>
+                        </div>
+                        <div class="report-btn-box">
+                            <button type="submit" class="waves-effect waves-light my-btn save-btn">View Report</button>
+                        </div>
+                    </div>
+                    <div class="chip-section-area">
+                        <h5>School of Engineering</h5>
+                        <div class="chip">MCA <i class="close material-icons">close</i></div>
+                        <div class="chip">B.Tech <i class="close material-icons">close</i></div>
+                        <div class="chip">M.Tech <i class="close material-icons">close</i></div>
+                        <div class="chip">MBA <i class="close material-icons">close</i></div>
+                    </div>
+                </div>
+                <div class="batch-year">
+                    <div class="batch-year-info">
+                        <label>One Year:</label>
+                        <select class="year-select">
+                            <option>2017</option>
+                            <option>2017</option>
+                        </select>
+                        <a href="#" class="multiple-year">Switch to Multiple Year</a>
+                    </div>
+                </div>
+                <ul class="old-record-list student-list">
+                    <li>
+                        <div class="cont">
+                            <h6>2000<span>Totals Students</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>784<span>Eligible Students</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>500 <span>Participated</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>422 <span>Placed</span></h6>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="report-section">
+
+                    <div class="row">
+                        <div class="col s12 l12 m12 ">
+                            <h4 class="title">Students
+                                 <ul class="icons-list">
+                                    <li class="search-list">
+                                        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                                        <input type="search" class="search-field " placeholder="Search here">
+                                     </li>
+                                    <li class="cat-select">
+                                        <select class="category-select">
+                                            <option>Export</option>
+                                            <option>Export</option>
+                                            <option>Export</option>
+                                        </select>
+                                    </li>
+                                 </ul>
+                              </h4>
+                            <div class="table-content student-sec">
+                                <table class="table custom-table responsive-table highlight bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Reg. No</th>
+                                            <th>Course</th>
+                                            <th>Eligible Drives</th>
+                                            <th>Register</th>
+                                            <th>Participated</th>
+                                            <th>Selected</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="users"><img src="images/user.png" alt="user"></div>
+                                                <a href="single-student-detail.html" class="stu-name">Munish Arora</a>
+                                            </td>
+                                            <td>ECE002</td>
+                                            <td>BCA-CA</td>
+                                            <td>50</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="users no-pic">M</div>
+                                                <a href="single-student-detail.html" class="stu-name">Munish Arora</a>
+                                            </td>
+                                            <td>ECE002</td>
+                                            <td>BCA-CA</td>
+                                            <td>50</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="users"><img src="images/user.png" alt="user"></div>
+                                                <a href="single-student-detail.html" class="stu-name">Munish Arora</a>
+                                            </td>
+                                            <td>ECE002</td>
+                                            <td>BCA-CA</td>
+                                            <td>50</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="users no-pic">K</div>
+                                                <a href="single-student-detail.html" class="stu-name">Munish Arora</a>
+                                            </td>
+                                            <td>ECE002</td>
+                                            <td>BCA-CA</td>
+                                            <td>50</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="users"><img src="images/user.png" alt="user"></div>
+                                                <a href="single-student-detail.html" class="stu-name">Munish Arora</a>
+                                            </td>
+                                            <td>ECE002</td>
+                                            <td>BCA-CA</td>
+                                            <td>50</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="custom-pagination my-pager">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" class="btn prev disabled"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                        <span class="pages">1/25</span>
+                                        <a href="javascript:void(0)" class="btn next"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <select class="pager-select ">
+                                            <option>15 per pages</option>
+                                            <option>25 per pages</option>
+                                            <option>50 per pages</option>
+
+                                        </select>
+                                    </li>
+                                </ul>
+                                <span class="pages-count">1-25 of 1250 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Companies" class="tab-part Companies">
+
+                <div class="report-panel">
+                    <div class="custom-row row">
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                                <option>Department/School</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Stream</option>
+                                <option>Stream</option>
+                                <option>Stream</option>
+                            </select>
+                        </div>
+                        <div class="report-select-box">
+                            <select class="report-select">
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                                <option>Degree/Course</option>
+                            </select>
+                        </div>
+                        <div class="report-btn-box">
+                            <button type="submit" class="waves-effect waves-light my-btn save-btn">View Report</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="batch-year">
+                    <div class="batch-year-info">
+                        <label>One Year:</label>
+                        <select class="year-select">
+                            <option>2017</option>
+                            <option>2017</option>
+                        </select>
+                        <a href="#" class="multiple-year">Switch to Multiple Year</a>
+                    </div>
+                </div>
+                <ul class="old-record-list student-list">
+                    <li>
+                        <div class="cont">
+                            <h6>70<span>Companies</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>120<span>Drives</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>6000 <span>Eligible Students</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>5300 <span>Registered</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>4733 <span>Participated</span></h6>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="cont">
+                            <h6>4733 <span>Selected</span></h6>
+
+                        </div>
+                    </li>
+
+                </ul>
+                <div class="report-section">
+
+                    <div class="row">
+                        <div class="col s12 l12 m12 ">
+                            <h4 class="title">Companies
+                                 <ul class="icons-list">
+                                    <li class="search-list">
+                                        <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                                        <input type="search" class="search-field " placeholder="Search here">
+                                     </li>
+                                    <li class="cat-select">
+                                        <select class="category-select">
+                                            <option>Export</option>
+                                            <option>Export</option>
+                                            <option>Export</option>
+                                        </select>
+                                    </li>
+                                 </ul>
+                              </h4>
+                            <div class="table-content student-sec">
+                                <table class="table custom-table responsive-table highlight bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>No. of Companies</th>
+                                            <th>No. of Drives</th>
+                                            <th>Eligible Students</th>
+                                            <th>Registered</th>
+                                            <th>Participated</th>
+                                            <th>Selected</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> <a href="single-company-detail.html" class="stu-name">Outgrow</a></td>
+                                            <td>20</td>
+                                            <td>1000</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>600</td>
+                                        </tr>
+                                         <tr>
+                                            <td> <a href="single-company-detail.html" class="stu-name">Outgrow</a></td>
+                                            <td>20</td>
+                                            <td>1000</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>600</td>
+                                        </tr>
+                                          <tr>
+                                            <td> <a href="single-company-detail.html" class="stu-name">Outgrow</a></td>
+                                            <td>20</td>
+                                            <td>1000</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>600</td>
+                                        </tr>
+                                          <tr>
+                                            <td> <a href="single-company-detail.html" class="stu-name">Outgrow</a></td>
+                                            <td>20</td>
+                                            <td>1000</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>600</td>
+                                        </tr>
+                                          <tr>
+                                            <td> <a href="single-company-detail.html" class="stu-name">Outgrow</a></td>
+                                            <td>20</td>
+                                            <td>1000</td>
+                                            <td>900</td>
+                                            <td>800</td>
+                                            <td>600</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="custom-pagination my-pager">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)" class="btn prev disabled"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                        <span class="pages">1/25</span>
+                                        <a href="javascript:void(0)" class="btn next"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                                    </li>
+                                    <li>
+                                        <select class="pager-select ">
+                                            <option>15 per pages</option>
+                                            <option>25 per pages</option>
+                                            <option>50 per pages</option>
+
+                                        </select>
+                                    </li>
+                                </ul>
+                                <span class="pages-count">1-25 of 1250 items</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>

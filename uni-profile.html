@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+       <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+       
+      
+    </head>
+
+    <body>
+       <header>
+         <div class="logo-part">
+           <a href="#" class="logo">Univery logo</a>
+         </div>
+          <ul class="right-navigation">
+            <li><a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"width="24px" height="24px">
+                  <path fill-rule="evenodd"  fill="rgb(255, 219, 77)" d="M23.690,22.276 L18.301,16.887 C19.823,15.041 20.651,12.746 20.651,10.328 C20.651,7.567 19.579,4.978 17.626,3.025 C15.678,1.072 13.084,-0.000 10.328,-0.000 C7.572,-0.000 4.978,1.072 3.025,3.025 C1.072,4.973 -0.000,7.567 -0.000,10.328 C-0.000,13.083 1.072,15.678 3.025,17.631 C4.973,19.579 7.567,20.655 10.328,20.655 C12.751,20.655 15.046,19.828 16.887,18.306 L22.276,23.690 C22.667,24.082 23.299,24.082 23.690,23.690 C24.082,23.299 24.082,22.667 23.690,22.276 ZM4.439,16.211 C2.863,14.640 1.997,12.550 1.997,10.328 C1.997,8.105 2.863,6.011 4.435,4.439 C6.006,2.868 8.096,2.002 10.323,2.002 C12.545,2.002 14.640,2.868 16.211,4.439 C17.782,6.011 18.649,8.101 18.649,10.328 C18.649,12.550 17.782,14.645 16.211,16.216 C14.640,17.787 12.545,18.654 10.323,18.654 C8.101,18.654 6.011,17.787 4.439,16.211 Z"/>
+                </svg>
+              </a>
+            </li>
+            <li><a href="#">
+              <svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="24px" height="24px">
+<path fill-rule="evenodd"  fill="rgb(255, 219, 77)"
+ d="M23.045,18.070 C20.888,16.196 18.891,13.550 18.891,6.946 C18.891,3.121 15.795,0.010 11.989,0.010 C8.182,0.010 5.085,3.121 5.085,6.946 C5.085,13.556 3.090,16.199 0.930,18.072 C0.332,18.596 -0.012,19.351 -0.012,20.143 C-0.012,20.578 0.340,20.932 0.773,20.932 L8.225,20.932 C8.589,22.685 10.138,24.006 11.988,24.006 C13.839,24.006 15.388,22.685 15.751,20.932 L23.203,20.932 C23.637,20.932 23.988,20.578 23.988,20.143 C23.988,19.344 23.644,18.589 23.045,18.070 ZM11.988,22.428 C11.010,22.428 10.175,21.804 9.854,20.932 L14.122,20.932 C13.802,21.804 12.966,22.428 11.988,22.428 ZM1.868,19.353 C1.896,19.322 1.927,19.293 1.959,19.265 C5.251,16.409 6.655,12.725 6.655,6.946 C6.655,3.992 9.048,1.588 11.989,1.588 C14.929,1.588 17.321,3.992 17.321,6.946 C17.321,12.719 18.725,16.403 22.019,19.265 C22.051,19.293 22.082,19.322 22.110,19.353 L1.868,19.353 Z"/>
+</svg>
+                <span class="badges">50</span></a></li>
+            <li><a href="#"><span class="user-pic"><img src="images/user.png" alt="user"/></span><span class="up-arrow"><svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="18px" height="11px">
+<path fill-rule="evenodd"  fill="rgb(255, 219, 77)"
+ d="M18.000,1.290 C18.000,1.428 17.947,1.569 17.849,1.674 L9.385,10.785 C9.186,10.999 8.866,10.999 8.667,10.785 L0.199,1.674 C0.011,1.472 0.015,1.160 0.183,0.944 C0.015,0.729 0.011,0.416 0.199,0.214 C0.398,-0.001 0.718,-0.001 0.918,0.214 L9.024,8.936 L17.131,0.218 C17.330,0.003 17.650,0.003 17.849,0.218 C17.951,0.323 18.000,0.465 18.000,0.602 C18.000,0.725 17.944,0.846 17.865,0.946 C17.946,1.047 18.000,1.167 18.000,1.290 Z"/>
+</svg></span></a></li>
+          </ul>
+       </header>
+          <aside class="sidebar">
+              <nav class="menu">
+               <ul class="sidebar-menu" id="sidebar-menu">
+                <li><a href="dashboard.html" class=" waves-effect waves-dark"><span class="icon-list"></span>Dashboard</a></li>
+                <li><a href="uni-profile.html" class="active waves-effect waves-dark"><span class="icon-list"></span>University Profile</a></li>
+                <li><a href="drive-management.html" class="  waves-effect waves-dark"><span class="icon-list"></span>Drive Management</a></li>
+                <li><a href="companies.html" class="waves-effect waves-dark"><span class="icon-list"></span>Companies</a></li>
+                <li><a href="students.html" class="  waves-effect waves-dark"><span class="icon-list"></span>Students</a></li>
+                <li><a href="manage-role.html" class="waves-effect waves-dark"><span class="icon-list"></span>Manage Users</a></li>
+                <li><a href="tasks.html" class="waves-effect waves-dark"><span class="icon-list"></span>Tasks</a></li>
+                <li><a href="announcement.html" class="waves-effect waves-dark"><span class="icon-list"></span>Announcements</a></li>
+                <li><a href="reports.html" class=" waves-effect waves-dark"><span class="icon-list"></span>Reports</a></li>
+            </ul>
+              </nav>
+          </aside>
+          <section class="main-content">
+            
+      <ul class="tabs uni-profile-tab">
+        <li class="tab "><a href="#Profile"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>Profile</a></li>
+        <li class="tab"><a  href="#Schools"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>Schools (10)</a></li>
+        <li class="tab"><a href="#Streams"> <span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>Streams(43)</a></li>
+        <li class="tab"><a class="active" href="#Degrees"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>Degrees(14)</a></li>
+        <li class="tab"><a href="#Staff"><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>Staff 200</a></li>
+      </ul>
+    
+      <div class="tab-area">
+          <div id="Profile" class="">
+             <div class="row">
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                     <input id="address" type="text" class="validate">
+                    <label for="address">Address</label>
+                  </div>
+               
+                  <div class="input-field col s6">
+                     <input id="affilition" type="text" class="validate">
+                    <label for="affilition">Affiliation/Accrediation by</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                     <select>
+                        <option value="" disabled selected>Country</option>
+                        <option value="1">India</option>
+                        <option value="2">USA</option>
+                        <option value="3">Canada</option>
+                      </select>
+                  </div>
+              
+                  <div class="col input-field s6">
+                     <select>
+                        <option value="" disabled selected>Establishment Year</option>
+                        <option value="1">2010</option>
+                        <option value="2">2011</option>
+                        <option value="3">2014</option>
+                      </select>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                     <select>
+                        <option value="" disabled selected>State</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                  </div>
+              
+                  <div class="col input-field s6">
+                     <select>
+                        <option value="" disabled selected>University Type</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s6">
+                     <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                  </div>
+              
+                  <div class="col input-field s6">
+                     <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 l12 m12">
+                    <button type="submit" class="my-btn custom-btn waves-light waves-effect">Save</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div id="Schools" class="">
+            <div class="header-section">
+              <h4>Schools<span class="count">14</span> <span class="add-more">+</span></h4>
+              <ul class="icons-list">
+                <li><a href="#" class="my-btn waves-effect  waves-light">Import CSV</a></li>
+              </ul>
+            </div>
+             <div class="table-content">
+                  <table class="table custom-table responsive-table highlight bordered">
+                    <thead>
+                      <tr>
+                        <th><div class="check-btn"><input type="checkbox"   class="filled-in" id="check"/><label for="check"></label></div></th>
+                        <th>School Name</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                    <tbody>
+                 </table>
+              </div>
+          </div>
+          <div id="Streams" class="">
+            <div class="header-section">
+              <h4>Streams<span class="count">14</span> <span class="add-more">+</span></h4>
+              <ul class="icons-list">
+                <li><a href="#" class="my-btn waves-effect  waves-light">Import CSV</a></li>
+              </ul>
+            </div>
+             <div class="table-content">
+                  <table class="table custom-table responsive-table highlight bordered">
+                    <thead>
+                      <tr>
+                        <th><div class="check-btn"><input type="checkbox" class="filled-in"  id="check"/><label for="check"></label></div></th>
+                        <th>School Name</th>
+                        <th>Stream</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                         <td>Pharmaceutical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                         <td>Pharmaceutical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                         <td>Pharmaceutical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                        <tr>
+                       <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                         <td>Pharmaceutical Sciences</td>
+                        <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                       </tr>
+                    <tbody>
+                 </table>
+              </div>
+          </div>
+          <div id="Degrees" class="">
+            <div class="header-section">
+              <h4>Degrees<span class="count">14</span> <span class="add-more">+</span></h4>
+              <ul class="icons-list">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="table-content">
+                  <table class="table custom-table responsive-table highlight bordered">
+                    <thead>
+                      <tr>
+                        <th><div class="check-btn"><input type="checkbox" class="filled-in"  id="check"/><label for="check"></label></div></th>
+                        <th>School/Department</th>
+                        <th>Stream</th>
+                        <th>Degree</th>
+                        <th>Display Name</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check1"/><label for="check1"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Pharmaceutical Sciences</td>
+                        <td>B. Pharma</td>
+                        <td>B. Pharma</td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                       <tr>
+                        <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check2"/><label for="check2"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Pharmaceutical Sciences</td>
+                        <td>B. Pharma</td>
+                        <td>B. Pharma</td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                       <tr>
+                        <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check3"/><label for="check3"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Pharmaceutical Sciences</td>
+                        <td>B. Pharma</td>
+                        <td>B. Pharma</td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                       <tr>
+                        <td><div class="check-btn"><input type="checkbox" class="filled-in"  id="check4"/><label for="check4"></label></div></td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Pharmaceutical Sciences</td>
+                        <td>B. Pharma</td>
+                        <td>B. Pharma</td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+          <div id="Staff" class="">
+             <div class="header-section">
+              <h4>Staff<span class="count">200</span> <span class="add-more">+</span></h4>
+              <ul class="icons-list">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="table-content">
+                  <table class="table custom-table responsive-table highlight bordered">
+                    <thead>
+                      <tr>
+                        <th><div class="check-btn"><input type="checkbox" class="filled-in"  id="check"/><label for="check"></label></div></th>
+                        <th>Name</th>
+                        <th>User ID</th>
+                        <th>School/Department</th>
+                        <th>Role</th>
+                        <th>Email</th>
+                        <th>Is Active?</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><div class="users"><img src="images/user.png" alt="user"/></div></td>
+                        <td>Munish Arora</td>
+                        <td>453461</td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Admin</td>
+                        <td>m@gmail.com</td>
+                        <td><div class="switch custom-switch"><label><input type="checkbox" class="filled-in"  checked><span class="lever"></span></label></div> 
+                        </td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                         <tr>
+                         <td><div class="users"><img src="images/user.png" alt="user"/></div></td>
+                        <td>Munish Arora</td>
+                        <td>453461</td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Admin</td>
+                        <td>m@gmail.com</td>
+                        <td><div class="switch custom-switch"><label><input type="checkbox" class="filled-in"  checked><span class="lever"></span></label></div> 
+                        </td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                         <tr>
+                         <td><div class="users"><img src="images/user.png" alt="user"/></div></td>
+                        <td>Munish Arora</td>
+                        <td>453461</td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Admin</td>
+                        <td>m@gmail.com</td>
+                        <td><div class="switch custom-switch"><label><input type="checkbox" class="filled-in"  checked><span class="lever"></span></label></div> 
+                        </td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                         <tr>
+                         <td><div class="users"><img src="images/user.png" alt="user"/></div></td>
+                        <td>Munish Arora</td>
+                        <td>453461</td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Admin</td>
+                        <td>m@gmail.com</td>
+                        <td><div class="switch custom-switch"><label><input type="checkbox" class="filled-in"  checked><span class="lever"></span></label></div> 
+                        </td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                         <tr>
+                         <td><div class="users"><img src="images/user.png" alt="user"/></div></td>
+                        <td>Munish Arora</td>
+                        <td>453461</td>
+                        <td>Applied Medical Sciences</td>
+                        <td>Admin</td>
+                        <td>m@gmail.com</td>
+                        <td><div class="switch custom-switch"><label><input type="checkbox" class="filled-in"  checked><span class="lever"></span></label></div> 
+                        </td>
+                       <td><div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                          <ul class="drop-down">
+                            <li><a href="#">Edit</a></li>
+                             <li><a href="#">Delete</a></li>
+                          </ul></div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </div> 
+          </div>
+    </div>
+  </div>
+        
+          </section>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+         $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
+   $(document).ready(function() {
+    $('select').material_select();
+  });
+        
+  </script>
+
+    </body>
+  </html>
+        
