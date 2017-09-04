@@ -5460,8 +5460,8 @@ button.btn-floating {
   clear: both;
   color: rgba(0, 0, 0, 0.87);
   cursor: pointer;
-  min-height: 50px;
-  line-height: 1.5rem;
+  /* min-height: 50px;
+  line-height: 1.5rem; */
   width: 100%;
   text-align: left;
   text-transform: none;
@@ -5481,13 +5481,14 @@ button.btn-floating {
 }
 
 .dropdown-content li > a, .dropdown-content li > span {
-  font-size: 16px;
-  color:#25cd18;
-  display: block;
-  line-height: 22px;
-  padding: 14px 16px;
+    font-size: 16px;
+    color: #909090;
+    display: block;
+    line-height: 20px;
+    padding: 10px 15px;
+    float: left;
+    width: 100%;
 }
-
 .dropdown-content li > span > label {
   top: 1px;
   left: 0;
@@ -5639,12 +5640,15 @@ button.btn-floating {
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fafafa;
+  background-color: #fff;
   padding: 0;
-  max-height: 70%;
-  width: 55%;
+  /* max-height: 70%; */
+  width: 640px;
   margin: auto;
-  overflow-y: auto;
+
+  box-shadow: -5px 0px 27px 0px rgba(0, 0, 0, 0.21);
+
+  overflow: visible;
   border-radius: 2px;
   will-change: top, opacity;
 }
@@ -5660,7 +5664,8 @@ button.btn-floating {
 }
 
 .modal .modal-content {
-  padding: 24px;
+  padding: 25px;
+  float:left; width:100%;
 }
 
 .modal .modal-close {
@@ -5669,11 +5674,10 @@ button.btn-floating {
 
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
-  padding: 4px 6px;
-  height: 56px;
+  padding: 0 25px 25px;
   width: 100%;
-  text-align: right;
+  text-align: center;
+  float: left;
 }
 
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
@@ -5689,7 +5693,7 @@ button.btn-floating {
   right: 0;
   height: 125%;
   width: 100%;
-  background: #000;
+  background: #065170;
   display: none;
   will-change: opacity;
 }
@@ -6021,6 +6025,7 @@ textarea.materialize-textarea {
           box-sizing: content-box;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  color:#282828;
 }
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
@@ -6094,9 +6099,9 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid#25cd18;
-  -webkit-box-shadow: 0 1px 0 0#25cd18;
-          box-shadow: 0 1px 0 0#25cd18;
+  border-bottom: 1px solid #009ad0;
+  /* -webkit-box-shadow: 0 1px 0 0 #009ad0;
+          box-shadow: 0 1px 0 0 #009ad0; */
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -6111,8 +6116,8 @@ input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
 input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label {
-  color:#25cd18;
+textarea.materialize-textarea:focus:not([readonly]) + label,.input-field label.active {
+  color:#009ad0;
 }
 
 input:not([type]).validate + label,
@@ -6215,9 +6220,9 @@ input[type=search].valid:not(.browser-default),
 input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #4CAF50;
-  -webkit-box-shadow: 0 1px 0 0 #4CAF50;
-          box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #009ad0;
+  /* -webkit-box-shadow: 0 1px 0 0 #009ad0;
+          box-shadow: 0 1px 0 0 #009ad0; */
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
@@ -6245,9 +6250,9 @@ input[type=search].invalid:not(.browser-default),
 input[type=search].invalid:not(.browser-default):focus,
 textarea.materialize-textarea.invalid,
 textarea.materialize-textarea.invalid:focus, .select-wrapper.invalid > input.select-dropdown {
-  border-bottom: 1px solid #F44336;
-  -webkit-box-shadow: 0 1px 0 0 #F44336;
-          box-shadow: 0 1px 0 0 #F44336;
+  border-bottom: 1px solid #009ad0;
+  /* -webkit-box-shadow: 0 1px 0 0 #F44336;
+          box-shadow: 0 1px 0 0 #F44336; */
 }
 
 input:not([type]).valid + label:after,
@@ -7022,6 +7027,7 @@ select {
   height: 3rem;
   line-height: 3rem;
   width: 100%;
+      color: #9e9e9e;
   font-size: 1rem;
   margin: 0 0 20px 0;
   padding: 0;
@@ -7042,6 +7048,7 @@ select {
   margin: auto 0;
   font-size: 10px;
   line-height: 10px;
+  color:#909090;
 }
 
 .select-wrapper + label {
@@ -8956,7 +8963,7 @@ input[type=range]:focus::-ms-fill-upper {
 }*/
 .picker__date-display {
   text-align: left;
-  background-color:#25cd18;
+  background-color:#009ad0;
   color: #fff;
   padding: 18px;
   font-weight: 300;
@@ -9042,7 +9049,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .picker__day.picker__day--today {
-  color:#25cd18;
+  color:#009ad0;
 }
 
 .picker__day.picker__day--today.picker__day--selected {
@@ -9059,7 +9066,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-radius: 50%;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  background-color:#25cd18;
+  background-color:#009ad0;
   color: #ffffff;
 }
 
@@ -9077,7 +9084,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__close, .picker__today, .picker__clear {
   font-size: 1.1rem;
   padding: 0 1rem;
-  color:#25cd18;
+  color:#009ad0;
 }
 
 .picker__clear {
