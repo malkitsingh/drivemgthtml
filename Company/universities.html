@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../css/custom.css" media="screen,projection" />
+</head>
+
+<body>
+    <header>
+        <div class="logo-part">
+            <a href="#" class="logo">Univery logo</a>
+        </div>
+        <ul class="right-navigation">
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path fill-rule="evenodd" fill="rgb(255, 219, 77)" d="M23.690,22.276 L18.301,16.887 C19.823,15.041 20.651,12.746 20.651,10.328 C20.651,7.567 19.579,4.978 17.626,3.025 C15.678,1.072 13.084,-0.000 10.328,-0.000 C7.572,-0.000 4.978,1.072 3.025,3.025 C1.072,4.973 -0.000,7.567 -0.000,10.328 C-0.000,13.083 1.072,15.678 3.025,17.631 C4.973,19.579 7.567,20.655 10.328,20.655 C12.751,20.655 15.046,19.828 16.887,18.306 L22.276,23.690 C22.667,24.082 23.299,24.082 23.690,23.690 C24.082,23.299 24.082,22.667 23.690,22.276 ZM4.439,16.211 C2.863,14.640 1.997,12.550 1.997,10.328 C1.997,8.105 2.863,6.011 4.435,4.439 C6.006,2.868 8.096,2.002 10.323,2.002 C12.545,2.002 14.640,2.868 16.211,4.439 C17.782,6.011 18.649,8.101 18.649,10.328 C18.649,12.550 17.782,14.645 16.211,16.216 C14.640,17.787 12.545,18.654 10.323,18.654 C8.101,18.654 6.011,17.787 4.439,16.211 Z"
+                        />
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px">
+                        <path fill-rule="evenodd" fill="rgb(255, 219, 77)" d="M23.045,18.070 C20.888,16.196 18.891,13.550 18.891,6.946 C18.891,3.121 15.795,0.010 11.989,0.010 C8.182,0.010 5.085,3.121 5.085,6.946 C5.085,13.556 3.090,16.199 0.930,18.072 C0.332,18.596 -0.012,19.351 -0.012,20.143 C-0.012,20.578 0.340,20.932 0.773,20.932 L8.225,20.932 C8.589,22.685 10.138,24.006 11.988,24.006 C13.839,24.006 15.388,22.685 15.751,20.932 L23.203,20.932 C23.637,20.932 23.988,20.578 23.988,20.143 C23.988,19.344 23.644,18.589 23.045,18.070 ZM11.988,22.428 C11.010,22.428 10.175,21.804 9.854,20.932 L14.122,20.932 C13.802,21.804 12.966,22.428 11.988,22.428 ZM1.868,19.353 C1.896,19.322 1.927,19.293 1.959,19.265 C5.251,16.409 6.655,12.725 6.655,6.946 C6.655,3.992 9.048,1.588 11.989,1.588 C14.929,1.588 17.321,3.992 17.321,6.946 C17.321,12.719 18.725,16.403 22.019,19.265 C22.051,19.293 22.082,19.322 22.110,19.353 L1.868,19.353 Z"
+                        />
+                    </svg>
+                    <span class="badges">50</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="user-pic"><img src="../images/user.png" alt="user"/></span>
+                    <span class="up-arrow">
+                     <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="18px" height="11px">
+                        <path fill-rule="evenodd"  fill="rgb(255, 219, 77)"
+                           d="M18.000,1.290 C18.000,1.428 17.947,1.569 17.849,1.674 L9.385,10.785 C9.186,10.999 8.866,10.999 8.667,10.785 L0.199,1.674 C0.011,1.472 0.015,1.160 0.183,0.944 C0.015,0.729 0.011,0.416 0.199,0.214 C0.398,-0.001 0.718,-0.001 0.918,0.214 L9.024,8.936 L17.131,0.218 C17.330,0.003 17.650,0.003 17.849,0.218 C17.951,0.323 18.000,0.465 18.000,0.602 C18.000,0.725 17.944,0.846 17.865,0.946 C17.946,1.047 18.000,1.167 18.000,1.290 Z"/>
+                     </svg>
+                  </span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <aside class="sidebar">
+        <nav class="menu">
+            <ul class="sidebar-menu" id="sidebar-menu">
+
+
+
+                <li><a href="dashboard.html" class=" waves-effect waves-dark"><span class="icon-list"></span>Dashboard</a></li>
+                <li><a href="companies.html" class="waves-effect waves-dark"><span class="icon-list"></span>Company Profile</a></li>
+                <li><a href="universities.html" class="active waves-effect waves-dark"><span class="icon-list"></span>Universities</a></li>
+                <li><a href="drive-management.html" class="  waves-effect waves-dark"><span class="icon-list"></span>Drive Management</a></li>
+                <li><a href="reports.html" class=" waves-effect waves-dark"><span class="icon-list"></span>Reports</a></li>
+
+
+            </ul>
+        </nav>
+    </aside>
+    <section class="main-content students">
+        <div class="panel">
+            <div class="row">
+                <div class="col s12 l12 m12 ">
+
+                    <div class="header-section">
+                        <h4>Universities<span class="count">18</span><span class="add-more">+</span></h4>
+                        <ul class="icons-list">
+                            <li class="search-list">
+                                <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                                <input type="search" class="search-field" placeholder="Search here">
+                            </li>
+                            <li class="filter-icons">
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px"
+                                        height="12px">
+                                        <path fill-rule="evenodd" fill="rgb(40, 40, 40)" d="M8.012,12.000 L8.012,3.117 L10.000,3.117 L10.000,12.000 L8.012,12.000 ZM8.012,-0.000 L10.000,-0.000 L10.000,2.057 L8.012,2.057 L8.012,-0.000 ZM3.976,3.117 L5.964,3.117 L5.964,12.000 L3.976,12.000 L3.976,3.117 ZM3.976,-0.000 L5.964,-0.000 L5.964,2.057 L3.976,2.057 L3.976,-0.000 ZM0.060,3.117 L2.048,3.117 L2.048,12.000 L0.060,12.000 L0.060,3.117 ZM-0.000,-0.000 L1.988,-0.000 L1.988,2.057 L-0.000,2.057 L-0.000,-0.000 Z"></path>
+                                    </svg>
+                                </a>
+
+                                <a href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="12px">
+                                        <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M11.000,4.238 L7.857,4.238 L7.857,-0.000 L3.143,-0.000 L3.143,4.238 L-0.000,4.238 L5.500,9.183 L11.000,4.238 ZM-0.000,10.595 L-0.000,12.008 L11.000,12.008 L11.000,10.595 L-0.000,10.595 Z"></path>
+                                    </svg>
+                                </a>
+
+                            </li>
+                            <li><a href="#modal1" class="my-btn waves-effect modal-trigger waves-light">Import CSV</a></li>
+                        </ul>
+                    </div>
+                    <div class="table-content">
+                        <table class="table custom-table responsive-table highlight bordered">
+                            <thead>
+                                <tr>
+                                   
+                                    <th>University Name</th>
+                                    <th>Address</th>
+                                    <th>Contact Person</th>
+                                    <th>Email</th>
+                                    <th>Contact</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td>Lovely Professional University</td>
+                                    <td>Phagwara</td>
+                                    <td>Vivek Gautam</td>
+                                    <td>vivek@lpu.co.in</td>
+                                    <td>9876543210</td>
+                                    
+                                    <td>
+                                        <div class="action-block"> <span class="action-menu"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></span>
+                                            <ul class="drop-down">
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                               
+                              
+                               
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="custom-pagination my-pager">
+                        <ul>
+                            <li>
+                                <a href="javascript:void(0)" class="btn prev disabled"><i class="fa fa-caret-left" aria-hidden="true"></i></a>
+                                <span class="pages">1/25</span>
+                                <a href="javascript:void(0)" class="btn next"><i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <select class="pager-select ">
+                                            <option>15 per pages</option>
+                                            <option>25 per pages</option>
+                                            <option>50 per pages</option>
+
+                                        </select>
+                            </li>
+                        </ul>
+                        <span class="pages-count">1-25 of 1250 items</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <div class="sidebar-toggle">
+        <div class="header-bar">
+            <h4>Add Category</h4>
+            <a href="javascript:void(0)" class="close"><i class="material-icons">close</i></a>
+        </div>
+        <div class="sidebar-body nice-scroll">
+
+            <form class="row hide stream-side-cont">
+                <div class="input-field col s12">
+                    <input id="cat_name" type="text" class="validate">
+                    <label for="cat_name" class="">Category Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1" class="">Description</label>
+                </div>
+            </form>
+            <form class="row  add-company-side-cont">
+                <div class="input-field col s12">
+                    <input id="cat_name" type="text" class="validate">
+                    <label for="cat_name" class="">Category Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="estb_in" type="text" class="validate">
+                    <label for="estb_in" class="">Established In</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="no_emp" type="text" class="validate">
+                    <label for="no_emp" class="">No. of Employees</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="founder_name" type="text" class="validate">
+                    <label for="founder_name" class="">Founder Name</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="Address" class="materialize-textarea"></textarea>
+                    <label for="Address" class="">Address</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="pin_code" type="text" class="validate">
+                    <label for="pin_code" class="">Pin Code</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email" class="">Email</label>
+                </div>
+                <div class="input-field col s12">
+                    <input id="phone_number" type="text" class="validate">
+                    <label for="phone_number" class="">Phone Number</label>
+                </div>
+                <div class="contact-section">
+                    <h5>Contact Person</h5>
+                    <div class="contact-section-list">
+                        <span class="count-number">1</span>
+                        <div class="input-field col s12">
+                            <input id="name" type="text" class="validate">
+                            <label for="name" class="">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email" class="">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="designation" type="text" class="validate">
+                            <label for="designation" class="">Designation</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="contact_number" type="text" class="validate">
+                            <label for="contact_number" class="">Contact Number</label>
+                        </div>
+                    </div>
+                    <p class="more-field"><span class="add-more">+</span>Add More Contacts </p>
+                </div>
+                <div class="input-field col s12">
+                    <select class="form-seelct">
+            <option value="" disabled="" selected="">Select Category</option>
+            <option value="1">Role1</option>
+            <option value="2">Role1</option>
+            <option value="3">Role1</option>
+        </select>
+                </div>
+            </form>
+        </div>
+        <div class="sidebar-footer">
+            <button type="submit" class="my-btn waves-effect waves-light submit-btn save-btn">Create</button>
+            <button type="submit" class="my-btn waves-effect waves-light back-btn">Create & Add Another</button>
+
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+        <div class="modal-content">
+
+            <div class="upload-part">
+                <input type="file" class="browse-input" />
+                <div class="browse-content">
+                    <span class="upload-icons"><svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="16px" height="21px">
+<path fill-rule="evenodd"  fill="rgb(40, 40, 40)"
+ d="M15.889,9.439 L8.269,0.145 C8.194,0.052 8.086,-0.000 7.978,-0.000 C7.871,-0.000 7.763,0.052 7.688,0.145 L0.067,9.439 C-0.043,9.574 -0.074,9.772 -0.010,9.942 C0.053,10.113 0.197,10.224 0.358,10.224 L4.770,10.224 L4.770,20.535 C4.770,20.792 4.949,21.000 5.171,21.000 L10.786,21.000 C11.007,21.000 11.187,20.792 11.187,20.535 L11.187,10.224 L15.599,10.224 C15.759,10.224 15.904,10.113 15.967,9.943 C16.030,9.772 16.000,9.574 15.889,9.439 Z"/>
+</svg></span>
+                    <h5>Add/update Degrees</h5>
+                    <p>Drop <strong>CSV file</strong> here or click to upload</p>
+                </div>
+            </div>
+            <p class="file-formet">File format should be similar to attached sample: <a href="javascript:void(0)"> View Sample</a></p>
+            <p class="checkbox-part"> <input type="checkbox" name="check" class="filled-in" id="checkk" /><label for="checkk">Send Email Invitations to the New Staff.</label></p>
+            <p class="checkbox-part"> <input type="checkbox" name="checkkk" class="filled-in" id="checkkk" /><label for="checkkk">Empty Values in the Excel Sheet must Replace Existing Information for Staff if present..</label></p>
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect my-btn save-btn">Submit</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
+    <div id="modal2" class="modal bottom-sheet">
+        <div class="modal-content">
+            <ul class="filter-list">
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter" name="filter" />
+                    <label for="filter">Company Name</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter1" name="filter1" />
+                    <label for="filter1">Address</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter2" name="filter2" />
+                    <label for="filter2">Email</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter3" name="filter3" />
+                    <label for="filter3">Functional Area</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter4" name="filter4" />
+                    <label for="filter4">Employees</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter5" name="filter5" />
+                    <label for="filter5">Founder Name</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter6" name="filter6" />
+                    <label for="filter6">Contact Person 1</label>
+                </li>
+                <li>
+                    <input type="checkbox" class="filled-in" id="filter7" name="filter7" />
+                    <label for="filter7">Contact Person 2</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="custom-overlay sidebar-overlay"></div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+    <script type="text/javascript" src="../js/custom.js"></script>
+</body>
+
+</html>
