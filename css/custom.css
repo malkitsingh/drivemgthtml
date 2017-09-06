@@ -1398,6 +1398,7 @@ label.drive-time::after {
 label.drive-time {
     FLOAT: LEFT;
     font-size: 12px;
+    cursor: pointer;
     color: #909090;
     font-weight: 600;
     margin: 5px 0 10px;
@@ -1428,6 +1429,8 @@ span.drive-date {
     font-size: 16px;
     font-weight: 600;
     color: #282828;
+    z-index: 5;
+  
 }
 .timeline-content:last-child .panel{margin-bottom: 0px;}
 .drive-date svg{position: absolute; left:0; top:0; bottom: 0; right: 0;}

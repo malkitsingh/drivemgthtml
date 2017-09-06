@@ -8,6 +8,10 @@
     });
       $('ul.tabs').tabs();
       $('select').material_select();
+      $('.drive-time').click(function(){
+        $(this).parent().toggleClass('active');
+        $(this).next('.panel').slideToggle();
+      });
       $('.search-list').mouseenter(function(){
            $(' .search-list .search-field').addClass('active');
       });
