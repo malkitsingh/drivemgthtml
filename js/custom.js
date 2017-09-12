@@ -1,5 +1,5 @@
   $(document).ready(function(){
-     $('.collapsible').collapsible();
+    $('.collapsible').collapsible();
     $('ul.tabs').tabs();
     $('select').material_select();
     $('.coordinator-details-head').click(function(){

@@ -2553,12 +2553,35 @@ ul.detail-step {
     line-height: 1;
     cursor: pointer;
     margin: 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
+.add-more-block span.add-more {
+    margin-left: 0;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+.add-more-block a{color: #282828}
+.add-more-block {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0px;
+}
+h4.cust-title.notop {
+    margin-top: 0;
+}
+
 .academics-details-body {
     float: left;
     width: 100%;
     display: none;
     padding: 0 10px;
+}
+.stu-profile-fields.full-block .academics-details-body {
+    padding: 0 30px;
 }
 .academic-head.active h4 i{ transform: rotate(0deg);   transition: 0.5s;}
 .academic-head h4 i {
@@ -2695,3 +2718,108 @@ h5.sub-title {
     color: #282828;
 }
 .drive-content .student-sec.extra-pad .custom-table tr td:first-child, .drive-content .student-sec.extra-pad .custom-table tr th:first-child{padding-left: 20px}
+.profile-fields.stu-profile-fields {
+    max-width: 100%;
+}
+.staff-profile-body {
+    float: left;
+    width: 100%;
+}
+.stu-info-cont {
+    float: left;
+    width: calc(100% - 135px);
+    padding-left: 30px;
+}
+#basic-info .staff-profile-body {
+    padding-top: 30px;
+    float: left; width:100%;
+}
+span.error {
+    color: red;
+}
+.profile-fields.stu-profile-fields.full-block {
+    padding: 0;
+    width: 100%;
+}
+.stu-profile-fields .input-field1 {
+    margin-bottom: 20px;
+    margin-top: 0;
+
+}
+#basic-info .edit-img {
+    left: 50%;
+    margin-left: -13px;
+}
+[type="radio"]:checked + label{color: #282828}
+.new-select span.caret {
+    font-size: 0 !important;
+    background-image: url(../images/arrow.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10px;
+}
+h4.cust-title {
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.new-select  .dropdown-content li > a, .new-select  .dropdown-content li > span{color: #282828}
+.new-select input.select-dropdown{color: #282828}
+.check-btn1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.check-btn1 label{color: #282828;}
+.academic-info-list {
+    float: left;
+    width: 100%;
+    padding-left: 40px;
+    position: relative;
+}
+span.list-number {
+    background: #4c5d62;
+    width: 20px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 22px;
+}
+.stu-pic-side {
+    float: left;
+    width: 135px;
+}
+.p-cont{float: left; width:100%; margin-top: 0; margin-bottom: 15px;}
+.p-cont p {
+    float: left;
+    width: 100%;
+    color: #909090;
+    font-size: 14px;
+    margin-top: 0;
+}   
+.persnl-details{float: left; width: 100%; margin: 0; column-count: 2;}
+.persnl-details li{float: left; margin-bottom: 3px; width: 100%; font-size: 14px}
+.persnl-details li label{font-size: 14px; color: #909090;}
+.table-content.education-table table td , .table-content.education-table table th{padding: 8px 20px;}
+.table-content.education-table {
+    box-shadow: none;
+}
+.profile-title{float: left; width: 100%;margin: 0 0 15px 0; border-bottom: 1px solid #909090; padding: 0 0 15px; font-size: 16px;text-transform: uppercase; font-weight: 600;}
+.stu-info-cont ul {
+    float: left; width: 100%; margin: 0;
+}
+.p-cont ol{ float: left; width: 100%; margin: 0;  padding-left: 20px;}
+.stu-info-cont ul li span{color: #282828}
+.stu-info-cont ul li , .p-cont ol li{float: left; width: 100%; margin-bottom: 3px; font-size: 14px; color: #909090}
+.stu-info-cont ul li label{font-size: 14px;; color: #909090}
+.stu-info-cont h6 {
+    margin: 0;
+}
