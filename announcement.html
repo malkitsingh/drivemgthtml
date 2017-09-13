@@ -60,7 +60,7 @@
               <div class="panel anounce-panel">
               <div class="panel-head">
                 <h3 class="panel-title">All Announcement</h3>
-                <button class="my-btn announce-btn waves-light waves-effect" id="announce-btn">Add New Announcement</button>
+                <a class="my-btn announce-btn waves-light waves-effect modal-trigger" href="#modal31" id="announce-btn">Add New Announcement</a>
               </div>
               <div class="panel-body">
                   <div class="search-option">
@@ -128,8 +128,39 @@ text ever since the 1500s, when an unknown printer took a galley of type and scr
                </div>
             </div>
          </section>
+            <div id="modal31" class="modal">
+    <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+    <div class="modal-content">
+    <h4 class="title-note">Add Announcement</h4>
+        <form class="row">
+            <div class="input-field col s12">
+               
+                <input id="to" type="text" class="validate"  data-role="materialtags">
+                <label for="to" class="">Tittle</label>
+            </div>
+            
+           
+             <div class="input-field col s12">
+                <input id="Description" type="text" class="validate">
+                <label for="Description" class="">Description</label>
+            </div>
+            <div class="input-field col s12">
+              <label class="cust-label">Attachment</label>
+                <div class="btn browse-btn new-browse">
+                          <span><i class="material-icons"></i> Choose File</span>
+                  <input type="file">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="modal-footer">
+       <a href="#!" class="modal-action modal-close left waves-effect my-btn save-btn">Submit</a>
+   
+    </div>
+  </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
       <script>
          $(document).ready(function(){
     $('ul.tabs').tabs();

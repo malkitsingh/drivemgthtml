@@ -53,4 +53,9 @@
     closeOnSelect: false // Close upon selecting a date,
   });
  
-        
+           $(document).ready(function(){
+    $('ul.tabs').tabs();
+    $('.dropdown-button ').click(function(){
+      $('.custom-overlay').toggleClass('active');
+    });
+  });
