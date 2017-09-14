@@ -1,4 +1,8 @@
   $(document).ready(function(){
+     $('.job-rest-block .job-rest-list').click(function(){
+    $(this).parent().toggleClass('active');
+    $('.job-rest-body').slideToggle();
+ });
     $('.collapsible').collapsible();
     $('ul.tabs').tabs();
     $('select').material_select();
@@ -40,7 +44,7 @@
   $("body").niceScroll({cursorcolor:"#000",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
   $(".nice-scroll").niceScroll({cursorcolor:"#0097d5",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
 	
- 
+
   });
 
 

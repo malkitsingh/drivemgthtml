@@ -2898,3 +2898,143 @@ ul.dropdown-content.cust-drop1 {
     top: 70px !important;
     box-shadow: none;
 }
+.job-rest-body {
+    float: left;
+    width: 100%;
+    padding: 20px;
+}
+.job-rest-block {
+    float: left;
+    width: 100%;
+    border: 1px solid #e9e9e9;
+     box-shadow: 0px 0px 15px 0px rgba(224, 224, 224, 0.4);
+     margin-bottom: 20px
+}
+.new-timeline-cont .job-rest-list{margin-bottom: 0}
+.job-rest-list h6 i {
+    position: absolute;
+    left: -5px;
+    line-height: 1;
+    top: -8px;
+    font-size: 32px;
+    transform: rotate(-90deg);
+    transition: 0.5s;
+}
+.job-rest-list a.my-btn.waves-effect.right.waves-light {
+    display: block;
+    position: absolute;
+    top: 8px;
+    /* left: 0; */
+    right: 15px;
+}
+.job-rest-list.disbled {
+    background: #f4f4f4;
+    position: relative;
+}
+ul.com-in {
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    margin: 5px 0 0;
+    display: none;
+}
+.rounds-head.collapsible-header.active ul.com-in{display: block;}
+ul.com-in li:last-child::after{display: none}
+ul.com-in li::after{content: "|"; margin: 0 10px;}
+ul.com-in li {
+    float: left;
+  position: relative;
+  font-size: 14px;
+  color: #909090;
+}
+.table-content.cont-right-part {
+    float: left;
+    width: calc(100% - 365px);
+}
+.cont-left-part {
+    float: left;
+    width: 365px;
+    padding-right: 30px;
+}
+.csv-file input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+textarea.my-textarea {
+    float: left;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #EEE;
+    MARGIN-TOP: 10PX;
+}
+.cont-left-part p {
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+    color: #909090; 
+}
+.narrow-text label{font-size: 14px;float: left; width: 100%}
+.modal-cont-head p{color: #909090; float: left; width: 100%; font-size: 14px; margin: 0}
+.modal-cont-head {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #909090;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.modal-cont-head h6 {
+    float: left;
+    width: 100%;
+    margin: 0;
+    color: #282828;
+    font-size: 16px;
+}
+.btn.browse-btn.csv-file {
+    background: #fbfcfe;
+    border: 1px solid #eee;
+    font-size: 14px;
+    color: #282828;
+    padding: 0 5px 6PX;
+    POSITION: RELATIVE;
+}
+.list-detail h6 span {
+    background: #4c5d62;
+    color: #fff;
+    width: 15px;
+    display: inline-block;
+    text-align: center;
+    height: 15px;
+    font-weight: 100;
+    padding: 0px;
+    margin-right: 4px;
+}
+.rounds-head.collapsible-header h5 a{color: #282828}
+.job-rest-list.disbled h6{padding-left: 0}
+.job-rest-list h6 {position: relative;padding-left: 30px;}
+.job-rest-body h6{margin-bottom: 15px; font-size: 16px;width: auto}
+.new-timeline-cont .job-info{margin-left: 0; width: 100%; padding: 20px}
+.new-timeline-cont > .panel{padding: 0}
+.new-timeline-cont > .panel > .main-content{margin-top: 0}
+.new-timeline-cont span.shortlisted{padding-left: 0; padding-right: 40px;}
+.new-timeline-cont span.shortlisted span i{font-size: 16px}
+.new-timeline-cont span.shortlisted span {
+    margin: 0;
+    left: auto;
+    right: 0;
+    position: absolute;
+    top: -5px;
+    padding: 3px;
+}
+.round-body.collapsible-body.bordr0.padd0 {
+    padding-left: 0;
+}
+.modal.custom-modal.wide-modal {
+    max-width: 90%;
+    width: 1310px;
+}
