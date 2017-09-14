@@ -154,6 +154,7 @@ aside.sidebar {
     bottom: 0;
     left: 0;
     background: #4c5d62;
+  
 }
 aside.sidebar nav.menu {
     float: left;
@@ -219,6 +220,7 @@ section.main-content {
     width: calc(100% - 200px);
     padding: 30px;
     padding-top: 90px;
+    /* transition: 0.5s */
 }
 a.selc {
     text-decoration: underline;
@@ -246,18 +248,20 @@ a.selc {
   position: relative;
   padding-left: 150px;
 }
-span.date-time {
+span.date-time 
+{
     font-size: 16px;
     float: right;
     color: #909090;
     margin-top: -10px;
     
 }
-span.add-more ,.add-more1{
+span.add-more ,.add-more1
+{
     width: 26px;
     height: 26px;
     display: inline-block;
-    border: 2px solid #ffb64d;
+    border: 1px solid #ffb64d;
     text-align: center;
     border-radius: 5px;
     font-size: 28px;
@@ -632,6 +636,10 @@ ul.drop-down {
     padding: 5px 20px;
     margin-left: 10px;
 }
+.import-csv
+{
+    line-height:20px;
+    top:1px!important;
 }
 .batch-year {
     float: left;
@@ -1658,11 +1666,12 @@ a.my-btn.add-btn {
 .students .tabs.uni-profile-tab li {
     width: 25% !important;
 }
-.filter-icons a {
+.filter-icons a 
+{
     width: 25px;
     height: 25px;
     display: inline-block;
-    border: 2px solid #ffb64d;
+    border: 1px solid #ffb64d;
     border-radius: 3px;
     text-align: center;
     margin: 0 2px;
@@ -2176,20 +2185,51 @@ span.time-left {
     background-color: #065170;
     opacity: 0.5;
 }
-.sidebar-toggle {
+.sidebar-toggle
+ {
     position: fixed;
     height: 100vh;
     background: #fff;
     right: 0;
     width: 450px;
     max-width: 100%; top: 0;
-  box-shadow: -5px 0px 27px 0px rgba(0, 0, 0, 0.21);
-  z-index: 12;
-  margin-right: -450px;
-  transition: 0.5s margin;
+    box-shadow: -5px 0px 27px 0px rgba(0, 0, 0, 0.21);
+    z-index: 12;
+    margin-right: -450px;
+    transition: 0.5s margin;
   
 }
 .sidebar-toggle.active{margin-right: 0; transition: 0.5s margin;}
+.sidebar-toggle1
+ {
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    right: 0;
+    width: 450px;
+    max-width: 100%; top: 0;
+    box-shadow: -5px 0px 27px 0px rgba(0, 0, 0, 0.21);
+    z-index: 12;
+    margin-right: -450px;
+    transition: 0.5s margin;
+  
+}
+.sidebar-toggle1.active{margin-right: 0; transition: 0.5s margin;}
+.sidebar-toggle2
+ {
+    position: fixed;
+    height: 100vh;
+    background: #fff;
+    right: 0;
+    width: 450px;
+    max-width: 100%; top: 0;
+    box-shadow: -5px 0px 27px 0px rgba(0, 0, 0, 0.21);
+    z-index: 12;
+    margin-right: -450px;
+    transition: 0.5s margin;
+  
+}
+.sidebar-toggle2.active{margin-right: 0; transition: 0.5s margin;}
 .header-bar h4 {
     float: left;
     width: 100%;
@@ -2402,7 +2442,8 @@ p.more-field .add-more {
     position: relative;
     top: 3px;
 }
-span.count-number {
+span.count-number
+ {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -2413,7 +2454,7 @@ span.count-number {
     color: #fff;
     line-height: 1;
     padding: 2px;
-    left: 20px;
+    left:4px;
     top: 20px;
 }
 p.more-field {
@@ -2870,8 +2911,8 @@ span.text-color
 .plc-link
 {
     position: absolute;
-    left: 60%;
-    top: 25%;
+    left:53%;
+    top:60%;
 }
 .company-subtag
 {
@@ -4363,4 +4404,205 @@ p.create1
 {
     width:40%;
     float: left;
+}
+.sub-name
+{
+    margin:0;
+    padding:25px 4px;
+    font-size:14px;
+    color:#909090;
+    line-height:20px;
+    white-space: normal;
+    word-break: break-word;
+}
+.logo-box img
+{
+    width:100%;
+}
+.company-details1
+ {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+.company-detail-form
+{
+    margin-top:40%!important;
+}
+.company-section
+{
+    width: 100%;
+    float: left;
+    display: table;
+    padding-left: 30px 0 0 50px;
+    padding: 30px 0 0 40px;
+
+}
+.company-section-about
+{
+  
+    width: 100%;
+    float: left;
+    display: table;
+    padding: 30px 0 0 0px;
+   
+}
+.company-tag-about
+{
+    display:table-cell;
+    vertical-align: middle;
+    width:100%;
+    float:left;
+    margin:0;
+    padding:0;
+}
+.company-color
+{
+     color:#0099d2!important;
+}
+.add-properties
+{
+    background-image: none!important;
+    border:1px solid #ffdb4d!important;
+    border-radius:3px!important;
+    font-weight:400;
+    line-height:18px!important;
+    top:1px !important;
+}
+.table-section-outer
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+}
+.category-select1
+{
+    width:50%!important;
+}
+.pager-border
+{
+    border-top:none!important;
+}
+.icons2
+{
+    color:#282828;
+}
+.add-company-form-section
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+    padding:20px 30px;
+}
+.add-company-each
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+}
+.add-company-each input[type=text]:not(.browser-default).validate + label
+{
+    margin-left:-13px;
+}
+.contact-person
+{
+    width:100%;
+    float:left;
+    padding:20px 0;
+}
+p.contact-pname
+{
+   margin:0;
+   padding:0;
+   font-size:20px;
+   color:#282828;
+   line-height:10px;
+}
+.center-align
+{
+    right:-32%!important;
+}
+
+.field-type
+{
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+    position: relative;
+}
+label.field-type-option
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    font-size: 14px;
+    top: -10px;
+    left: 12px;
+}
+.select-section .select-wrapper input.select-dropdown
+{
+
+    height:inherit!important;
+}
+ul.dropdown-content.cust-drop1
+ {
+    position: absolute;
+    top: 70px !important;
+    box-shadow: none;
+}
+
+/***********toggle *********/
+div#toggle-btn  i{font-size: 26px}
+div#toggle-btn {
+    float: left;
+    width: 55px;
+    background: rgba(0,0,0,0.1);
+    height: 70px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #fff;
+}
+body.active .sidebar-menu > li > a span.txt{display: none;}
+body.active aside.sidebar{width: 55px;  }
+body.active  section.main-content{width:calc(100% - 55px) ;}
+body.active .logo-part {
+    display: none;
+}
+.gender-label-section
+{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 0 0 30px;
+}
+.add-more-properties
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+}
+.new-label
+{
+    margin:0;
+    padding:0 10px;
+    box-sizing:border-box;
+    font-size:14px;
+    color:#282828;
+    line-height:10px;
+}
+.add-align
+{
+    float:left!important;
+    margin-left:10px!important;
+    margin-right:10px!important;
 }
