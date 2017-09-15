@@ -4557,7 +4557,8 @@ ul.dropdown-content.cust-drop1
 
 /***********toggle *********/
 div#toggle-btn  i{font-size: 26px}
-div#toggle-btn {
+div#toggle-btn 
+{
     float: left;
     width: 55px;
     background: rgba(0,0,0,0.1);

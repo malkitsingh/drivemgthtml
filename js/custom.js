@@ -1,5 +1,11 @@
 
 $(document).ready(function () {
+<<<<<<< HEAD
+=======
+  $('#toggle-btn').click(function () {
+    $('body').toggleClass('active');
+  });
+>>>>>>> f896b48aefac0bb410f39c8f09ae7f729d65f11e
   $('.job-rest-block .job-rest-list').click(function () {
     $(this).parent().toggleClass('active');
     $('.job-rest-body').slideToggle();
@@ -44,8 +50,6 @@ $(document).ready(function () {
   });
   $("body").niceScroll({ cursorcolor: "#000", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
   $(".nice-scroll").niceScroll({ cursorcolor: "#0097d5", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
-
-
 
   $('.collapsible').collapsible();
   $('ul.tabs').tabs();
@@ -108,6 +112,10 @@ $(document).ready(function () {
   $("body").niceScroll({ cursorcolor: "#000", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
   $(".nice-scroll").niceScroll({ cursorcolor: "#0097d5", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
 
+  $('ul.tabs').tabs();
+  $('.dropdown-button ').click(function () {
+    $('.custom-overlay').toggleClass('active');
+  });
 
 });
 
@@ -121,9 +129,3 @@ $('.datepicker').pickadate({
   closeOnSelect: false // Close upon selecting a date,
 });
 
-$(document).ready(function () {
-  $('ul.tabs').tabs();
-  $('.dropdown-button ').click(function () {
-    $('.custom-overlay').toggleClass('active');
-  });
-});
