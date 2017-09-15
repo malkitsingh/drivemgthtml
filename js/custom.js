@@ -1,57 +1,52 @@
-<<<<<<< HEAD
+
 $(document).ready(function () {
-  $('#toggle-btn').click(function(){
-    $('body').toggleClass('active');
-=======
-  $(document).ready(function(){
-     $('.job-rest-block .job-rest-list').click(function(){
+  $('.job-rest-block .job-rest-list').click(function () {
     $(this).parent().toggleClass('active');
     $('.job-rest-body').slideToggle();
- });
-    $('.collapsible').collapsible();
-    $('ul.tabs').tabs();
-    $('select').material_select();
-    $('.coordinator-details-head').click(function(){
-      $(this).toggleClass('active');
-      $('.coordinator-details-area').slideToggle();
-    });
-      $('ul.tabs').tabs();
-      $('select').material_select();
-      $('.drive-time').click(function(){
-        $(this).parent().toggleClass('active');
-        $(this).next('.panel').slideToggle();
-      });
-      $('.search-list').mouseenter(function(){
-           $(' .search-list .search-field').addClass('active');
-      });
-          $('.drop-arrow').click(function(){
-            $(this).parent().parent().toggleClass('active');
-             $(this).parent().parent().next()
-          })
-            $('.modal').modal();
-           $('ul.tabs').tabs();
-    $(' .header-section  .add-more ').click(function(){
-      $('.sidebar-toggle').addClass('active');
-       $('.custom-overlay').addClass('active');
-    });
-     $('.sidebar-toggle .close').click(function(){
-      $('.sidebar-toggle').removeClass('active');
-       $('.custom-overlay').removeClass('active');
-    });
-  $('.add_comp_cat').click(function(){
-      $('.sidebar-toggle').addClass('active');
-       $('.custom-overlay').addClass('active');
-    });
-      $('.academic-head').click(function(){
-        $(this).toggleClass('active');
-        $(this).next('.academics-details-body').slideToggle();
-      });
-  $("body").niceScroll({cursorcolor:"#000",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
-  $(".nice-scroll").niceScroll({cursorcolor:"#0097d5",cursoropacitymax:0.7,boxzoom:true,touchbehavior:true});  // This is an IFrame (iPad compatible)
-	
-
->>>>>>> 6f513c6d2565b2aa80cc466037cfb6d5c1b04097
   });
+  $('.collapsible').collapsible();
+  $('ul.tabs').tabs();
+  $('select').material_select();
+  $('.coordinator-details-head').click(function () {
+    $(this).toggleClass('active');
+    $('.coordinator-details-area').slideToggle();
+  });
+  $('ul.tabs').tabs();
+  $('select').material_select();
+  $('.drive-time').click(function () {
+    $(this).parent().toggleClass('active');
+    $(this).next('.panel').slideToggle();
+  });
+  $('.search-list').mouseenter(function () {
+    $(' .search-list .search-field').addClass('active');
+  });
+  $('.drop-arrow').click(function () {
+    $(this).parent().parent().toggleClass('active');
+    $(this).parent().parent().next()
+  })
+  $('.modal').modal();
+  $('ul.tabs').tabs();
+  $(' .header-section  .add-more ').click(function () {
+    $('.sidebar-toggle').addClass('active');
+    $('.custom-overlay').addClass('active');
+  });
+  $('.sidebar-toggle .close').click(function () {
+    $('.sidebar-toggle').removeClass('active');
+    $('.custom-overlay').removeClass('active');
+  });
+  $('.add_comp_cat').click(function () {
+    $('.sidebar-toggle').addClass('active');
+    $('.custom-overlay').addClass('active');
+  });
+  $('.academic-head').click(function () {
+    $(this).toggleClass('active');
+    $(this).next('.academics-details-body').slideToggle();
+  });
+  $("body").niceScroll({ cursorcolor: "#000", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
+  $(".nice-scroll").niceScroll({ cursorcolor: "#0097d5", cursoropacitymax: 0.7, boxzoom: true, touchbehavior: true });  // This is an IFrame (iPad compatible)
+
+
+
   $('.collapsible').collapsible();
   $('ul.tabs').tabs();
   $('select').material_select();
@@ -90,7 +85,7 @@ $(document).ready(function () {
     $('.sidebar-toggle').removeClass('active');
     $('.custom-overlay').removeClass('active');
   });
-   $('.icons3').click(function () {
+  $('.icons3').click(function () {
     $('.sidebar-toggle2').addClass('active');
     $('.custom-overlay').addClass('active');
   });
