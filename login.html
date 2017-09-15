@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -8,15 +9,42 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
 </head>
+
 <body>
-     <div class="header">
-            <a href="dashboard.html" class="logo"><img src="images/logo.png"/></a>
-        </div>
+    <!-- <div class="custom-loader">
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="gooey">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+            </defs>
+        </svg>
+        <div class="blob blob-0"></div>
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="blob blob-4"></div>
+        <div class="blob blob-5"></div>
+    </div> -->
+    <div class="header">
+        <a href="dashboard.html" class="logo"><img src="images/logo.png"/></a>
+    </div>
     <div class="login-section">
-       
+
         <div class="login-content">
+
             <h6>Login Your Account</h6>
             <div class="login-form">
+                <div id="card-alert" class="card green lighten-5">
+                    <div class="card-content green-text">
+                        <p>SUCCESS : The page has been added.</p>
+                    </div>
+                    <button type="button" class="close green-text" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                      </button>
+                </div>
                 <form>
                     <div class="input-field1 login-option">
                         <label>I am</label>
@@ -34,27 +62,27 @@
                         </p>
                     </div>
                     <div class="input-field">
-                         <input id="user_id" type="text" class="validate">
-                         <label for="user_id" class="">Enter User ID</label>
-                  </div>
+                        <input id="user_id" type="text" class="validate">
+                        <label for="user_id" class="">Enter User ID</label>
+                    </div>
                     <div class="input-field">
-                         <input id="password" type="password" class="validate">
-                         <label for="password" class="">Enter Password</label>
-                         <a href="javascript:void(0)" class="forget">Forget?</a>
-                      </div>
-                        <div class="input-field">
-                            <button type="submit" class="my-btn waves-effect waves-light">Login</button>
-                        </div>
-                      
+                        <input id="password" type="password" class="validate">
+                        <label for="password" class="">Enter Password</label>
+                        <a href="javascript:void(0)" class="forget">Forget?</a>
+                    </div>
+                    <div class="input-field">
+                        <button type="submit" class="my-btn waves-effect waves-light">Login</button>
+                    </div>
+
                 </form>
             </div>
-            <p>Don’t have login detailsl?  Ask your teacher to get invite on this portal.</p>
+            <p>Don’t have login detailsl? Ask your teacher to get invite on this portal.</p>
         </div>
     </div>
 </body>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 
 </html>

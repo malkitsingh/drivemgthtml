@@ -2898,3 +2898,128 @@ ul.dropdown-content.cust-drop1 {
     top: 70px !important;
     box-shadow: none;
 }
+.export-button-section
+{
+    float:right;
+}
+div#toggle-btn  i{font-size: 26px}
+div#toggle-btn 
+{
+    float: left;
+    width: 55px;
+    background: rgba(0,0,0,0.1);
+    height: 70px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #fff;
+}
+.card{float: left; width: 100%; margin: 0 0 15px 0 ;border-radius: 0px; box-shadow: none; border-left: 3px  solid transparent;}
+.green.lighten-5 {
+    background-color: #E8F5E9 !important;
+    border-color: #4CAF50 !important;
+}
+.card .card-content  p{text-align: left; font-size: 14px;}
+.card .card-content{padding: 15px 20px; float: left; width:100%; border-radius: 0px;}
+#card-alert button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    line-height: 1;
+        margin-top: -12px;
+    right: 10px;
+    font-size: 20px;
+    color: #fff;
+
+}
+body.active .sidebar-menu > li > a span.txt{display: none;}
+body.active aside.sidebar{width: 55px;  }
+body.active  section.main-content{width:calc(100% - 55px) ;}
+body.active .logo-part {
+    display: none;
+}
+.custom-loader .preloder-wrapper{z-index: 11}
+.custom-loader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.8);
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+/* body {
+    background: #111;
+    background: radial-gradient(#111, #000);
+}
+
+.blob {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(230,230,230,0.85);
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 1rem);
+    top: calc(50% - 1rem);
+    box-shadow: 0 0 1rem rgba(255, 255, 255, 0.25);
+}
+
+.blob-2 { animation: animate-to-2 1.5s infinite; }
+.blob-3 { animation: animate-to-3 1.5s infinite; }
+.blob-1 { animation: animate-to-1 1.5s infinite; }
+.blob-4 { animation: animate-to-4 1.5s infinite; }
+.blob-0 { animation: animate-to-0 1.5s infinite; }
+.blob-5 { animation: animate-to-5 1.5s infinite; }
+
+@keyframes animate-to-2 {
+    25%, 75% { transform: translateX(-1.5rem) scale(0.75); }
+    95% { transform: translateX(0rem) scale(1); }
+}
+
+@keyframes animate-to-3 {
+    25%, 75% { transform: translateX(1.5rem) scale(0.75); }
+    95% { transform: translateX(0rem) scale(1); }
+}
+
+@keyframes animate-to-1 {
+    25% { transform: translateX(-1.5rem) scale(0.75); }
+    50%, 75% { transform: translateX(-4.5rem) scale(0.6); }
+    95% { transform: translateX(0rem) scale(1); }
+}
+
+@keyframes animate-to-4 {
+    25% { transform: translateX(1.5rem) scale(0.75); }
+    50%, 75% { transform: translateX(4.5rem) scale(0.6); }
+    95% { transform: translateX(0rem) scale(1); }
+}
+
+@keyframes animate-to-0 {
+    25% { transform: translateX(-1.5rem) scale(0.75); }
+    50% { transform: translateX(-4.5rem) scale(0.6); }
+    75% { transform: translateX(-7.5rem) scale(0.5); }
+    95% { transform: translateX(0rem) scale(1); }
+}
+
+@keyframes animate-to-5 {
+    25% { transform: translateX(1.5rem) scale(0.75); }
+    50% { transform: translateX(4.5rem) scale(0.6); }
+    75% { transform: translateX(7.5rem) scale(0.5); }
+    95% { transform: translateX(0rem) scale(1); }
+} */
