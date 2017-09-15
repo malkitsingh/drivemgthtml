@@ -1,11 +1,10 @@
 
 $(document).ready(function () {
-<<<<<<< HEAD
-=======
+
   $('#toggle-btn').click(function () {
     $('body').toggleClass('active');
   });
->>>>>>> f896b48aefac0bb410f39c8f09ae7f729d65f11e
+
   $('.job-rest-block .job-rest-list').click(function () {
     $(this).parent().toggleClass('active');
     $('.job-rest-body').slideToggle();
