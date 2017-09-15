@@ -4,7 +4,6 @@ $(document).ready(function () {
   $('#toggle-btn').click(function () {
     $('body').toggleClass('active');
   });
-
   $('.job-rest-block .job-rest-list').click(function () {
     $(this).parent().toggleClass('active');
     $('.job-rest-body').slideToggle();
@@ -16,7 +15,7 @@ $(document).ready(function () {
 
   $('select').material_select();
 
-    $('.modal').modal();
+  $('.modal').modal();
 
   $('.coordinator-details-head').click(function () {
     $(this).toggleClass('active');
@@ -57,10 +56,10 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $(this).next('.academics-details-body').slideToggle();
   });
- 
 
- 
- 
+
+
+
 
   $(' .header-section  .add-more .contact-add ').click(function () {
     $('.sidebar-toggle .add-contact').addClass('active');
@@ -97,24 +96,30 @@ $(document).ready(function () {
   $('.dropdown-button ').click(function () {
     $('.custom-overlay').toggleClass('active');
   });
+  
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year,
+    today: 'Today',
+    clear: 'Clear',
+    close: 'Ok',
+    closeOnSelect: false // Close upon selecting a date,
+  });
+
+   $( function() {
+      $( "#sortable1, #sortable2" ).sortable({
+        connectWith: ".connectedSortable"
+      }).disableSelection();
+    } );
 
 
 
-
-
-$('.datepicker').pickadate({
-  selectMonths: true, // Creates a dropdown to control month
-  selectYears: 15, // Creates a dropdown of 15 years to control year,
-  today: 'Today',
-  clear: 'Clear',
-  close: 'Ok',
-  closeOnSelect: false // Close upon selecting a date,
 });
-});
 
 
-window.onload = function() {
- 
-   $('.custom-loader').addClass('hide');
+window.onload = function () {
+
+  $('.custom-loader').addClass('hide');
 }
 
