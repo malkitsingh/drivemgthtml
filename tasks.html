@@ -93,886 +93,1495 @@
     </nav>
   </aside>
   <section class="main-content">
-    <div class="panel">
-      <ul class="tabs">
-         <div class="create-task-button">
-               <button type="submit" class="waves-effect create-task-btn waves-light my-btn save-btn">Create a Task</button>
-        </div>
-        <li class="tab"><a href="#AllTask" class="active task">All Task</a></li>
-        <li class="tab"><a href="#DueToday" class="task">Due Today</a></li>
-        <li class="tab"><a href="#DueThisWeek" class="task">Due This Week</a></li>
-        <li class="tab"><a href="#OverDue" class="task">OverDue</a></li>
-        <li class="tab"><a href="#Completed" class="task">Completed</a></li>
-        <li class="indicator" style="right: 1450px; left: 0px;"></li>
-      </ul>
-      <div id="AllTask" class="tab-part reports active">
-        <div class="report-panel">
-          <div class="status-section">
-            <div class="s-left-section">
-              <a href="#" class="borad">Board</a>
-              <a href="#" class="">Table</a>
-            </div>
-            <div class="s-right-section">
-              <div class="s-inner">
-                <div class="search-bar-section">
-                  <ul class="icons-list">
-                    <li class="search-list">
-                      <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
-                      <input type="search" class="search-field active" placeholder="Search here">
-                    </li>
-                    <li class="filter-icons">
-                      <a href="javascript:void(0)">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="12px">
-                          <path fill-rule="evenodd" fill="rgb(40, 40, 40)" d="M8.012,12.000 L8.012,3.117 L10.000,3.117 L10.000,12.000 L8.012,12.000 ZM8.012,-0.000 L10.000,-0.000 L10.000,2.057 L8.012,2.057 L8.012,-0.000 ZM3.976,3.117 L5.964,3.117 L5.964,12.000 L3.976,12.000 L3.976,3.117 ZM3.976,-0.000 L5.964,-0.000 L5.964,2.057 L3.976,2.057 L3.976,-0.000 ZM0.060,3.117 L2.048,3.117 L2.048,12.000 L0.060,12.000 L0.060,3.117 ZM-0.000,-0.000 L1.988,-0.000 L1.988,2.057 L-0.000,2.057 L-0.000,-0.000 Z"></path>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="select-status-section">
-                  <div class="status-gap">
-
-                    <div class="input-field col s12 status-select">
-                      <select>
-                              <option value="" disabled selected>All User</option>
-                              <option value="1">Option 1</option>
-                              <option value="2">Option 2</option>
-                              <option value="3">Option 3</option>
-                            </select>
-                    </div>
+    <div class="tooltip6">
+      <a href="#" class="create-task">Create a Task</a>
+      <div class="tooltiptext6">
+        <div class="create-atsk-inner">
+          <div class="sidebar-body">
+            <form class="row  add-company-side-cont">
+                  <div class="input-field col s12">
+                    <input id="cat_name" type="text" class="validate">
+                    <label for="cat_name" class="">Title</label>
                   </div>
-                  <div class="status-gap custom-time">
+                   <div class="input-field col s12">
+                    <select>
+                            <option value="" disabled selected>Due Date</option>
+                            <option value="1">India</option>
+                            <option value="2">USA</option>
+                            <option value="3">Canada</option>
+                    </select>
+                  </div>
+                  <div class="add-time">
+                    <p>Add Time</p>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="cat_name" type="text" class="validate">
+                    <label for="cat_name" class="">Add Tag</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <select>
+                            <option value="" disabled selected>Assign To</option>
+                            <option value="1">India</option>
+                            <option value="2">USA</option>
+                            <option value="3">Canada</option>
+                    </select>
+                  </div>
+                  <div class="task-btn-section1">
+                     <a href="#" class="tsk">Create Task</a>
+                     <a href="#" class="tsk cancel-task">Cancel</a>
+                  </div>
+            </form>
+  
+          </div>
 
-                    <div class="input-field col s12 status-select">
-                      <select>
+        </div>
+
+      </div>
+    </div>
+
+    <ul class="tabs">
+      <li class="tab"><a href="#AllTask" class="active task">All Task</a></li>
+      <li class="tab"><a href="#DueToday" class="task">Due Today</a></li>
+      <li class="tab"><a href="#DueThisWeek" class="task">Due This Week</a></li>
+      <li class="tab"><a href="#OverDue" class="task">OverDue</a></li>
+      <li class="tab"><a href="#Completed" class="task">Completed</a></li>
+      <li class="indicator" style="right: 1450px; left: 0px;"></li>
+    </ul>
+    <div id="AllTask" class="tab-part reports active">
+      <div class="report-panel">
+        <div class="status-section">
+          <div class="s-left-section">
+            <a href="#" class="borad">Board</a>
+            <a href="#" class="">Table</a>
+          </div>
+          <div class="s-right-section">
+            <div class="s-inner">
+              <div class="search-bar-section">
+                <ul class="icons-list">
+                  <li class="search-list">
+                    <button type="submit" class="search-icon"><i class="fa fa-search"></i></button>
+                    <input type="search" class="search-field active" placeholder="Search here">
+                  </li>
+                  <li class="filter-icons">
+                    <a href="javascript:void(0)">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="12px">
+                        <path fill-rule="evenodd" fill="rgb(40, 40, 40)" d="M8.012,12.000 L8.012,3.117 L10.000,3.117 L10.000,12.000 L8.012,12.000 ZM8.012,-0.000 L10.000,-0.000 L10.000,2.057 L8.012,2.057 L8.012,-0.000 ZM3.976,3.117 L5.964,3.117 L5.964,12.000 L3.976,12.000 L3.976,3.117 ZM3.976,-0.000 L5.964,-0.000 L5.964,2.057 L3.976,2.057 L3.976,-0.000 ZM0.060,3.117 L2.048,3.117 L2.048,12.000 L0.060,12.000 L0.060,3.117 ZM-0.000,-0.000 L1.988,-0.000 L1.988,2.057 L-0.000,2.057 L-0.000,-0.000 Z"></path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="select-status-section">
+                <div class="status-gap">
+
+                  <div class="menu1">
+                    <ul>
+
+                      <li>
+                        <a href="#">All User<span class="arrow">▼</span></a>
+                        <div class="user-outer-section">
+                          <ul class="sub-menu1 user-options">
+                            <li>
+                              <div class="search-section">
+                                <input type="text" placeholder="Serach" class="serach-box">
+                                <div class="search-icon1">
+                                  <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+                              </div>
+                            </li>
+                            <div class="item-header">
+                              <p>All USER</p>
+                            </div>
+                            <li class="list-item" id="style-1">
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+
+                              <div class="item-outer-section">
+                                <div class="item-left-section">
+                                  <div class="user-notice-info">
+                                    <img src="images/user.png" alt="user">
+                                  </div>
+                                </div>
+                                <div class="item-right-section">
+                                  <p>GrujiKochar@venturepact.com</p>
+                                </div>
+
+                              </div>
+
+
+
+                            </li>
+
+                          </ul>
+                        </div>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+                <div class="status-gap custom-time">
+
+                  <div class="input-field col s12 status-select">
+                    <select>
                         <option value="" disabled selected>Custom Time Period</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                       </select>
 
-                    </div>
                   </div>
-                  <div class="date-from">
-                    <div class="form-section1 calen">
-                      <input type="text" class="datepicker picker__input" />
-                      <i class="fa fa-calendar" aria-hidden="true"></i>
-                    </div>
+                </div>
+                <div class="date-from">
+                  <div class="form-section1 calen">
+                    <input type="text" class="datepicker picker__input" />
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
-                  <div class="to-lavel">
-                    <p>to</p>
-                  </div>
-                  <div class="date-from">
-                    <div class="form-section1 calen">
-                      <input type="text" class="datepicker picker__input" />
-                      <i class="fa fa-calendar" aria-hidden="true"></i>
-                    </div>
+                </div>
+                <div class="to-lavel">
+                  <p>to</p>
+                </div>
+                <div class="date-from">
+                  <div class="form-section1 calen">
+                    <input type="text" class="datepicker picker__input" />
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="status-table-section">
-            <div class="table-inner-section">
-              <div class="status-each-section">
-                <div class="status-inner">
-                  <div class="status-header">
-                    <p>Not Started</p>
-                    <div class="ratting">
-                      <span>5</span>
-                    </div>
-                  </div>
-                  <div class="status-content" id="style-1">
-                    <ul id="sortable1" class="connectedSortable">
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                    
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                      
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                               
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-
-                    </ul>
+        </div>
+        <div class="status-table-section">
+          <div class="table-inner-section">
+            <div class="status-each-section">
+              <div class="status-inner">
+                <div class="status-header">
+                  <p>Not Started</p>
+                  <div class="ratting">
+                    <span>5</span>
                   </div>
                 </div>
+                <div class="status-content" id="style-1">
+                  <ul id="sortable1" class="connectedSortable">
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices icons2">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
 
+                          <div class="tooltip2">
+                            <div class="user-notice-info">
+                              <img src="images/user.png" alt="user" />
+                            </div>
+                            <span class="tooltiptext">
+                              <span class="assign-tos">Assigned To</span>
+                            <p class="assign-name">Gurji Kochar</span>
+                              </span>
+                          </div>
+
+
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                          <i class="fa fa-plus" aria-hidden="true"></i>
+                          </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices icons2">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p class="danger">Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="tooltip2">
+                            <div class="user-notice-info">
+                              <img src="images/user.png" alt="user" />
+                            </div>
+                            <span class="tooltiptext">
+                              <span class="assign-tos">Assigned To</span>
+                            <p class="assign-name">Gurji Kochar</span>
+                              </span>
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="tooltip2">
+                            <div class="user-notice-info">
+                              <img src="images/user.png" alt="user" />
+                            </div>
+                            <span class="tooltiptext">
+                              <span class="assign-tos">Assigned To</span>
+                            <p class="assign-name">Gurji Kochar</span>
+                              </span>
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices icons2">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+
+
+
+
+
+
+                  </ul>
+                </div>
               </div>
-              <div class="status-each-section">
-                <div class="status-inner">
-                  <div class="status-header">
-                    <p>In Progress</p>
-                    <div class="ratting">
-                      <span>3</span>
-                    </div>
-                  </div>
-                  <div class="status-content" id="style-1">
-                    <ul id="sortable1" class="connectedSortable">
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
 
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                    
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                      
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                               
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-
-                    </ul>
+            </div>
+            <div class="status-each-section">
+              <div class="status-inner">
+                <div class="status-header">
+                  <p>In Progress</p>
+                  <div class="ratting">
+                    <span>3</span>
                   </div>
                 </div>
+                <div class="status-content" id="style-1">
+                  <ul id="sortable1" class="connectedSortable">
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
 
 
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p class="danger">Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+
+
+
+
+
+
+                  </ul>
+
+                </div>
               </div>
-              <div class="status-each-section">
-                <div class="status-inner">
-                  <div class="status-header">
-                    <p>Blocked</p>
-                    <div class="ratting">
-                      <span>2</span>
-                    </div>
-                  </div>
-                  <div class="status-content" id="style-1">
-                    <ul id="sortable1" class="connectedSortable">
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
 
-                                
-                            </div>
 
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                    
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                
-
-                    </ul>
+            </div>
+            <div class="status-each-section">
+              <div class="status-inner">
+                <div class="status-header">
+                  <p>Blocked</p>
+                  <div class="ratting">
+                    <span>2</span>
                   </div>
                 </div>
+                <div class="status-content" id="style-1">
+                  <ul id="sortable1" class="connectedSortable">
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
 
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p class="danger">Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+
+
+
+
+
+
+                  </ul>
+
+                </div>
               </div>
-              <div class="status-each-section">
-                <div class="status-inner">
-                  <div class="status-header">
-                    <p>Completed</p>
-                    <div class="ratting">
-                      <span>3</span>
-                    </div>
-                  </div>
-                  <div class="status-content" id="style-1">
-                    <ul id="sortable1" class="connectedSortable">
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
 
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                    
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
-                                   Call venturepact to get result 
-                                   of last round of drive.
-                          </a>
-                        </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                      
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                               
-                                <a href="#" class="tag-btn add-tag">
-                                  <i class="fa fa-plus" aria-hidden="true"></i>
-                                </a>
-                                
-
-                                
-                            </div>
-
-                        </div>
-                       </li>
-
-                    </ul>
+            </div>
+            <div class="status-each-section">
+              <div class="status-inner">
+                <div class="status-header">
+                  <p>Completed</p>
+                  <div class="ratting">
+                    <span>3</span>
                   </div>
                 </div>
-
-              </div>
-
-              <div class="status-each-section">
-                <div class="status-inner">
-                  <div class="status-header">
-                    <p>Deferred</p>
-                    <div class="ratting">
-                      <span>1</span>
-                    </div>
-                  </div>
-                 <div class="status-content" id="style-1">
-                    <ul id="sortable1" class="connectedSortable">
-                       <li class="ui-state-default">
-                        <div class="status-notice">
-                          <a href="#" class="notices">
+                <div class="status-content" id="style-1">
+                  <ul id="sortable1" class="connectedSortable">
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
                                    Call venturepact to get result 
                                    of last round of drive.
                           </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="notice-info">
-                            <div class="notice-left-section">
-                                  <div class="date-from notice-date">
-                                    <div class="form-section1 calen">
-                                      <input type="text" class="" />
-                                     
-                                    </div>
-                                  </div>
-                            </div>
-                            <div class="notice-right-section">
-                                  <div class="user-notice-info">
-                                        <img src="images/user.png" alt="user" />
-                                  </div>
-                            </div>
-                            <div class="tag-button-section">
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn">Tag 1</a>
-                                <a href="#" class="tag-btn add-tag">
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
                                   <i class="fa fa-plus" aria-hidden="true"></i>
                                 </a>
-                                
 
-                                
-                            </div>
+
 
                         </div>
-                       </li>
-           
 
-                    </ul>
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p class="danger">Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+
+
+
+
+
+
+                  </ul>
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="status-each-section">
+              <div class="status-inner">
+                <div class="status-header">
+                  <p>Deferred</p>
+                  <div class="ratting">
+                    <span>1</span>
                   </div>
                 </div>
+                <div class="status-content" id="style-1">
+                  <ul id="sortable1" class="connectedSortable">
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
 
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p class="danger">Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+                    </li>
+                    <li class="ui-state-default">
+                      <div class="status-notice">
+                        <a href="#" class="notices">
+                                   Call venturepact to get result 
+                                   of last round of drive.
+                          </a>
+                      </div>
+                      <div class="notice-info">
+                        <div class="notice-left-section">
+                          <div class="date-from notice-date">
+                            <div class="form-section1 calen">
+                              <p>Due:5 Oct,2017</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="notice-right-section">
+                          <div class="user-notice-info">
+                            <img src="images/user.png" alt="user" />
+                          </div>
+                        </div>
+                        <div class="tag-button-section">
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn">Tag 1</a>
+                          <a href="#" class="tag-btn add-tag">
+                                  <i class="fa fa-plus" aria-hidden="true"></i>
+                                </a>
+
+
+
+                        </div>
+
+                      </div>
+
+
+
+
+
+
+                  </ul>
+
+                </div>
               </div>
+
             </div>
           </div>
         </div>
-        <div id="DueToday" class="tab-part Students" style="display: none;">
-          <div class="report-panel">
-            gfhgfh
-          </div>
+      </div>
+      <div id="DueToday" class="tab-part Students" style="display: none;">
+        <div class="report-panel">
+          gfhgfh
         </div>
-        <div id="DueThisWeek" class="tab-part Companies" style="display: none;">
+      </div>
+      <div id="DueThisWeek" class="tab-part Companies" style="display: none;">
 
-          <div class="report-panel">
-            gfhgfhfgdgdgfdgfd
+        <div class="report-panel">
+          gfhgfhfgdgdgfdgfd
 
-          </div>
         </div>
-        <div id="OverDue" class="tab-part Companies" style="display: none;">
+      </div>
+      <div id="OverDue" class="tab-part Companies" style="display: none;">
 
-          <div class="report-panel">
-            gfhgfhfgdgdgfdgfd
+        <div class="report-panel">
+          gfhgfhfgdgdgfdgfd
 
-          </div>
         </div>
-        <div id="Completed" class="tab-part Companies" style="display: none;">
+      </div>
+      <div id="Completed" class="tab-part Companies" style="display: none;">
 
-          <div class="report-panel">
-            gfhgfhfgdgdgfdgfd
+        <div class="report-panel">
+          gfhgfhfgdgdgfdgfd
 
-          </div>
         </div>
+      </div>
 
   </section>
+  <div class="sidebar-toggle1 task-details">
+    <div class="header-bar">
+      <h4>Task Details</h4>
+      <a href="javascript:void(0)" class="close"><i class="material-icons">close</i></a>
+    </div>
+    <div class="task-details-section">
+      <div class="task-inner-section">
+        <form class="row  add-company-side-cont">
+          <div class="contact-section">
+            <div class="task-left-section">
+              <div class="input-field col s12">
+                <input disabled value="Call Venturepact To get result as soon as possible" id="disabled" type="text" class="validate">
+                <label for="founder_name" class="">Task Name</label>
+              </div>
+            </div>
+            <div class="task-right-section">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="contact-section">
+            <div class="field-type">
+              <label class="field-type-option">Due Date</label>
+              <div class="input-field col s5">
+                <select class="form-seelct">
+                                          <option value="" disabled="" selected="">21,Oct,2017</option>
+                                          <option value="1">Due-Date</option>
+                                        
+                          </select>
+              </div>
+              <div class="col s1">
+                <p class="to-label">at</p>
+              </div>
+              <div class="input-field col s5">
+                <select class="form-seelct">
+                                          <option value="" disabled="" selected="">21,Oct,2017</option>
+                                          <option value="1">Due-Date</option>
+                                        
+                          </select>
+              </div>
+
+            </div>
+          </div>
+          <div class="contact-section">
+            <div class="field-type1">
+
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Description</label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="contact-section">
+            <div class="field-type2">
+
+              <div class="input-field">
+                <select disabled>
+                          <option value="" disabled selected>Choose your option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                </select>
+                <label>Materialize Disabled</label>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="contact-section">
+            <div class="field-type2">
+              <div class="input-field">
+                <select disabled>
+      
+                   <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option> 
+                  </select>
+                <label>Materialize Disabled</label>
+              </div>
+
+            </div>
+          </div>
+          <div class="add-tags-section">
+            <p class="add-tags">Add Tag</p>
+            <div class="add-tag-button">
+              <ul>
+                <li>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Tag1 <i class="material-icons cut-icon">close</i></a>
+                  <a href="#" class="add-tag-icons">Add More Tag<i class="material-icons cut-icon">close</i></a>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="delete-task-btn">
+            <a href="#" class="delete-task">Delete This Task</a>
+          </div>
+
+
+
+
+        </form>
+      </div>
+
+    </div>
+
+  </div>
   <div class="custom-overlay"></div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
