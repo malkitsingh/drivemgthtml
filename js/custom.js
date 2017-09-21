@@ -76,6 +76,23 @@ $(document).ready(function () {
     $('.sidebar-toggle2').addClass('active');
     $('.custom-overlay').addClass('active');
   });
+  
+  $('.icons').click(function () {
+    $('.sidebar').addClass('active');
+    $('.custom-overlay').addClass('active');
+  });
+   $('.sidebar .close').click(function () {
+    $('.sidebar').removeClass('active');
+    $('.custom-overlay').removeClass('active');
+  });
+    $('.icons5').click(function () {
+    $('.sidebar5').addClass('active');
+    $('.custom-overlay').addClass('active');
+  });
+   $('.sidebar5 .close').click(function () {
+    $('.sidebar5').removeClass('active');
+    $('.custom-overlay').removeClass('active');
+  });
 
   $('.sidebar-toggle2 .close').click(function () {
     $('.sidebar-toggle2').removeClass('active');
