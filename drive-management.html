@@ -91,23 +91,23 @@
     </aside>
     <section class="main-content">
         <ul class="tabs uni-profile-tab">
-            <li class="tab "><a href="#create-new-drive" ><span><i class="fa fa-plus" aria-hidden="true"></i></span>Create New Drive</a></li>
+            <li class="tab "><a href="#create-new-drive" class="active"><span><i class="fa fa-plus" aria-hidden="true"></i></span>Create New Drive</a></li>
             <li class="tab"><a href="#upcoming-drives" ><span><i class="fa fa-th" aria-hidden="true"></i></span>Upcoming Drives</a></li>
             <li class="tab">
                 <a href="#past-drives" > <span><i class="fa fa-history" aria-hidden="true"></i></span>Past Drives</a>
             </li>
-            <li class="tab"><a href="#ongoing-drives" class="active"><span><i class="fa fa-play" aria-hidden="true"></i></span>Ongoing Drives</a></li>
+            <li class="tab"><a href="#ongoing-drives"><span><i class="fa fa-play" aria-hidden="true"></i></span>Ongoing Drives</a></li>
         </ul>
         <div class="tab-area">
             <div id="create-new-drive" class="">
                 <div class="steps-part">
-                    <ul>
+                   <ul>
                         <!-- done class for previous of current step-->
-                        <li class="current"><a href="javascript:void(0)"><span class="numbering">1</span>Company/Drive Details</a></li>
-                        <li class=""><a href="javascript:void(0)"><span class="numbering">2</span>Job Details</a></li>
-                        <li class=""><a href="javascript:void(0)"><span class="numbering">3</span>Drive Process</a></li>
-                        <li class=""><a href="javascript:void(0)"><span class="numbering">4</span>Lock Students</a></li>
-                        <li class=""><a href="javascript:void(0)"><span class="numbering">5</span>Assign Students/Faculty Coordinator</a></li>
+                        <li class="current"><a href="javascript:void(0)"><span class="numbering bread">1</span>Company/Drive Details</a></li>
+                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">2</span>Job Details</a></li>
+                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">3</span>Drive Process</a></li>
+                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">4</span>Lock Students</a></li>
+                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">5</span>Assign Students/Faculty Coordinator</a></li>
                     </ul>
                 </div>
                 <div class="step-content">
@@ -171,7 +171,11 @@
                                 </div>
                                 <div class="row">
                                     <div class="col s12">
-                                        <button type="submit" class="my-btn continue-btn waves-effect waves-light">Continue</button>
+                                        <button type="submit" class="my-btn continue-btn waves-effect waves-light next-btn">Next 
+                                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </button> 
+                                        <a href="draft.html" class="save-draft">Save As Draft</a>
+                                          
                                     </div>
                                 </div>
                             </form>
