@@ -1417,7 +1417,8 @@ div.job-info {
     position: absolute;
     left: 65px;
 }
-label.drive-time::after {
+label.drive-time::after
+{
     position: absolute;
     content: " ";
     left: -30px;
@@ -1428,14 +1429,16 @@ label.drive-time::after {
     top: 50%;
     transform: translateY(-50%);
 }
-label.drive-time {
+label.drive-time
+ {
     FLOAT: LEFT;
-    font-size: 12px;
+    font-size: 16px;
     cursor: pointer;
-    color: #909090;
+    color:#282828;
     font-weight: 600;
     margin: 5px 0 10px;
     position: relative;
+    text-transform: uppercase;
 }
 .timeline:last-child {margin-bottom: 0;}
 .timeline {
@@ -1607,11 +1610,12 @@ span.shortlisted {
 .batch-year-info {
     float: left;
 }
-.list-detail {
+.list-detail
+ {
     float: left;
     width: 100%;
     position: relative;
-    padding-right: 230px;
+    padding-right:35%;
 }
 .batch-year-info label{float: left; color: #282828; font-size: 16px; }
 .coordinator-details {
@@ -3614,6 +3618,7 @@ p.calender-info
     float: left;
     border-right: 1px solid #ddd;
     margin-right: 5px;
+    margin-top:-7px;
 }
 .plc-inner
 {
@@ -6655,4 +6660,347 @@ span.bond
     float:left;
     box-sizing:border-box;
     padding-top:60px;
+}
+.recently-job-haed
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+}
+p.job-haed
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    float:left;
+    font-size:16px;
+    line-height:20px;
+    color:#282828;
+    font-weight:500;
+    text-transform: uppercase;
+}
+.terms-condition-list .list .section .recent-box
+{
+    height: 20px!important;
+    width: 20px!important;
+    padding: 0px 6px!important;
+}
+.list1:before 
+{
+  
+    left: 10px!important;
+}
+span.recent-tag
+{
+    color:#fff;
+}
+.rounds1
+{
+    margin: 0!important;
+    padding: 0 30px 30px 30px;
+}
+.recent-terms
+{
+    padding:0 10px!important;
+}
+.section-recent
+{
+    padding:0!important;
+}
+.rounds ul.recent-icons
+{
+  display: inline-flex;
+}
+.pre-recet
+{
+    padding-right:5px;
+}
+.save-recent
+{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 10px 14px;
+    color: #888;
+    font-size: 16px;
+    line-height: 20px;
+}
+.drive-process
+{
+    width:100%;
+    float:left;
+    box-sizing:border-box;
+}
+.round-process
+{
+    width:100%;
+    float:left;
+
+}
+.drive-form
+{
+    width:50%;
+    float:left;
+}
+.input-field.col label.drive-date
+ {
+    left: -0.23rem!important;
+}
+.bond-contract1
+ {   
+      width: 100%;
+    float: left;
+    padding: 50px 0 30px 0px;
+    position: relative;
+}
+span.bond1 
+{
+    position: absolute;
+    top: 15px;
+    line-height: 10px;
+    color: #999;
+}
+.save-round
+{
+    width:100%;
+    float:left;
+}
+.save-btn1
+{
+    padding: 10px 20px;
+    margin: 0;
+    line-height: 20px;
+    font-size: 16px;
+    color:#282828;
+    display: inline-block;
+    outline: none;
+    border:none;
+    background-color:#ffdb4d;
+}
+p.round-tag
+{
+
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #282828;
+    font-weight: 500;
+    text-transform: uppercase;
+
+}
+.job-tag
+{
+    width:100%;
+    float:left;
+}
+.elligible-stu
+{
+    float:right;
+    position: relative;
+}
+p.elligble-student
+{
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: #282828;
+    font-size: 16px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+.collapsible-header i.eli-stu
+{
+    position: absolute;
+    border: 2px solid #ffb64d;
+    margin-left: 10px;
+    color: #282828;
+    border-radius: 5px;
+    right: -17px;
+}
+.rounds-head
+{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 18px;
+}
+.batch-time
+{
+    color:#282828;
+    font-weight: 500;
+    font-size:16px;
+}
+.batch-list li
+{
+    float:left;
+}
+.eligible-std
+{
+    padding-right: 10px;
+    border-right:2px solid #ddd;
+}
+.time-space
+{
+    padding-left: 5px;
+}
+span.date-tag
+{
+    color:#888;
+
+}
+.table-space
+{
+    margin-top: 10px;
+}
+.round
+{
+    border:none!important;
+}
+.prev-arr
+{
+    padding-right: 5px;
+    float:left;
+}
+.link-tag
+{
+    color:#282828;
+    text-transform: uppercase;
+    font-size:16px;
+    font-weight: 500;
+}
+p.upcoming-time
+{
+    font-weight:500;
+    color:#282828;
+}
+.drive-details
+{
+    margin: 0;
+    float: left;
+    padding: 0px 10px;
+    display: inline-block;
+    border: 1px solid #ffdb4d;
+    margin: 6px 0 0 12px;
+    font-size: 14px;
+    color:#282828;
+
+}
+.drive-user-details
+{
+    float:right;
+    width:100%;
+}
+.left-content-section
+{
+    width:70%!important;
+}
+.right-content-section
+{
+    width:30%;
+    float:left;
+}
+.right-inner-sub-section
+{
+    display: table;
+    float:left;
+    width:100%;
+}
+.drive-owner-section
+{
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+
+
+}
+.inner-section
+{
+    width:100%;
+    float:left;
+}
+.sub-inner-section1
+{
+    width: 40%;
+    float: left;
+    border: 2px solid #ddd;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+.sub-inner-section2
+{
+    width:15%;
+    float:left;
+}
+.sub-inner-section3
+{
+    width:40%;
+    float:left;
+}
+.users-pic
+{
+   height:25px;
+   width:25px;
+   border-radius:50%;
+   overflow:hidden;
+}
+p.user-nam
+{
+    margin: 0;
+    padding: 0 0px 2px 5px;
+    float: left;
+    color: #4c5d62;
+    font-size: 14px;
+    line-height: 15px;
+
+}
+p.usr
+{
+    float:left;
+    font-size:14px;
+    color:#282828;
+    margin:0;
+    font-weight:500;
+    padding:0 0 2px 5px;
+    
+}
+.start-drive
+{
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: #ffdb4d;
+    font-size:14px;
+    color:#282828;
+    margin: 0;
+    border: none;
+}
+.write
+{
+    padding:10px 20px;
+}
+.side
+{
+    float: right!important;
+}
+.user-prof
+{
+    float:right;
+    display: table;
+}
+.user-inner-section
+
+{
+    display:table-cell;
+    vertical-align: middle;
+}
+.section2
+ {
+    width: 80%;
+    float: left;
+    border: 2px solid #ddd;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-top: -15px;
 }

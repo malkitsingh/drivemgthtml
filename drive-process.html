@@ -109,41 +109,37 @@
                     <ul>
                         <!-- done class for previous of current step-->
                         <li class=""><a href="javascript:void(0)"><span class="numbering bread">1</span>Company/Drive Details</a></li>
-                        <li class="current"><a href="javascript:void(0)"><span class="numbering bread">2</span>Job Details</a></li>
-                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">3</span>Drive Process</a></li>
+                        <li class=""><a href="javascript:void(0)"><span class="numbering bread">2</span>Job Details</a></li>
+                        <li class="current"><a href="javascript:void(0)"><span class="numbering bread">3</span>Drive Process</a></li>
                         <li class=""><a href="javascript:void(0)"><span class="numbering bread">4</span>Lock Students</a></li>
                         <li class=""><a href="javascript:void(0)"><span class="numbering bread">5</span>Assign Students/Faculty Coordinator</a></li>
                     </ul>
                 </div>
                 <div class="step-content">
                     <div class="step step2" id="job-details">
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="col s6">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="job_title" type="text" class="validate">
-                                                <label for="job_title">Job Title</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <textarea id="Description" class="materialize-textarea"></textarea>
-                                                <label for="Description">Description</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input id="skill_required" type="text" class="validate">
-                                                <label for="skill_required">Skills Required</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input id="ctc" type="text" class="validate">
-                                                <label for="ctc">CTC</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <textarea id="ctc_description" class="materialize-textarea"></textarea>
-                                                <label for="ctc_description">CTC Description</label>
-                                            </div>
-                                            <div class="bond-contract">
-                                                <span class="bond">Bond/Contract</span>
+                         <div class="drive-process">
+                            <form class="drive-form">
+                              <div class="round-process1">
+                                   <div class="input-field col s6">
+                                            <select class="form-seelct">
+                                                    <option value="" disabled="" selected="">Round Name</option>
+                                                    <option value="1">Role1</option>
+                                                    <option value="2">Role1</option>
+                                                    <option value="3">Role1</option>
+                                            </select>
+                                    </div>
+                              </div>
+                               <div class="round-process1">
+                              
+                                        <div class="input-field col s6">
+                                                <input id="date" type="text" class="datepicker">
+                                                <label for="date_joining" class="drive-date">Date of Joining (Month/Year)</label>
+                                                <i class="fa fa-calendar suffix" aria-hidden="true"></i>
+                                        </div>
+                                
+                              </div>
+                              <div class="bond-contract1">
+                                                <span class="bond1">Is Elimination Round?</span>
                                                 <p class="radio-btn">
                                                     <input type="radio" class="radio with-gap" id="radio" name="radio">
                                                     <label for="radio">Yes</label>
@@ -152,143 +148,16 @@
                                                     <input type="radio" class="radio with-gap" id="radio1" name="radio">
                                                     <label for="radio1">No</label>
                                                 </p>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <textarea id="contract_description" class="materialize-textarea"></textarea>
-                                                <label for="contract_description">Contract Description</label>
-                                            </div>
-                                            <div class="input-field col s12">
-                                                <input id="job_location" type="text" class="validate">
-                                                <label for="job_location">Job Location</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class=" col s6">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="batch_year" type="text" class="validate">
-                                                <label for="batch_year">Batch Year Required</label>
-                                            </div>
-                                            <div class="input-field1 col s12">
-                                                <label class="custom-label">Select Discipline/School</label>
-                                                <div class="selection-block" id="style-1">
-                                                    <ul>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c0" />
-                                                            <label for="c0">Select all</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c1" />
-                                                            <label for="c1">Engineering</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c2" />
-                                                            <label for="c2">Computer Applications and IT</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c3" />
-                                                            <label for="c3">Design</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c4" />
-                                                            <label for="c4">Mechanical</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c5" />
-                                                            <label for="c5">Automobile</label>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="input-field1 col s12">
-                                                <label class="custom-label">Select Stream</label>
-                                                <div class="selection-block" id="style-1">
-                                                    <ul>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c00" />
-                                                            <label for="c00">CSE/IT</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c01" />
-                                                            <label for="c01">Electrical Engineering (EE)</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c02" />
-                                                            <label for="c02">Automobile Engineering (AE)</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c03" />
-                                                            <label for="c03">Design</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c04" />
-                                                            <label for="c04">Fashion</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c05" />
-                                                            <label for="c05">Automobile</label>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="input-field1 col s12">
-                                                <label class="custom-label">Select Degree</label>
-                                                <div class="selection-block special-box" id="style-1">
-                                                    <ul>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c000" />
-                                                            <label for="c000">CSE/IT</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c001" />
-                                                            <label for="c001">Electrical Engineering (EE)</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c002" />
-                                                            <label for="c002">Automobile Engineering (AE)</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c003" />
-                                                            <label for="c003">Design</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c004" />
-                                                            <label for="c004">Fashion</label>
-                                                        </li>
-                                                        <li>
-                                                            <input type="checkbox" class="filled-in" id="c005" />
-                                                            <label for="c005">Automobile</label>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="chip-section input-field1 col s12">
-                                                <div class="chip">B.Tech - CSE/IT <i class="close material-icons">close</i></div>
-                                                <div class="chip">B.Sc. (Design) - Fashion<i class="close material-icons">close</i></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="save-btn">
-                                        <a href="#" class="save-job">Save Job Details</a>
-                                    </div>
-                                </div>
+                              </div>
+                              <div class="save-round">
+                                  <a href="#" class="save-btn1">Save Round</a>
+                              </div>
                             </form>
-                        </div>
 
-                    </div>
-
-
-                </div>
-                <div class="recently-job">
+                         </div>
+                         <div class="recently-job">
                     <div class="recently-job-haed">
-                        <p class="job-haed">Recently Added Jobs</p>
+                        <p class="job-haed">Recently Added Round</p>
                     </div>
                     <div class="terms-condition-list recent-terms">
 
@@ -303,7 +172,7 @@
                                 <div class="rounds rounds1">
                                     <div class="rounds-head">
 
-                                        <h5>Software testing Engineer</h5>
+                                        <p class="round-tag">Presentation</p>
                                         <ul class="right-icons recent-icons">
                                             <li><a href="javascript:void(0)"><i class="material-icons">create</i></a></li>
                                             <li><a href="javascript:void(0)"><i class="material-icons">clear</i></a></li>
@@ -312,25 +181,18 @@
                                     <div class="round-body">
                                         <ul class="job-info1">
                                             <li>
-                                                <label>Description:</label><span>Candidates will be working on any phase of SDLC. Technology - Backend, Frontend, Android, iOS, DevOps, 
-                                                                            Quality Assurance.</span></li>
-                                            <li>
-                                                <label>Skills Required:</label><span> Good communication and technical skills</span></li>
-                                            <li>
-                                                <label>CTC Details:</label><span> Rs 4.5 to 8.5 LPA as PPO after Internship. Internship Stipend Rs 10000 p.m.</span></li>
-                                            <li>
-                                                <label>Bond/Contract:</label><span>1 year bond</span></li>
-                                            <li>
-                                                <label>Batch Year:</label><span> 2018</span></li>
-                                            <li>
-                                                <label>Eligibilty:</label><span> B.Tech - CSE/IT, B.Sc. (Design)</span></li>
-                                            <li>
-                                                <label>Job Location:</label><span> Jalandhar</span></li>
+                                               <span class="job-tag">24 July, 2017 at 12.15 PM
+                                               </span>
+                                                <span class="job-tag">Elimination: No
+                                               </span>
+                                            </li>
+                                            
+                                          
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                             <li>
                                 <div class="section section-recent">
                                     <div class="box1 recent-box">
                                         <span class="recent-tag">2</span>
@@ -340,7 +202,7 @@
                                 <div class="rounds rounds1">
                                     <div class="rounds-head">
 
-                                        <h5>Software testing Engineer</h5>
+                                        <p class="round-tag">Online Test</p>
                                         <ul class="right-icons recent-icons">
                                             <li><a href="javascript:void(0)"><i class="material-icons">create</i></a></li>
                                             <li><a href="javascript:void(0)"><i class="material-icons">clear</i></a></li>
@@ -349,26 +211,18 @@
                                     <div class="round-body">
                                         <ul class="job-info1">
                                             <li>
-                                                <label>Description:</label><span>Candidates will be working on any phase of SDLC. Technology - Backend, Frontend, Android, iOS, DevOps, 
-                                                                            Quality Assurance.</span></li>
-                                            <li>
-                                                <label>Skills Required:</label><span> Good communication and technical skills</span></li>
-                                            <li>
-                                                <label>CTC Details:</label><span> Rs 4.5 to 8.5 LPA as PPO after Internship. Internship Stipend Rs 10000 p.m.</span></li>
-                                            <li>
-                                                <label>Bond/Contract:</label><span>1 year bond</span></li>
-                                            <li>
-                                                <label>Batch Year:</label><span> 2018</span></li>
-                                            <li>
-                                                <label>Eligibilty:</label><span> B.Tech - CSE/IT, B.Sc. (Design)</span></li>
-                                            <li>
-                                                <label>Job Location:</label><span> Jalandhar</span></li>
+                                               <span class="job-tag">24 July, 2017 at 12.15 PM
+                                               </span>
+                                                <span class="job-tag">Elimination: No
+                                               </span>
+                                            </li>
+                                            
+                                          
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-
-                            <li>
+                             <li>
                                 <div class="section section-recent">
                                     <div class="box1 recent-box">
                                         <span class="recent-tag">3</span>
@@ -378,7 +232,7 @@
                                 <div class="rounds rounds1">
                                     <div class="rounds-head">
 
-                                        <h5>Software testing Engineer</h5>
+                                        <p class="round-tag">Technical Round</p>
                                         <ul class="right-icons recent-icons">
                                             <li><a href="javascript:void(0)"><i class="material-icons">create</i></a></li>
                                             <li><a href="javascript:void(0)"><i class="material-icons">clear</i></a></li>
@@ -387,25 +241,18 @@
                                     <div class="round-body">
                                         <ul class="job-info1">
                                             <li>
-                                                <label>Description:</label><span>Candidates will be working on any phase of SDLC. Technology - Backend, Frontend, Android, iOS, DevOps, 
-                                                                            Quality Assurance.</span></li>
-                                            <li>
-                                                <label>Skills Required:</label><span> Good communication and technical skills</span></li>
-                                            <li>
-                                                <label>CTC Details:</label><span> Rs 4.5 to 8.5 LPA as PPO after Internship. Internship Stipend Rs 10000 p.m.</span></li>
-                                            <li>
-                                                <label>Bond/Contract:</label><span>1 year bond</span></li>
-                                            <li>
-                                                <label>Batch Year:</label><span> 2018</span></li>
-                                            <li>
-                                                <label>Eligibilty:</label><span> B.Tech - CSE/IT, B.Sc. (Design)</span></li>
-                                            <li>
-                                                <label>Job Location:</label><span> Jalandhar</span></li>
+                                               <span class="job-tag">24 July, 2017 at 12.15 PM
+                                               </span>
+                                                <span class="job-tag">Elimination: No
+                                               </span>
+                                            </li>
+                                            
+                                          
                                         </ul>
                                     </div>
                                 </div>
                             </li>
-                            <li>
+                             <li>
                                 <div class="section section-recent">
                                     <div class="box1 recent-box">
                                         <span class="recent-tag">4</span>
@@ -415,7 +262,7 @@
                                 <div class="rounds rounds1">
                                     <div class="rounds-head">
 
-                                        <h5>Software testing Engineer</h5>
+                                        <p class="round-tag">Group Descussion</p>
                                         <ul class="right-icons recent-icons">
                                             <li><a href="javascript:void(0)"><i class="material-icons">create</i></a></li>
                                             <li><a href="javascript:void(0)"><i class="material-icons">clear</i></a></li>
@@ -424,25 +271,54 @@
                                     <div class="round-body">
                                         <ul class="job-info1">
                                             <li>
-                                                <label>Description:</label><span>Candidates will be working on any phase of SDLC. Technology - Backend, Frontend, Android, iOS, DevOps, 
-                                                                            Quality Assurance.</span></li>
-                                            <li>
-                                                <label>Skills Required:</label><span> Good communication and technical skills</span></li>
-                                            <li>
-                                                <label>CTC Details:</label><span> Rs 4.5 to 8.5 LPA as PPO after Internship. Internship Stipend Rs 10000 p.m.</span></li>
-                                            <li>
-                                                <label>Bond/Contract:</label><span>1 year bond</span></li>
-                                            <li>
-                                                <label>Batch Year:</label><span> 2018</span></li>
-                                            <li>
-                                                <label>Eligibilty:</label><span> B.Tech - CSE/IT, B.Sc. (Design)</span></li>
-                                            <li>
-                                                <label>Job Location:</label><span> Jalandhar</span></li>
+                                               <span class="job-tag">24 July, 2017 at 12.15 PM
+                                               </span>
+                                                <span class="job-tag">Elimination: No
+                                               </span>
+                                            </li>
+                                            
+                                          
                                         </ul>
                                     </div>
                                 </div>
                             </li>
+                              <li>
+                                <div class="section section-recent">
+                                    <div class="box1 recent-box">
+                                        <span class="recent-tag">5</span>
+                                    </div>
+                                </div>
 
+                                <div class="rounds rounds1">
+                                    <div class="rounds-head">
+
+                                        <p class="round-tag">HR ROUND</p>
+                                        <ul class="right-icons recent-icons">
+                                            <li><a href="javascript:void(0)"><i class="material-icons">create</i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="material-icons">clear</i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="round-body">
+                                        <ul class="job-info1">
+                                            <li>
+                                               <span class="job-tag">24 July, 2017 at 12.15 PM
+                                               </span>
+                                                <span class="job-tag">Elimination: No
+                                               </span>
+                                            </li>
+                                            
+                                          
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 
 
 
@@ -453,7 +329,7 @@
                         </ul>
                         <div class="row">
                             <div class="col s12">
-                                <a href="javascript:void(0)" class="add-more"><span class="add-more">+</span> Add Another Job</a>
+                                <a href="javascript:void(0)" class="add-more"><span class="add-more">+</span> Add Another Round</a>
                             </div>
                             <div class="col s12">
                                 <a href="javascript:void(0)" class="back-btn waves-effect  waves-light"><i class="fa fa-arrow-left pre-recet" aria-hidden="true"></i>Previous</a>
@@ -464,6 +340,10 @@
 
                     </div>
                 </div>
+
+
+                </div>
+               
             </div>
             <div id="upcoming-drives" class="">
                 <div class="batch-year">
