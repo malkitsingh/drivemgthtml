@@ -7038,3 +7038,12 @@ p.usr
 {
         margin-top: 12px;
 }
+.user-prf> ul > li > a
+{
+    padding:0!important;
+}
+.user-menu
+{
+    top:65px;
+    left: -60%;
+}
