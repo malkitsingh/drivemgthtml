@@ -633,10 +633,12 @@ ul.drop-down {
     padding: 5px 20px;
     margin-left: 10px;
 }
-.batch-year {
+.batch-year 
+{
     float: left;
     width: 100%;
     margin-bottom: 10px;
+    padding:0 20px;
 }
 ul.drop-down::after {
     top: 50%;
@@ -3005,12 +3007,14 @@ textarea.my-textarea {
     border: 1px solid #EEE;
     MARGIN-TOP: 10PX;
 }
-.cont-left-part p {
+.cont-left-part p
+ {
     float: left;
     width: 100%;
     font-size: 14px;
     margin: 0 0 10px 0;
-    color: #909090; 
+    color:#282828;
+    font-weight:500;
 }
 .narrow-text label{font-size: 14px;float: left; width: 100%}
 .modal-cont-head p{color: #909090; float: left; width: 100%; font-size: 14px; margin: 0}
@@ -5778,7 +5782,7 @@ p.tool-content
     border-radius: 6px;
     padding: 5px 0;
     position: absolute;
-    z-index: 10;
+    z-index:99;
     top: 79px;
     left: -446px;
     margin-left: -60px;
@@ -7003,4 +7007,34 @@ p.usr
     padding: 2px 5px;
     border-radius: 4px;
     margin-top: -15px;
+}
+.add-cord
+{
+    top:-30px;
+}
+.add-student
+{
+    width:1000px!important;
+}
+.ad-stu
+{
+    text-align: inherit!important;
+}
+.batch-year1
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.full-length1
+{
+    float:right!important
+}
+.add-cordint
+{
+    text-decoration: underline;
+}
+.add-student-cor
+{
+        margin-top: 12px;
 }
