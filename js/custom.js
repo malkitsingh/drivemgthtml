@@ -57,6 +57,16 @@ $(document).ready(function () {
     $(this).next('.academics-details-body').slideToggle();
   });
 
+  $(' .stu-filter').click(function () {
+    $('.sidebar-toggle4').addClass('active');
+    $('.custom-overlay').addClass('active');
+  });
+
+  $('.sidebar-toggle4 .close').click(function () {
+    $('.sidebar-toggle4').removeClass('active');
+    $('.custom-overlay').removeClass('active');
+  });
+
 
 
 
@@ -76,20 +86,20 @@ $(document).ready(function () {
     $('.sidebar-toggle2').addClass('active');
     $('.custom-overlay').addClass('active');
   });
-  
+
   $('.icons').click(function () {
     $('.sidebar').addClass('active');
     $('.custom-overlay').addClass('active');
   });
-   $('.sidebar .close').click(function () {
+  $('.sidebar .close').click(function () {
     $('.sidebar').removeClass('active');
     $('.custom-overlay').removeClass('active');
   });
-    $('.icons5').click(function () {
+  $('.icons5').click(function () {
     $('.sidebar5').addClass('active');
     $('.custom-overlay').addClass('active');
   });
-   $('.sidebar5 .close').click(function () {
+  $('.sidebar5 .close').click(function () {
     $('.sidebar5').removeClass('active');
     $('.custom-overlay').removeClass('active');
   });
@@ -113,7 +123,7 @@ $(document).ready(function () {
   $('.dropdown-button ').click(function () {
     $('.custom-overlay').toggleClass('active');
   });
-  
+
 
   $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -124,12 +134,11 @@ $(document).ready(function () {
     closeOnSelect: false // Close upon selecting a date,
   });
 
-   $( function() {
-      $( "#sortable1, #sortable2" ).sortable({
-        connectWith: ".connectedSortable"
-      }).disableSelection();
-    } );
-
+  $(function () {
+    $("#sortable1, #sortable2").sortable({
+      connectWith: ".connectedSortable"
+    }).disableSelection();
+  });
 
 
 });

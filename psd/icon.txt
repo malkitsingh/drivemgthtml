@@ -1,1 +1,2 @@
 https://material.io/icons/
+https://jqueryui.com/show/

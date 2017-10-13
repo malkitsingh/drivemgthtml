@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/nouislider.css" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/media.css" media="screen,projection" />
 </head>
 
 <body>
@@ -116,14 +118,14 @@
                             <input type="search" class="search-field " placeholder="Search here">
                         </li>
                         <li class="filter-icons">
-                            <a href="javascript:void(0)">
+                            <a href="#modal2" class="modal-trigger">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="12px">
                                     <path fill-rule="evenodd" fill="rgb(40, 40, 40)" d="M8.012,12.000 L8.012,3.117 L10.000,3.117 L10.000,12.000 L8.012,12.000 ZM8.012,-0.000 L10.000,-0.000 L10.000,2.057 L8.012,2.057 L8.012,-0.000 ZM3.976,3.117 L5.964,3.117 L5.964,12.000 L3.976,12.000 L3.976,3.117 ZM3.976,-0.000 L5.964,-0.000 L5.964,2.057 L3.976,2.057 L3.976,-0.000 ZM0.060,3.117 L2.048,3.117 L2.048,12.000 L0.060,12.000 L0.060,3.117 ZM-0.000,-0.000 L1.988,-0.000 L1.988,2.057 L-0.000,2.057 L-0.000,-0.000 Z"
                                     />
                                 </svg>
                             </a>
 
-                            <a href="#modal2" class="modal-trigger">
+                            <a href="javascript:void(0);" class="stu-filter" onclick="slider()">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="10px">
                                     <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M4.833,10.000 L10.167,10.000 L10.167,8.333 L4.833,8.333 L4.833,10.000 ZM-0.000,-0.000 L-0.000,1.667 L15.000,1.667 L15.000,-0.000 L-0.000,-0.000 ZM2.500,5.833 L12.500,5.833 L12.500,4.167 L2.500,4.167 L2.500,5.833 Z"
                                     />
@@ -820,11 +822,191 @@
             </ul>
         </div>
     </div>
+    <div class="sidebar-toggle4">
+        <div class="header-bar">
+            <h4>Filters</h4>
+            <a href="javascript:void(0)" class="close"><i class="material-icons">close</i></a>
+        </div>
+        <div class="sidebar-body nice-scroll">
+            <form class="row  ">
+                <div class="input-field col s12">
+                    <select class="form-seelct">
+                     <option value="" disabled="" selected="">Select Course</option>
+                     <option value="1">Role1</option>
+                     <option value="2">Role1</option>
+                     <option value="3">Role1</option>
+                  </select>
+                </div>
+                <div class="input-field col s12">
+                    <input id="skills" type="text" class="validate">
+                    <label for="skills" class="">Skills</label>
+                </div>
+                <div class="col s12 ">
+                    <div class="academics-details">
+                        <div class="academic-head">
+                            <h4><i class="material-icons">arrow_drop_down</i>Academic</h4>
+                        </div>
+                        <div class="academics-details-body">
+                            <div class="custom-range-slider">
+                                <h6>Percentage</h6>
+                                <div class="slider-box">
+                                    <input type="text" class="min-value left" value="0" />
+                                    <div class="center-slider">
+                                        <div id="test-slider1"></div>
+                                        <div class="radio-box-part">
+                                            <p class="radio-btn">
+                                                <input type="radio" class="radio with-gap" id="Aggregate" name="radio">
+                                                <label for="Aggregate">Aggregate</label>
+                                            </p>
+                                            <p class="radio-btn">
+                                                <input type="radio" class="radio with-gap" id="Throughout" name="radio">
+                                                <label for="Throughout">Throughout</label>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="max-value right" value="100" />
+                                </div>
+                            </div>
+                            <div class="custom-range-slider">
+                                <h6>Back Papers</h6>
+                                <div class="slider-box">
+                                    <input type="text" class="min-value left" value="0" />
+                                    <div class="center-slider">
+                                        <div id="test-slider2"></div>
+                                    </div>
+                                    <input type="text" class="max-value right" value="100" />
+                                </div>
+                            </div>
+                            <div class="custom-range-slider">
+                                <h6>Diploma</h6>
+                                <div class="slider-box">
+                                    <input type="text" class="min-value left" value="0" />
+                                    <div class="center-slider">
+                                        <div id="test-slider3"></div>
+                                    </div>
+                                    <input type="text" class="max-value right" value="100" />
+                                </div>
+                            </div>
+                            <div class="custom-range-slider">
+                                <h6>12<sup>th</sup></h6>
+                                <div class="slider-box">
+                                    <input type="text" class="min-value left" value="0" />
+                                    <div class="center-slider">
+                                        <div id="test-slider4"></div>
+                                    </div>
+                                    <input type="text" class="max-value right" value="100" />
+                                </div>
+                            </div>
+                            <div class="custom-range-slider">
+                                <h6>10<sup>th</sup></h6>
+                                <div class="slider-box">
+                                    <input type="text" class="min-value left" value="0" />
+                                    <div class="center-slider">
+                                        <div id="test-slider5"></div>
+
+                                    </div>
+                                    <input type="text" class="max-value right" value="100" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="input-field col s12">
+                    <select class="form-seelct">
+                     <option value="" disabled="" selected="">Select Select</option>
+                     <option value="1">Role1</option>
+                     <option value="2">Role1</option>
+                     <option value="3">Role1</option>
+                  </select>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="sidebar-footer center">
+            <button type="submit" class="my-btn apply waves-effect waves-light submit-btn save-btn">Apply</button>
+
+        </div>
+    </div>
     <div class="custom-overlay sidebar-overlay"></div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <!-- <script type="text/javascript" src="js/materialize-tags.min.js"></script> -->
+    <script type="text/javascript" src="js/nouislider.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        var slider = document.getElementById('test-slider1');
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            step: 1,
+            orientation: 'horizontal', // 'horizontal' or 'vertical'
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: wNumb({
+                decimals: 0
+            })
+        });
+        var slider = document.getElementById('test-slider2');
+        noUiSlider.create(slider, {
+            start: [20, 80],
+            connect: true,
+            step: 1,
+            orientation: 'horizontal', // 'horizontal' or 'vertical'
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: wNumb({
+                decimals: 0
+            })
+        });
+        var slider = document.getElementById('test-slider3');
+        noUiSlider.create(slider, {
+            start: [0, 100],
+            connect: true,
+            step: 1,
+            orientation: 'horizontal', // 'horizontal' or 'vertical'
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: wNumb({
+                decimals: 0
+            })
+        });
+        var slider = document.getElementById('test-slider4');
+        noUiSlider.create(slider, {
+            start: [0, 100],
+            connect: true,
+            step: 1,
+            orientation: 'horizontal', // 'horizontal' or 'vertical'
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: wNumb({
+                decimals: 0
+            })
+        });
+        var slider = document.getElementById('test-slider5');
+        noUiSlider.create(slider, {
+            start: [0, 100],
+            connect: true,
+            step: 1,
+            orientation: 'horizontal', // 'horizontal' or 'vertical'
+            range: {
+                'min': 0,
+                'max': 100
+            },
+            format: wNumb({
+                decimals: 0
+            })
+        });
+    </script>
 </body>
 
 </html>
