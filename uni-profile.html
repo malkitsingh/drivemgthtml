@@ -382,7 +382,7 @@
                   <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M11.000,4.238 L7.857,4.238 L7.857,-0.000 L3.143,-0.000 L3.143,4.238 L-0.000,4.238 L5.500,9.183 L11.000,4.238 ZM-0.000,10.595 L-0.000,12.008 L11.000,12.008 L11.000,10.595 L-0.000,10.595 Z"></path>
                 </svg>
               </a>
-              <a href="javascript:void(0)">
+              <a href="#modal3" class=" modal-trigger">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px">
                   <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M-0.000,10.000 L12.000,5.000 L-0.000,-0.000 L-0.000,3.889 L8.571,5.000 L-0.000,6.111 L-0.000,10.000 Z"></path>
                 </svg>
@@ -1649,6 +1649,35 @@
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
     </div>
   </div>
+  
+  <div id="modal3" class="modal">
+        <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+        <div class="modal-content">
+            <h4 class="title-note"> Send Note</h4>
+            <form class="row">
+                <div class="input-field col s12">
+
+                    <input id="to" type="text" class="validate" data-role="materialtags">
+                    <label for="to" class="">To</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                    <input id="pin_code" type="text" class="validate">
+                    <label for="subject" class="">Subject</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="Message" class="materialize-textarea"></textarea>
+                    <label for="Message" class="">Message</label>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect my-btn save-btn">Send Note</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+        </div>
+    </div>
+	
   <div class="sidebar add-staff-outer">
     <div class="header-bar">
       <h4>Add Staff</h4>
