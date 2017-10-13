@@ -7240,3 +7240,88 @@ a.detail_btn:hover,a.detail_btn:focus { background-color:#ffdb4d; }
 .pagination.announce_pagination li:last-of-type a:hover,.pagination.announce_pagination li:last-of-type a:focus { background:url('../images/continue-arrow.png') right 20px center no-repeat #f7d345; }
 
 
+/*upcoming-drive-modal  */
+.left-section
+{
+  float:left;
+}
+.right-section
+{
+    float:right;
+}
+.company-name
+{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+.drive-type
+{
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #909090;
+}
+.registered
+{
+    float: left;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+.regs-no
+{
+    float: left;
+    font-size: 18px;
+    color: #909090;
+    margin: 2px 0px;
+    padding-left: 30px;
+    font-weight: 300;
+}
+.job-info-list-detail:hover .test
+{
+    color: #039be5!important;
+    cursor: pointer;
+}
+.sub-sec
+{
+ width:60%!important;
+ float:right!important;
+}
+.user-menu-sec 
+{
+    left: -99%!important;
+}
+.spc
+{
+    margin-top: 20px;
+}
+.user-options2:before
+{
+    left:85%!important;
+}
+.sub-inner-section4
+ {
+    width: 20%;
+    float: right;
+}
+a.cover:focus
+{
+    text-decoration: underline;
+}
+.wr
+{ 
+    width:20%!important;
+    float:right!important;
+}
+.test:hover
+{
+text-decoration: underline;
+}
+/*  */
