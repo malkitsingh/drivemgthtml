@@ -7325,3 +7325,9 @@ a.cover:focus
 text-decoration: underline;
 }
 /*  */
+.drive_collapsible > li { width:100%; height:auto; float:left; position:relative; margin-bottom:20px; }
+.drive_collapsible .rounds-head { border:0; margin:0; min-height:50px; }
+/* .drive_collapsible .rounds-body { width:90% !important; height:auto; float:right; border:0; } */
+.drive_collapsible .round-body.collapsible-body { padding:0!important; margin:-52px 0 0 0!important; }
+
+
