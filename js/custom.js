@@ -142,82 +142,79 @@ $(document).ready(function () {
 
 
 });
-
-
 window.onload = function () {
 
   $('.custom-loader').addClass('hide');
 }
-$(document).ready(function()
-{
-       var slider = document.getElementById('test-slider1');
-        noUiSlider.create(slider, {
-            start: [20, 80],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': 0,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            })
-        });
-        var slider = document.getElementById('test-slider2');
-        noUiSlider.create(slider, {
-            start: [20, 80],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': 0,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            })
-        });
-        var slider = document.getElementById('test-slider3');
-        noUiSlider.create(slider, {
-            start: [0, 100],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': 0,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            })
-        });
-        var slider = document.getElementById('test-slider4');
-        noUiSlider.create(slider, {
-            start: [0, 100],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': 0,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            })
-        });
-        var slider = document.getElementById('test-slider5');
-        noUiSlider.create(slider, {
-            start: [0, 100],
-            connect: true,
-            step: 1,
-            orientation: 'horizontal', // 'horizontal' or 'vertical'
-            range: {
-                'min': 0,
-                'max': 100
-            },
-            format: wNumb({
-                decimals: 0
-            })
-        })
+$(document).ready(function () {
+  var slider = document.getElementById('test-slider1');
+  noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider = document.getElementById('test-slider2');
+  noUiSlider.create(slider, {
+    start: [20, 80],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider = document.getElementById('test-slider3');
+  noUiSlider.create(slider, {
+    start: [0, 100],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider = document.getElementById('test-slider4');
+  noUiSlider.create(slider, {
+    start: [0, 100],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  });
+  var slider = document.getElementById('test-slider5');
+  noUiSlider.create(slider, {
+    start: [0, 100],
+    connect: true,
+    step: 1,
+    orientation: 'horizontal', // 'horizontal' or 'vertical'
+    range: {
+      'min': 0,
+      'max': 100
+    },
+    format: wNumb({
+      decimals: 0
+    })
+  })
 });

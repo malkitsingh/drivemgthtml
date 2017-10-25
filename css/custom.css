@@ -7329,5 +7329,84 @@ text-decoration: underline;
 .drive_collapsible .rounds-head { border:0; margin:0; min-height:50px; }
 /* .drive_collapsible .rounds-body { width:90% !important; height:auto; float:right; border:0; } */
 .drive_collapsible .round-body.collapsible-body { padding:0!important; margin:-52px 0 0 0!important; }
+/*yes-delte-pop  */
+.y-delte
+{
+    box-shadow: none!important;
+    padding: 8px 25px!important;
+    line-height: 25px;
+    background-image: none!important;
+    background: #ffdb4d;
+}
+.confirm-pop-up
+{
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 20px 0;
+}
+.pop-inner-section
+{
+    width: 100%;
+    float: left;
+    padding: 20px 0 20px 0;
 
+}
+.warning-message
+{
+    font-size: 30px;
+    margin: 0;
+    padding: 0px 0;
+    line-height: 25px;
 
+}
+.warning-sub-message
+{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 0;
+    line-height: 30px;
+}
+/*end  */
+/*custom-tooltip-css  */
+.tooltip4
+ {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip4 .tooltiptext 
+{
+    visibility: hidden;
+    width: 120px;
+    background: #4c5d62;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 71%;
+    margin-left: -60px;
+    font-size: 14px;
+}
+
+.tooltip4 .tooltiptext::after
+ {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:#4c5d62 transparent transparent transparent;
+}
+
+.tooltip4:hover .tooltiptext {
+    visibility: visible;
+}
+/*End  */
