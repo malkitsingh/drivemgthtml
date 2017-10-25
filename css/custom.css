@@ -352,27 +352,30 @@ span.anouce-icons {
     position: relative;
     padding-right: 150px;
 }
-.content-list h5 {
+.content-list h5
+ {
     float: left;
     width: 100%;
     margin: 0;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     color: #555451;
     text-transform: uppercase;
 }
-span.list-time {
+span.list-time
+ {
     background: #fff;
-    font-size: 12px;
+    font-size: 13px;
     padding: 3px 5px;
     border-radius: 3px;
     margin-left: 10px;
     color: #909090;
+    font-weight: 400;
 }
-.content-list ul{float: left; width:100%; margin: 6px 0 0;}
+.content-list ul{float: left; width:100%;margin: 0;}
 .content-list ul li{float: left; font-size: 14px; color: #909090}
 .content-list ul li a,.content-list ul li a:link,.content-list ul li a:visited { float: left; font-size: 14px; color: #909090}
-.content-list ul li::after{content:"|"; margin:  0 10px; }
+ .content-list ul li.line::after{content:"|"; margin:  0 10px; } 
 .content-list ul li:last-child::after{content:" "; margin: 0px;}
 a.view-job {
     text-transform: capitalize;
@@ -7410,3 +7413,83 @@ text-decoration: underline;
     visibility: visible;
 }
 /*End  */
+  /*student-module-css  */
+.view-all
+{
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 10px 0 0 10px;
+    line-height: 25px;
+}
+.btn-design
+{
+    padding: 5px 20px;
+    line-height: 15px;
+    margin: 0;
+    display: inline-block;
+    font-size: 14px;
+    border: 1px solid #f7d345;
+    outline: none;
+    float:left;
+    width: auto;
+    color: #282828!important;
+}
+.spc
+{
+    margin-right: 10px;
+}
+.spc:hover
+{
+    text-decoration: none!important;
+}
+.top-space
+{
+    margin-top:15px!important;
+}
+.registered-drive
+{
+    float: right;
+    padding: 5px 20px;
+    border: 1px solid #f7d345;
+    line-height: 18px;
+    display: inline-block;
+    margin: 0;
+    outline: none;
+    font-size: 14px;
+    color: #282828!important;
+    font-weight: 500;
+}
+.ctc-details
+{
+    width:100%;
+    float:left;
+    margin: 10px 0;
+}
+.job-pr
+{
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0 10px;
+    line-height: 14px;
+}
+.reg-btn
+{
+    float: right;
+    padding: 8px 20px;
+    font-size: 14px;
+    display: inline-block;
+    outline: none;
+    margin: 0;
+    line-height: 15px;
+    background-color: #f7d345;
+    color: #282828!important;
+}
+.not-reg
+{
+    color: #ff0000;
+    float: right;
+    font-size: 14px;
+    opacity: 0.5;
+}
+/*End student module  */
