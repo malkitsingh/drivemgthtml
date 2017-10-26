@@ -7493,3 +7493,71 @@ text-decoration: underline;
     opacity: 0.5;
 }
 /*End student module  */
+/*pop in assign student and faculty  */
+.create-publish
+{
+    float: right;
+    margin: 0;
+    padding: 10px 20px;
+    line-height: 20px;
+    display: inline-block;
+    width: auto;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    color:#282828;
+    background-color: #f7d345;
+}
+.sure-drive
+{
+    font-size: 30px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    font-weight: 500;
+}
+.bot-section
+{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 30px 40px;
+
+}
+.send
+{
+    color: #282828!important;
+    padding-left: 30px!important;
+}
+.snd-sel
+{
+    float: left;
+    position: relative;
+    top: 5px;
+
+}
+.sele-op
+{
+    float:left;
+}
+.sele-op input.select-dropdown
+{
+    width: 120px!important;
+    line-height: 22px!important;
+    border: 1px solid #282828!important;
+    color: #282828!important;
+    font-size: 15px;
+}
+.notify
+{
+    float: left;
+    margin: 0;
+    padding: 5px 10px;
+}
+.sele-op .select-wrapper span.caret
+{
+    font-size: 13px!important;
+}
+/*end pop  */
