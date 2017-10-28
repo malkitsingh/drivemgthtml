@@ -2051,7 +2051,7 @@ span.new-line {
     float: left;
     width: 100%;
     background: #fff;
-    padding: 40px 70px;
+    padding: 40px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03);
 }
 .active  span.icon-list1  svg path{fill: rgb(40,40,40);}
@@ -7570,3 +7570,24 @@ text-decoration: underline;
 .no_data_available p span { color:#282828; font-size:16px; line-height:21px; margin:auto; }
 .no_data_available a,.no_data_available a:link,.no_data_available a:visited { min-width: 74px; height:35px; display:inline-block; background:#ffdb4e; padding:0 20px; border-bottom: 2px solid #f8d346; font-size: 16px; color: #282828; font-weight: 600; text-align: center; line-height:34px; margin-top:10px; }
 .no_data_available a:hover,.no_data_available a:focus { background:#f8d346; }
+
+
+/* Change Number PSD : already present in dynamic */
+.login-section h5 { width: 100%; height: auto; float: left; text-align: center; color: #bafaff; font-size: 20px; text-transform: uppercase; margin:0; }
+p.forget_text { color: #fff; margin:5px 0 20px 0; }
+.verify_mobile { margin:5px 0 10px 0 !important; }
+
+/* > Verification Code */
+h5.verification_code { color:#282828; font-size:20px; line-height:25px; text-transform:inherit; text-align:left; }
+h5.verification_code span { color:#32cc2e; }
+
+.verify_note { width: 100%; height: auto; float: left; color:#909090; font-size:14px; line-height:24px; margin-top:40px; }
+.verify_note span { color:#282828; font-size:14px; line-height:24px; }
+.verify_note a,.verify_note a:link,.verify_note a:visited { color:#0099d1; text-decoration:underline; }
+a.resend_code,a.resend_code:link,a.resend_code:visited { position:absolute; color:#0099d1; font-size:14px; line-height:24px; right:0; top: 9px; }
+.resend_code_text { padding-right:100px !important; box-sizing: border-box !important; }
+/* > Resent Password Text */
+.reset_pass_text { width: 100%; height: auto; float: left; background: #fff; padding: 40px; -webkit-box-shadow: 0 0 32px rgba(0,0,0,.24); -moz-box-shadow: 0 0 32px rgba(0,0,0,.24); box-shadow: 0 0 32px rgba(0,0,0,.24); -ms-box-shadow: 0 0 32px rgba(0,0,0,.24); -o-box-shadow: 0 0 32px rgba(0,0,0,.24); text-align: center; }
+.reset_pass_text figure { margin: 0 0 20px 0; }
+.reset_pass_text h5 { color:#282828; font:20px; line-height: 24px; text-transform: uppercase; }
+.reset_pass_text p { color:#909090; font:16px; line-height: 24px; }
