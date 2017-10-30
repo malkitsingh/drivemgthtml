@@ -468,50 +468,226 @@
                 <div class="panel-body">
                     <div class="staff-profile-body ">
                         <div class="profile-fields stu-profile-fields full-block">
-
-                            <div class="row">
-                                <div class="col l6 m6 s12 input-field">
-                                    <input id="job_loc" type="text" class="validate">
-                                    <label for="job_loc" class="">Job Location </label>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col l6 m6 s12 input-field">
-                                    <select>
-                                        <option value="" disabled="" selected="">Sector</option>
-                                        <option value="1">India</option>
-                                        <option value="2">USA</option>
-                                        <option value="3">Canada</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col l6 m6 s12 input-field">
-                                    <select>
-                                        <option value="" disabled="" selected="">Emplyment Type</option>
-                                        <option value="1">India</option>
-                                        <option value="2">USA</option>
-                                        <option value="3">Canada</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col l6 m6 s12 input-field">
-                                    <select>
-                                        <option value="" disabled="" selected="">Expected Annual Salary</option>
-                                        <option value="1">India</option>
-                                        <option value="2">USA</option>
-                                        <option value="3">Canada</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
+						  <div class="row">
+							<div class="col s12">
+							  <h4 class="preference_heading">Set Preference for</h4>
+							  <ul class="tabs preference_tabs">
+								<li class="tab"><a class="active" href="#preference_job">Job</a></li>
+								<li class="tab"><a href="#preference_edu">Higher Education</a></li>
+							  </ul>
+							</div>
+							<div id="preference_job" class="col s6">
+								<div class="input-field">
+								  <input id="first_name" type="text" class="validate">
+								  <label for="first_name">Job Title</label>
+								</div>
+								<div class="input-field">
+									<select>
+									  <option value="" disabled selected>Industry</option>
+									  <option value="1">Industry</option>
+									  <option value="2">Industry</option>
+									  <option value="3">Industry</option>
+									</select>
+							    </div>
+								<div class="input-field">
+								  <input id="first_name" type="text" class="validate">
+								  <label for="first_name">Job Location</label>
+								</div>
+								<div class="input-field">
+									<select>
+									  <option value="" disabled selected>Sector</option>
+									  <option value="1">Sector</option>
+									  <option value="2">Sector</option>
+									  <option value="3">Sector</option>
+									</select>
+							    </div>
+								<div class="input-field">
+									<select>
+									  <option value="" disabled selected>Emplyment Type</option>
+									  <option value="1">Emplyment Type</option>
+									  <option value="2">Emplyment Type</option>
+									  <option value="3">Emplyment Type</option>
+									</select>
+							    </div>
+								<div class="input-field">
+									<select>
+									  <option value="" disabled selected>Expected Annual Salary</option>
+									  <option value="1">Expected Annual Salary</option>
+									  <option value="2">Expected Annual Salary</option>
+									  <option value="3">Expected Annual Salary</option>
+									</select>
+							    </div>
+								<div class="input-field">
                                     <button type="submit" class="my-btn mrtop0 save-btn waves-light waves-effect">Save</button>
                                 </div>
-                            </div>
-                        </div>
+							</div>
+							<div id="preference_edu" class="col s12">
+								<h4 class="preference_heading">Which discipline are you interested in?</h4>
+								<div class="discipline_section">
+									<div class="row">
+										<div class="col s4">
+											<p>
+											  <input type="checkbox" id="discipline1" />
+											  <label for="discipline1">Engineering</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline2" />
+											  <label for="discipline2">Computer Applications and IT</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline3" />
+											  <label for="discipline3">Agriculture</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline4" />
+											  <label for="discipline4">Food Technology</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline5" />
+											  <label for="discipline5">Biotechnology</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline6" />
+											  <label for="discipline6">Microbiology</label>
+											</p>
+										</div>
+										<div class="col s4">
+											<p>
+											  <input type="checkbox" id="discipline7" />
+											  <label for="discipline7">Biochemistry</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline8" />
+											  <label for="discipline8">Environmental Sciences</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline9" />
+											  <label for="discipline9">Sciences</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline10" />
+											  <label for="discipline10">Botany</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline11" />
+											  <label for="discipline11">Zoology</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline12" />
+											  <label for="discipline12">Chemistry</label>
+											</p>
+										</div>
+										<div class="col s4">
+											<p>
+											  <input type="checkbox" id="discipline13" checked="checked" />
+											  <label for="discipline13">Management</label>
+											</p>											
+											<p>
+											  <input type="checkbox" id="discipline14" />
+											  <label for="discipline14">Commerce</label>
+											</p>											
+											<p>
+											  <input type="checkbox" id="discipline15" />
+											  <label for="discipline15">Economics</label>
+											</p>											
+											<p>
+											  <input type="checkbox" id="discipline16" />
+											  <label for="discipline16">Law</label>
+											</p>											
+											<p>
+											  <input type="checkbox" id="discipline17" />
+											  <label for="discipline17">Hotel Management and Tourism</label>
+											</p>											
+											<p>
+											  <input type="checkbox" id="discipline18" />
+											  <label for="discipline18">Journalism and Film Production</label>
+											</p>											
+										</div>
+									</div>
+								</div>
+								<h4 class="preference_heading">Select Programme</h4>
+								<div class="row">
+									<div class="col s4">
+										<div class="discipline_section">
+											<p>
+											  <input type="checkbox" id="discipline19" />
+											  <label for="discipline19">M. Phil. (Management)</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline20" />
+											  <label for="discipline20">Pd.D.(Management) [Full Time]</label>
+											</p>
+											<p>
+											  <input type="checkbox" id="discipline21" />
+											  <label for="discipline21">Pd.D.(Management) [Part Time]</label>
+											</p>
+										</div>
+									</div>
+								</div>
+								<h4 class="preference_heading">Where you want to do higher education?</h4>
+								<div class="discipline_radio">
+									<p>
+									  <input class="with-gap" name="group1" type="radio" id="edu1" />
+									  <label for="edu1">India</label>
+									</p>
+									<p>
+									  <input class="with-gap" name="group1" type="radio" id="edu2" />
+									  <label for="edu2">Abroad</label>
+									</p>
+								</div>
+								
+								<div class="discipline_radio">
+								<div class="input-field">
+                                    <button type="submit" class="my-btn mrtop0 save-btn waves-light waves-effect">Save</button>
+                                </div>
+                                </div>
+							</div>
+						  </div>
+        
+
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col l6 m6 s12 input-field"> -->
+                                    <!-- <input id="job_loc" type="text" class="validate"> -->
+                                    <!-- <label for="job_loc" class="">Job Location </label> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col l6 m6 s12 input-field"> -->
+                                    <!-- <select> -->
+                                        <!-- <option value="" disabled="" selected="">Sector</option> -->
+                                        <!-- <option value="1">India</option> -->
+                                        <!-- <option value="2">USA</option> -->
+                                        <!-- <option value="3">Canada</option> -->
+                                    <!-- </select> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col l6 m6 s12 input-field"> -->
+                                    <!-- <select> -->
+                                        <!-- <option value="" disabled="" selected="">Emplyment Type</option> -->
+                                        <!-- <option value="1">India</option> -->
+                                        <!-- <option value="2">USA</option> -->
+                                        <!-- <option value="3">Canada</option> -->
+                                    <!-- </select> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                                <!-- <div class="col l6 m6 s12 input-field"> -->
+                                    <!-- <select> -->
+                                        <!-- <option value="" disabled="" selected="">Expected Annual Salary</option> -->
+                                        <!-- <option value="1">India</option> -->
+                                        <!-- <option value="2">USA</option> -->
+                                        <!-- <option value="3">Canada</option> -->
+                                    <!-- </select> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="row"> -->
+                                <!-- <div class="input-field col s12"> -->
+                                    <!-- <button type="submit" class="my-btn mrtop0 save-btn waves-light waves-effect">Save</button> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                        
+						</div>
                     </div>
                 </div>
             </div>
@@ -519,80 +695,11 @@
                 <div class="panel-body">
                     <div class="staff-profile-body ">
                         <div class="profile-fields stu-profile-fields full-block">
-                            <h4 class="cust-title notop">Current Address</h4>
-                            <div class="row">
-                                <div class="col l6 m6 s12 input-field">
-                                    <textarea id="type" class="materialize-textarea"></textarea>
-                                    <label for="type" class="">Type...</label>
-                                </div>
-                            </div>
-                            <div class="academics-details">
-                                <div class="col s12 academic-head">
-                                    <h4><i class="material-icons">arrow_drop_down</i>Key Expertises / skills</h4></div>
-                                <div class="academics-details-body">
-                                    <div class="row">
-                                        <div class="input-field col m6 s12">
-                                            <input id="add" type="text" class="validate">
-                                            <label for="add" class="">Add<span class="error">*</span></label>
-                                        </div>
-                                    </div>
-
-                                    <div class="add-more-block">
-                                        <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="academics-details">
-                                <div class="col s12 academic-head">
-                                    <h4><i class="material-icons">arrow_drop_down</i>Add Achievements</h4></div>
-                                <div class="academics-details-body">
-                                    <div class="academic-info-list">
-                                        <span class="list-number">1</span>
-                                        <div class="row">
-                                            <div class="input-field col m6 s12">
-                                                <input id="add" type="text" class="validate">
-                                                <label for="add" class="">Accomplishment Title</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col m6 s12">
-                                                <textarea id="desc" class="materialize-textarea"></textarea>
-                                                <label for="desc" class="">Description</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col m6 s12">
-                                                <select>
-                                                    <option selected="" disabled="">Year</option>
-                                                    <option>2010</option>
-                                                    <option>2012</option>
-                                                    <option>2014</option>
-                                                </select>
-                                            </div>
-
-                                        </div>
-                                        <div class="add-more-block">
-                                            <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="academics-details">
-                                <div class="col s12 academic-head">
-                                    <h4><i class="material-icons">arrow_drop_down</i>Add Personal Interests / Hobbies</h4></div>
-                                <div class="academics-details-body">
-                                    <div class="row">
-                                        <div class="input-field col m6 s12">
-                                            <input id="add" type="text" class="validate">
-                                            <label for="add" class="">Add Personal Interests / Hobbies</label>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="academics-details">
+							<div class="other_skills">
+								<label>skills</label>
+								<div class="chips add_skills"></div>
+							</div>
+							<div class="academics-details">
                                 <div class="col s12 academic-head">
                                     <h4><i class="material-icons">arrow_drop_down</i>Add Certificate</h4></div>
                                 <div class="academics-details-body">
@@ -604,31 +711,386 @@
                                                 <label for="add" class="">Certificate Name</label>
                                             </div>
                                         </div>
-                                        <div class="row">
+										<div class="row">
                                             <div class="input-field col m6 s12">
-                                                <textarea id="desc" class="materialize-textarea"></textarea>
-                                                <label for="desc" class="">Description</label>
+                                                <input id="add" type="text" class="validate">
+                                                <label for="add" class="">Certification Authority</label>
                                             </div>
                                         </div>
-                                        <div class="row">
+										<div class="row">
                                             <div class="input-field col m6 s12">
-                                                <select>
-                                                    <option selected="" disabled="">Year</option>
-                                                    <option>2010</option>
-                                                    <option>2012</option>
-                                                    <option>2014</option>
-                                                </select>
+                                                <input id="add" type="text" class="validate">
+                                                <label for="add" class="">License Number</label>
                                             </div>
-
                                         </div>
-                                        <div class="add-more-block">
+										<div class="row">
+										<div class="time_period col s6">
+											<h4>Time Period</h4>
+											<div class="row">
+												<div class="col s6">
+													<label>From</label>
+													<select class="browser-default">
+														<option value="" disabled selected>Month</option>
+														<option value="1">Month</option>
+														<option value="2">Month</option>
+														<option value="3">Month</option>
+												    </select>
+													<select class="browser-default">
+														<option value="" disabled selected>Year</option>
+														<option value="1">Year</option>
+														<option value="2">Year</option>
+														<option value="3">Year</option>
+												    </select>
+												</div>
+												<div class="col s6">
+													<label>To</label>
+													<select class="browser-default">
+														<option value="" disabled selected>Month</option>
+														<option value="1">Month</option>
+														<option value="2">Month</option>
+														<option value="3">Month</option>
+												    </select>
+													<select class="browser-default">
+														<option value="" disabled selected>Year</option>
+														<option value="1">Year</option>
+														<option value="2">Year</option>
+														<option value="3">Year</option>
+												    </select>
+												</div>
+											</div>
+											<p>
+											  <input type="checkbox" id="certification" />
+											  <label for="certification">This certification does not expire</label>
+											</p>
+										</div>
+										</div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="add" type="text" class="validate">
+                                                <label for="add" class="">Certification URL</label>
+                                            </div>
+                                        </div>
+										<div class="add-more-block">
                                             <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
                                         </div>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+                                        <!-- <div class="row"> -->
+                                            <!-- <div class="input-field col m6 s12"> -->
+                                                <!-- <textarea id="desc" class="materialize-textarea"></textarea> -->
+                                                <!-- <label for="desc" class="">Description</label> -->
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="row"> -->
+                                            <!-- <div class="input-field col m6 s12"> -->
+                                                <!-- <select> -->
+                                                    <!-- <option selected="" disabled="">Year</option> -->
+                                                    <!-- <option>2010</option> -->
+                                                    <!-- <option>2012</option> -->
+                                                    <!-- <option>2014</option> -->
+                                                <!-- </select> -->
+                                            <!-- </div> -->
+
+                                        <!-- </div> -->
+                                        
 
                                     </div>
                                 </div>
                             </div>
-                              <div class="row">
+							<div class="academics-details">
+                                <div class="col s12 academic-head">
+                                    <h4><i class="material-icons">arrow_drop_down</i>Add Course</h4></div>
+                                <div class="academics-details-body">
+                                    <div class="academic-info-list">
+                                        <span class="list-number">1</span>
+                                        <div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="cname" type="text" class="validate">
+                                                <label for="cname" class="">Course Name</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="cnumber" type="text" class="validate">
+                                                <label for="cnumber" class="">Number</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <select>
+                                                    <option selected="" disabled="">Associated With</option>
+                                                    <option>Associated</option>
+                                                    <option>Associated</option>
+                                                    <option>Associated</option>
+                                                </select>
+                                            </div>
+                                        </div>
+										<div class="add-more-block">
+                                            <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="academics-details">
+                                <div class="col s12 academic-head">
+                                    <h4><i class="material-icons">arrow_drop_down</i>Add Projects</h4></div>
+                                <div class="academics-details-body">
+                                    <div class="academic-info-list">
+                                        <span class="list-number">1</span>
+                                        <div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="cproject" type="text" class="validate">
+                                                <label for="cproject" class="">Project Name</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+										<div class="time_period col s6">
+											<h4>Dates</h4>
+											<div class="row">
+												<div class="col s6">
+													<label>Start Date</label>
+													<select class="browser-default">
+														<option value="" disabled selected>Month</option>
+														<option value="1">Month</option>
+														<option value="2">Month</option>
+														<option value="3">Month</option>
+												    </select>
+													<select class="browser-default">
+														<option value="" disabled selected>Year</option>
+														<option value="1">Year</option>
+														<option value="2">Year</option>
+														<option value="3">Year</option>
+												    </select>
+												</div>
+												<div class="col s6">
+													<label>End Date</label>
+													<select class="browser-default">
+														<option value="" disabled selected>Month</option>
+														<option value="1">Month</option>
+														<option value="2">Month</option>
+														<option value="3">Month</option>
+												    </select>
+													<select class="browser-default">
+														<option value="" disabled selected>Year</option>
+														<option value="1">Year</option>
+														<option value="2">Year</option>
+														<option value="3">Year</option>
+												    </select>
+												</div>
+											</div>
+											<p>
+											  <input type="checkbox" id="projectOngoing" />
+											  <label for="projectOngoing">Project Ongoing</label>
+											</p>
+										</div>
+										</div>
+										<div class="row">
+											<div class="time_period col s6">
+												<h4>Contributors</h4>
+												<div class="chip contribute_person">
+													<figure><img src="images/pritam.png" alt="Pritam"></figure>
+													Pritam Kumar Soni
+													<i class="close material-icons">close</i>
+												</div>
+												<div class="chip contribute_person">
+													<figure><img src="images/gurleen.png" alt="Gurleen"></figure>
+													Gurleen Kaur
+													<i class="close material-icons">close</i>
+												</div>
+											</div>
+									    </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="acontributor" type="text" class="validate">
+                                                <label for="acontributor" class="">Add Another Contributor</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="aoccupation" type="text" class="validate">
+                                                <label for="aoccupation" class="">Occupation</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="aproject" type="text" class="validate">
+                                                <label for="aproject" class="">Project URL</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+												<textarea id="textarea01" class="materialize-textarea" data-length="120"></textarea>
+												<label for="textarea01">Description</label>
+											  </div>
+                                        </div>
+										<div class="add-more-block">
+                                            <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="academics-details">
+                                <div class="col s12 academic-head">
+                                    <h4><i class="material-icons">arrow_drop_down</i>Add Honors & Awards</h4></div>
+                                <div class="academics-details-body">
+                                    <div class="academic-info-list">
+                                        <span class="list-number">1</span>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="ctitle" type="text" class="validate">
+                                                <label for="ctitle" class="">Title</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <select>
+                                                    <option selected="" disabled="">Associated With</option>
+                                                    <option>Associated</option>
+                                                    <option>Associated</option>
+                                                    <option>Associated</option>
+                                                </select>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+                                                <input id="cissuer" type="text" class="validate">
+                                                <label for="cissuer" class="">Issuer</label>
+                                            </div>
+                                        </div>
+										<div class="row">
+                                            <div class="col m6 s12">
+											<div class="row">
+												<div class="input-field col m6 s12">
+													<select>
+														<option selected="" disabled="">Month</option>
+														<option>Month</option>
+														<option>Month</option>
+														<option>Month</option>
+													</select>
+												</div>
+												<div class="input-field col m6 s12">
+													<select>
+														<option selected="" disabled="">Year</option>
+														<option>Year</option>
+														<option>Year</option>
+														<option>Year</option>
+													</select>
+												</div>
+                                        </div>
+										</div>
+                                        </div>
+										<div class="row">
+                                            <div class="input-field col m6 s12">
+												<textarea id="textarea101" class="materialize-textarea" data-length="120"></textarea>
+												<label for="textarea101">Description</label>
+											  </div>
+                                        </div>
+										<div class="add-more-block">
+                                            <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							<div class="academics-details">
+                                <div class="col s12 academic-head">
+                                    <h4><i class="material-icons">arrow_drop_down</i>Add Personal interests/Hobbies</h4></div>
+                                <div class="academics-details-body">
+									<div class="row">
+										<div class="input-field col m6 s12">
+											<input id="ainterest" type="text" class="validate">
+											<label for="ainterest" class="">Add your Interests/hobbies</label>
+										</div>
+									</div>
+                                </div>
+                            </div>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							<!-- <div class="academics-details"> -->
+                                <!-- <div class="col s12 academic-head"> -->
+                                    <!-- <h4><i class="material-icons">arrow_drop_down</i>Key Expertises / skills</h4></div> -->
+                                <!-- <div class="academics-details-body"> -->
+                                    <!-- <div class="row"> -->
+                                        <!-- <div class="input-field col m6 s12"> -->
+                                            <!-- <input id="add" type="text" class="validate"> -->
+                                            <!-- <label for="add" class="">Add<span class="error">*</span></label> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+
+                                    <!-- <div class="add-more-block"> -->
+                                        <!-- <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a> -->
+                                    <!-- </div> -->
+
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="academics-details"> -->
+                                <!-- <div class="col s12 academic-head"> -->
+                                    <!-- <h4><i class="material-icons">arrow_drop_down</i>Add Achievements</h4></div> -->
+                                <!-- <div class="academics-details-body"> -->
+                                    <!-- <div class="academic-info-list"> -->
+                                        <!-- <span class="list-number">1</span> -->
+                                        <!-- <div class="row"> -->
+                                            <!-- <div class="input-field col m6 s12"> -->
+                                                <!-- <input id="add" type="text" class="validate"> -->
+                                                <!-- <label for="add" class="">Accomplishment Title</label> -->
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="row"> -->
+                                            <!-- <div class="input-field col m6 s12"> -->
+                                                <!-- <textarea id="desc" class="materialize-textarea"></textarea> -->
+                                                <!-- <label for="desc" class="">Description</label> -->
+                                            <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="row"> -->
+                                            <!-- <div class="input-field col m6 s12"> -->
+                                                <!-- <select> -->
+                                                    <!-- <option selected="" disabled="">Year</option> -->
+                                                    <!-- <option>2010</option> -->
+                                                    <!-- <option>2012</option> -->
+                                                    <!-- <option>2014</option> -->
+                                                <!-- </select> -->
+                                            <!-- </div> -->
+
+                                        <!-- </div> -->
+                                        <!-- <div class="add-more-block"> -->
+                                            <!-- <a href="javascript:void(0)"><span class="add-more">+</span>Add More</a> -->
+                                        <!-- </div> -->
+
+                                    <!-- </div> -->
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="academics-details"> -->
+                                <!-- <div class="col s12 academic-head"> -->
+                                    <!-- <h4><i class="material-icons">arrow_drop_down</i>Add Personal Interests / Hobbies</h4></div> -->
+                                <!-- <div class="academics-details-body"> -->
+                                    <!-- <div class="row"> -->
+                                        <!-- <div class="input-field col m6 s12"> -->
+                                            <!-- <input id="add" type="text" class="validate"> -->
+                                            <!-- <label for="add" class="">Add Personal Interests / Hobbies</label> -->
+                                        <!-- </div> -->
+                                    <!-- </div> -->
+
+                                <!-- </div> -->
+                            <!-- </div> -->
+                            
+  
+                            <div class="row">
                                 <div class="input-field col s12">
                                     <button type="submit" class="my-btn mrtop0 save-btn waves-light waves-effect">Save</button>
                                 </div>
@@ -646,3 +1108,9 @@
 </body>
 
 </html>
+<script>
+$('.add_skills').material_chip({
+	placeholder: 'Add Skills',
+	secondaryPlaceholder: 'Add More Skills',
+});
+</script>

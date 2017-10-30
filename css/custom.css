@@ -7591,3 +7591,54 @@ a.resend_code,a.resend_code:link,a.resend_code:visited { position:absolute; colo
 .reset_pass_text figure { margin: 0 0 20px 0; }
 .reset_pass_text h5 { color:#282828; font:20px; line-height: 24px; text-transform: uppercase; }
 .reset_pass_text p { color:#909090; font:16px; line-height: 24px; }
+
+/* Student : Job Preference Tab */
+.preference_heading { color:#909090; font-size:16px; line-height:21px; }
+ul.preference_tabs { width: auto; height: auto; float: left; border-bottom: 0px !important; }
+ul.preference_tabs li { width: auto; height:auto; float: left; margin-right:10px !important; }
+ul.preference_tabs li:last-of-type { margin-right:0 !important; }
+ul.preference_tabs li.indicator { display:none; }
+ul.preference_tabs li a,ul.preference_tabs li a:link,ul.preference_tabs li a:visited { width: auto; height: 32px; float: left; padding:0 15px; background-color:#fff; border: solid 1px #e6f3f8; color:#0099d2; font-size:16px; line-height:31px; text-transform:capitalize; font-weight:400; }
+ul.preference_tabs li a.active { background:url("../images/tab-active.png") left 15px center no-repeat #f2fafd !important; padding-left:35px !important; }
+#preference_job label { color:#909090; }
+
+.discipline_section { background:#fbfcfe; padding:20px 15px; }
+.discipline_section [type="checkbox"]:checked + label:before {
+    height: 21px;
+    border: 0px solid #fff;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+	content:url("../images/discipline-checked.png");
+	left:0; top:-1px;
+	/* background:url("../images/discipline-checked.png" left center no-repeat !important; */
+	)
+}
+.discipline_section [type="checkbox"] + label { line-height:21px; color:#909090; font-size:16px; padding-left:25px; }
+.discipline_section [type="checkbox"]:checked + label { color:#25cd18; }
+.discipline_section [type="checkbox"] + label:before,.discipline_section [type="checkbox"]:not(.filled-in) + label:after { border:0; }
+
+.discipline_radio { width: 100%; height: auto; float: left; }
+.discipline_radio p { width: auto; height: auto; float: left; padding:0; margin-right:20px; }
+
+.discipline_radio [type="radio"]:not(:checked) + label,.discipline_radio [type="radio"]:checked + label { padding-left:30px; }
+.discipline_radio [type="radio"] + label:before,.discipline_radio [type="radio"] + label:after { height:20px; width:20px; margin:3px; }
+
+.other_details { padding-top:20px; }
+
+
+/* .other_skills { } */
+.other_skills label { text-transform:uppercase; color:#282828; font-size:16px; line-height:21px; font-weight:600; }
+.add_skills .chip { width:auto; height: 26px; float:left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; background-color: #f2f2f2; padding:0 10px; color:#282828; font-size:13px; line-height:26px; border:0; margin-top:9px; }
+.add_skills .chip .close { line-height:26px; }
+.add_skills .chips input { height: auto; }
+
+.time_period h4 { color:#282828; font-size:16px; line-height:21px; font-weight:600; text-transform:uppercase; }
+.time_period label { color:#909090; font-size:16px; line-height:21px; display:inline-block; }
+.time_period label[for="certification"],.time_period label[for="projectOngoing"] { color:#282828; font-size:16px; line-height:21px; padding-left:25px; }
+.time_period select { margin-top:10px; border: 1px solid #909090; height: 35px; }
+
+.chip.contribute_person { width: 100%; height: auto; float: left; color:#282828; font-size:16px; line-height:41px; font-weight:600; border:0; border-bottom:1px solid #eff1f3; padding:0 0 10px 0; margin-bottom:10px; background:transparent; }
+.chip.contribute_person figure { width:41px; height:41px; float:left; margin:0 10px 0 0; }
+.chip.contribute_person .close { line-height: inherit; top: 2px; position: relative; color:#ff1616; font-size:26px; }
+
+
