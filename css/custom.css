@@ -7642,3 +7642,7 @@ ul.preference_tabs li a.active { background:url("../images/tab-active.png") left
 .chip.contribute_person .close { line-height: inherit; top: 2px; position: relative; color:#ff1616; font-size:26px; }
 
 
+/* Create New Drive Button */
+a.new_drive_link,a.new_drive_link:link,a.new_drive_link:visited { color: #282828; font-size: 16px; line-height: 21px; font-weight: 600; padding:0; background-color:transparent; margin:15px 0 0 0; border:0; }
+a.new_drive_link p { color: #282828; font-size: 16px; line-height: 24px; font-weight: 600; float:left; }
+a.new_drive_link .add-more { margin:0 10px 0 0; float:left; }
