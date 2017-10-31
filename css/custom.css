@@ -7623,7 +7623,7 @@ ul.preference_tabs li a.active { background:url("../images/tab-active.png") left
 .discipline_radio [type="radio"]:not(:checked) + label,.discipline_radio [type="radio"]:checked + label { padding-left:30px; }
 .discipline_radio [type="radio"] + label:before,.discipline_radio [type="radio"] + label:after { height:20px; width:20px; margin:3px; }
 
-.other_details { padding-top:20px; }
+.other_details,.academics,.internships,.cont-del { padding-top:20px; }
 
 
 /* .other_skills { } */
