@@ -7646,3 +7646,665 @@ ul.preference_tabs li a.active { background:url("../images/tab-active.png") left
 a.new_drive_link,a.new_drive_link:link,a.new_drive_link:visited { color: #282828; font-size: 16px; line-height: 21px; font-weight: 600; padding:0; background-color:transparent; margin:15px 0 0 0; border:0; }
 a.new_drive_link p { color: #282828; font-size: 16px; line-height: 24px; font-weight: 600; float:left; }
 a.new_drive_link .add-more { margin:0 10px 0 0; float:left; }
+
+/* Pritam Sir */
+/* Css for profile-page */
+  .pro-inner-section
+  {
+      width:100%;
+      float:left
+  }
+  .pro-left-sec1
+  {
+    width: 80%;
+    float: left;
+    padding: 0 20px;
+  }
+ .pro-right-sec1
+ {
+     width:20%;
+     float:left;
+ }
+.pro-icon-section
+{
+    float:right;
+}
+.pro-edit
+{
+   margin-left: 10px;
+}
+span.action-menu1
+{
+    border: 1px solid #ffb64d!important;
+    border-radius: 3px!important;
+}
+.pro-inner-section
+{
+    display: table;
+}
+.pro-sub-inner-section
+{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    box-sizing: border-box;
+    height: 70px;
+    padding: 30px 0;
+    width: 100%;
+    border-bottom: 1px solid #c5c6c7;
+}
+.user-profile-area
+{
+    height: 140px;
+    width: 140px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0;
+    padding:0;
+}
+.prof-name
+{
+    margin:0;
+    padding:0;
+    line-height: 20px;
+    font-size:20px;
+    color:#282828;
+    float: left;
+    width:100%;
+    font-weight: 500;
+}
+.prof-details
+{
+    width: 100%;
+    float: left;
+    line-height: 25px;
+    margin: 0;
+    padding:0;
+    font-size: 16px;
+    color:#909090;
+}
+.pro-stu-details
+{
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 30px 0px;
+
+}
+span.stu-about
+{
+    font-size: 16px;
+    width: 100%;
+    float: left;
+    text-align-last: center;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.pro-see-more
+{
+    text-align: center;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.pro-intership-sec
+{
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+}
+span.pro-inter
+{
+     float: left;
+    width: 100%;
+    font-size: 16px;
+    color: #282828;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.pro-header-section
+{
+    width: 100%;
+    float: left;
+    padding-bottom: 5px;
+    border-bottom: 1px solid  #282828;
+}
+.pro-inner-section-content
+{
+    width:100%;
+    float:left;
+    padding: 20px 0;
+}
+.pro-tag
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    float:left;
+    line-height: 25px;
+    color: #282828;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pro-tech
+{
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #909090;
+    line-height: 20px;
+}
+.pro-tech1
+{
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #909090;
+    line-height: 20px;
+}
+.pro-tech::after
+ {
+    content: "|";
+    margin: 0 10px;
+    color: #909090;
+}
+
+.pro-otrs::after
+{
+    content: "=";
+    margin: 0 10px;
+    color: #909090;
+}
+.pro-address
+{
+    float: left;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: #909090;
+    line-height: 20px;
+}
+.pro-year
+{
+    float: left;
+    width: 100%;
+    line-height: 30px;
+    padding: 5px 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.pro-addrs
+{
+    width:100%;
+    float:left;
+}
+.pro-otr
+{
+    width:100%;
+    float: left;
+}
+.pro-education-field
+{
+    width:100%;
+    float: left;
+    margin-top: 15px;
+}
+.pro-uni-list
+{
+    width:100%;
+    float:left;
+}
+.uni-list-item
+{
+    height: 60px;
+    width: 60px;
+    margin:5px 0;
+    padding: 10px 0;
+    float: left;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+.uni-details-list
+{
+    float: left;
+    padding: 0px 20px;
+
+}
+.uniname
+{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    line-height: 20px;
+    font-weight:500;
+    color: #282828;
+}
+.pro-uni-list1
+{
+    width:100%;
+    float: left;
+    padding: 10px 0;
+}
+.uniname-details
+{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    line-height: 20px;
+    color:#909090;;
+}
+.pro-skill-section
+{
+    width:100%;
+    float: left;
+    padding-bottom: 40px;
+}
+.skill-list
+{
+    width:100%;
+    float: left;
+
+}
+.skill-list ul li
+{
+    FLOAT: LEFT;
+    DISPLAY: INLINE-BLOCK;
+    MARGIN: 0;
+    PADDING: 0;
+}
+.skill-btn
+{
+    padding: 5px 20px;
+    line-height: 20px;
+    margin: p;
+    margin: 0;
+    display: inline;
+    float: left;
+    box-sizing: border-box;
+    font-size: 14px;
+    text-decoration: none;
+    color:#fff;
+}
+.php
+{
+    background-color: #86d4e3;
+    margin-right: 10px;
+}
+.python
+{
+    background-color:#fadd9c;
+    margin-right: 10px;
+}
+.angular
+{
+    background-color: #f6be9a;
+    margin-right: 10px;
+}
+.js
+{
+    background-color: #a6e6c2;
+    margin-right: 10px;
+}
+.ui-design 
+{
+    background-color:#accdf3;
+    margin-right: 10px;
+}
+.pro-contact-details
+{
+    width:100%;
+    float: left;
+}
+.prof-inner-section
+{
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+.prof-each-sec
+{
+    width:33.33%;
+    float: left;
+    padding:5px 5px;
+}
+.pro-offical-head
+{
+    width:100%;
+    float:left;
+    margin:0;
+    font-size: 14px;
+    color:#909090;
+    line-height: 20px;
+
+}
+.prof-offical-content
+{
+    width:100%;
+    float:left;
+    margin:0;
+    font-size: 16px;
+    color:#282828;
+    line-height: 20px;
+}
+.prof-content:after
+{
+    content: "|";
+    margin: 0 10px;
+    color: #909090; 
+}
+.pro-current-address
+{
+    width:100%;
+    float:left;
+    padding: 20px 5px;
+}
+.prof-address
+{
+    color:#909090;
+    float: left;
+    margin:0;
+    padding:0;
+    font-size: 14px;
+    width:100%;
+}
+.prof-address1
+{
+    color:#282828;
+    float: left;
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    width:100%;
+}
+.job-preff
+{
+    width:100%;
+    float: left;
+}
+.prof-outer-section
+{
+    width:100%;
+    float: left;
+}
+.prof-outer-layer
+{
+    width: 100%;
+    float: left;
+    padding:10px 0px;
+}
+.pro-right-inner-section
+{
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+}
+.prof-sub-inner-section
+{
+    width: 100%;
+    float: left;
+    border: 1px dashed #282828;
+    padding: 10px 15px;
+}
+span.profile-complete
+{
+    width:100%;
+    float: left;
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #282828;
+}
+.prof-sub-inner-section .progress
+{
+    height: 20px!important;
+    background-color: #f2f2f2!important
+}
+.prof-sub-inner-section .progress .determinate
+{
+    background-color: #61d158!important;
+}
+.complete-message
+{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
+    margin-right: 20px;
+    color: #282828;
+    font-weight: 500;
+}
+.prf-details
+{
+    width:100%;
+    float: left;
+}
+.not-pos
+{
+    color: #909090;
+    
+}
+.course
+{
+    width:100%;
+    float:left;
+    box-sizing: border-box;
+}
+.course-inner-section
+{
+    width:100%;
+    float:left;
+    padding:10px 0;
+}
+.course-tittle
+{
+    font-size: 16px;
+    color: #282828;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+.course-content 
+{
+    width: 58%;
+    float: left;
+    padding-bottom: 20px;
+}
+.course-content-details
+{
+    font-size: 14px;
+    color: #909090;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    width: 100%;
+    float: left;
+}
+.certification-section
+{
+    width:100%;
+    float: left;
+    box-sizing: border-box;
+}
+.font-size1
+{
+    font-size: 14px!important;
+}
+.course-about::after
+ {
+    content: "|";
+    margin: 0 10px;
+    color: #909090;
+}
+.certification-about-uni
+{
+    float: left;
+    width:100%;
+}
+.uni-certi-images
+{
+    height:33px;
+    width: 33px;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #f2f2f2;
+
+}
+.prof-uni-name
+{
+    margin: 0;
+    padding: 5px 10px;
+    line-height: 30px;
+    float: left;
+    font-weight: 500;
+    display: inline-block;
+}
+.certification-outer-section
+{
+    width:100%;
+    float: left;
+}
+.see-project
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 14px;
+    display: inline-block;
+    padding: 0;
+}
+.prof-project
+{
+    width:100%;
+    float: left;
+}
+.honor-award-section
+{
+    width:100%;
+    float:left;
+
+}
+.personal-interest-hobbies
+{
+    width:100%;
+    float: left;
+}
+.hobbies-list
+{
+    width: 100%;
+    float: left;
+    padding: 15px 0;
+}
+.hobbies-list ol
+{
+    margin: 0!important;
+    padding: 0 15px!important;
+}
+.view-details-section
+{
+    width:100%;
+    float: left;
+    padding: 20px 20px;
+}
+.basic-details
+{
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #282828;
+    padding: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  
+}
+.view-details-inner-section
+{
+    width: 100%;
+    float: left;
+    padding: 0 20px;
+}
+.view-details-left-inner-section
+{
+    width: 20%;
+    float: left;
+}
+.view-details-right-inner-section
+{
+    width: 80%;
+    float: left;
+}
+.view-user-profile
+{
+    height: 135px;
+    width: 135px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    float: left;
+}
+.view-user-profile img
+{
+    width: 100%!important;
+}
+.profile-each-form
+{
+    width:100%;
+    float: left;
+}
+.stu-profile-output
+{
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+.stu-profile-each-section
+{
+    width: 25%;
+    float: left;
+}
+.ps-details
+{
+    width:100%;
+    float: left;
+    font-size: 14px;
+    color: #909090;
+    margin: 0;
+    padding:0;
+    line-height: 20px;
+}
+.ps-output
+{
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    width: 100%;
+    float: left;
+}
+.stu-profile-fields {
+width: 100%;
+float: left;
+box-sizing: border-box;
+}
+  /* End */
