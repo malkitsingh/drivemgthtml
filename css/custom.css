@@ -7871,7 +7871,7 @@ span.pro-inter
 {
     height: 60px;
     width: 60px;
-    margin:5px 0;
+    margin:5px 15px 5px 0;
     padding: 2px 0;
     float: left;
     background-color: #f4f4f4;
@@ -7880,7 +7880,7 @@ span.pro-inter
 }
 .uni-details-list
 {
-    float: right; width:90%;
+    float: left; width:90%;
 
 }
 .uniname
@@ -8014,7 +8014,7 @@ span.pro-inter
 {
     width:100%;
     float:left;
-    padding: 10px 5px;
+    padding: 10px 0 0 0;
 }
 .pro-current-address:last-of-type { padding-bottom:0; }
 .prof-address
@@ -8115,7 +8115,7 @@ span.profile-complete
 {
     width:100%;
     float:left;
-    padding:10px 0;
+    padding:10px 0 0 0;
 }
 .course-tittle
 {
@@ -8131,13 +8131,12 @@ span.profile-complete
 {
     width: 58%;
     float: left;
-    padding-bottom: 20px;
 }
 .course-content-details
 {
     font-size: 14px;
     color: #909090;
-    margin: 0;
+    margin: 5px 0 10px 0;
     padding: 0;
     line-height: 20px;
     width: 100%;
@@ -8162,22 +8161,23 @@ span.profile-complete
 .certification-about-uni
 {
     float: left;
-    width:100%;
+    width:100%; margin-top:10px;
 }
 .uni-certi-images
 {
-    height:33px;
-    width: 33px;
+    height:28px;
+    width: 28px;
     overflow: hidden;
     float: left;
-    border: 1px solid #f2f2f2;
-
+    border: 1px solid #ededed;
+	padding:3px;
 }
+.uni-certi-images img { max-width:100%; }
 .prof-uni-name
 {
     margin: 0;
-    padding: 5px 10px;
-    line-height: 30px;
+    padding: 0 10px;
+    line-height: 28px;
     float: left;
     font-weight: 500;
     display: inline-block;
@@ -8190,12 +8190,13 @@ span.profile-complete
 .see-project
 {
     float: left;
-    width: 100%;
+    width:auto;
     margin-bottom: 25px;
     font-size: 14px;
     display: inline-block;
-    padding: 0;
+    padding: 0; text-decoration:underline;
 }
+.see-project:hover,.see-project:focus { text-decoration:none; }
 .prof-project
 {
     width:100%;
@@ -8216,7 +8217,7 @@ span.profile-complete
 {
     width: 100%;
     float: left;
-    padding: 15px 0;
+    padding: 15px 0 0 0;
 }
 .hobbies-list ol
 {
@@ -8227,7 +8228,6 @@ span.profile-complete
 {
     width:100%;
     float: left;
-    padding: 20px 20px;
 }
 .basic-details
 {
@@ -8246,16 +8246,16 @@ span.profile-complete
 {
     width: 100%;
     float: left;
-    padding: 0 20px;
+    padding:20px 0 0 160px; position:relative;
 }
 .view-details-left-inner-section
 {
-    width: 20%;
-    float: left;
+    width: auto;
+    float: left; position:absolute; left:0; top:20px;
 }
 .view-details-right-inner-section
 {
-    width: 80%;
+    width: 100%;
     float: left;
 }
 .view-user-profile
@@ -8317,3 +8317,5 @@ box-sizing: border-box;
 /* Profile Addition CSS */
 .view_detail { width: 100%; height:auto; float: left; background-color:#fff; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -ms-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -o-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); padding:15px; box-sizing:border-box; margin-top:10px; }
 .pro-offical-content { font-size:16px; color:#282828; }
+a.save_detail,a.save_detail:link,a.save_detail:visited { width:auto; height:auto; float:right; background:#ffdb4d; color: #282828; font-size: 14px; line-height:27px; padding:0px 15px; text-transform:capitalize; }
+a.save_detail:hover,a.save_detail:focus { background:#efc72a; }
