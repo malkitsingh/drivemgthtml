@@ -7689,7 +7689,7 @@ span.action-menu1
     text-align: center;
     box-sizing: border-box;
     height: 70px;
-    padding: 30px 0;
+    padding:20px 0;
     width: 100%;
     border-bottom: 1px solid #c5c6c7;
 }
@@ -7705,7 +7705,7 @@ span.action-menu1
 }
 .prof-name
 {
-    margin:0;
+    margin:5px 0;
     padding:0;
     line-height: 20px;
     font-size:20px;
@@ -7729,7 +7729,7 @@ span.action-menu1
     width: 100%;
     float: left;
     box-sizing: border-box;
-    padding: 30px 0px;
+    padding: 20px 0 0 0;
 
 }
 span.stu-about
@@ -7740,19 +7740,20 @@ span.stu-about
     text-align-last: center;
     line-height: 22px;
     margin: 0;
-    padding: 0;
     display: inline-block;
+	padding:0 20px;
 }
 .pro-see-more
 {
     text-align: center;
     float: left;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
     line-height: 20px;
     font-size: 16px;
     text-decoration: none;
     font-weight: 500;
+	
 }
 .pro-intership-sec
 {
@@ -7776,13 +7777,13 @@ span.pro-inter
     width: 100%;
     float: left;
     padding-bottom: 5px;
-    border-bottom: 1px solid  #282828;
+    border-bottom: 1px solid  #909090;
 }
 .pro-inner-section-content
 {
     width:100%;
     float:left;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 .pro-tag
 {
@@ -7871,15 +7872,15 @@ span.pro-inter
     height: 60px;
     width: 60px;
     margin:5px 0;
-    padding: 10px 0;
+    padding: 2px 0;
     float: left;
     background-color: #f4f4f4;
     text-align: center;
+	border: solid 1px #ededed;
 }
 .uni-details-list
 {
-    float: left;
-    padding: 0px 20px;
+    float: right; width:90%;
 
 }
 .uniname
@@ -7898,7 +7899,10 @@ span.pro-inter
     width:100%;
     float: left;
     padding: 10px 0;
+	border-bottom:1px solid #f4f4f4;
 }
+.pro-uni-list1:last-of-type { border-bottom:0; padding-bottom:0; }
+
 .uniname-details
 {
     font-size: 14px;
@@ -7913,7 +7917,6 @@ span.pro-inter
 {
     width:100%;
     float: left;
-    padding-bottom: 40px;
 }
 .skill-list
 {
@@ -7975,13 +7978,12 @@ span.pro-inter
 {
     width: 100%;
     float: left;
-    padding: 20px 0;
+    padding: 20px 0 0 0; 
 }
 .prof-each-sec
 {
     width:33.33%;
     float: left;
-    padding:5px 5px;
 }
 .pro-offical-head
 {
@@ -8012,8 +8014,9 @@ span.pro-inter
 {
     width:100%;
     float:left;
-    padding: 20px 5px;
+    padding: 10px 5px;
 }
+.pro-current-address:last-of-type { padding-bottom:0; }
 .prof-address
 {
     color:#909090;
@@ -8048,6 +8051,7 @@ span.pro-inter
     float: left;
     padding:10px 0px;
 }
+.prof-outer-layer:last-of-type { padding-bottom:0; }
 .pro-right-inner-section
 {
     width: 100%;
@@ -8095,6 +8099,7 @@ span.profile-complete
     width:100%;
     float: left;
 }
+.prf-details a,.prf-details a:link,.prf-details a:visited { font-size:14px; }
 .not-pos
 {
     color: #909090;
@@ -8307,4 +8312,8 @@ width: 100%;
 float: left;
 box-sizing: border-box;
 }
-  /* End */
+/* End */
+
+/* Profile Addition CSS */
+.view_detail { width: 100%; height:auto; float: left; background-color:#fff; -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -ms-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); -o-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.03); padding:15px; box-sizing:border-box; margin-top:10px; }
+.pro-offical-content { font-size:16px; color:#282828; }
