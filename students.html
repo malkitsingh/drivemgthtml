@@ -716,7 +716,7 @@
         </div>
     </div>
     <div id="modal1" class="modal">
-        <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+        <a href="javascript:void(0)" class="modal-close close-btn1"><i class="material-icons">close</i></a>
         <div class="modal-content">
 
             <div class="upload-part">
@@ -733,16 +733,29 @@
                     <p>Drop <strong>CSV file</strong> here or click to upload</p>
                 </div>
             </div>
-            <p class="file-formet">File format should be similar to attached sample: <a href="javascript:void(0)"> View Sample</a></p>
+            <div class="upload_successful">
+              <figure><img src="images/password-reset.png" width="88" height="88" alt="Success"></figure>
+              <p>Students.csv <a href="#">Change file</a></p>
+          </div>
+			<p class="file-formet">File format should be similar to attached sample: <a href="javascript:void(0)"> View Sample</a></p>
             <p class="checkbox-part"> <input type="checkbox" name="check" class="filled-in" id="checkk" /><label for="checkk">Send Email Invitations to the New Staff.</label></p>
             <p class="checkbox-part"> <input type="checkbox" name="checkkk" class="filled-in" id="checkkk" /><label for="checkkk">Empty Values in the Excel Sheet must Replace Existing Information for Staff if present..</label></p>
 
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect my-btn save-btn">Submit</a>
+            <a href="#modal_error" class="modal-action modal-close waves-effect my-btn save-btn modal-trigger">Upload</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
         </div>
     </div>
+	
+	<div id="modal_error" class="modal" style="cursor:pointer">
+    <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+     <div class="csv_error">
+        <h3> Students.csv uploaded successfully</h3>
+         <p>Added 50 Rows</p>
+         <a href="#">Errors in 20 Rows</a>
+     </div>
+ </div>
 
     <div id="modal3" class="modal">
         <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>

@@ -8319,3 +8319,21 @@ box-sizing: border-box;
 .pro-offical-content { font-size:16px; color:#282828; }
 a.save_detail,a.save_detail:link,a.save_detail:visited { width:auto; height:auto; float:right; background:#ffdb4d; color: #282828; font-size: 14px; line-height:27px; padding:0px 15px; text-transform:capitalize; }
 a.save_detail:hover,a.save_detail:focus { background:#efc72a; }
+
+/* Uploaded Successful */
+.upload_successful { width: 100%; height: auto; float: left; border: 1px dashed #000; padding:50px 20px; position: relative; text-align: center; background: #f2fcf1; }
+.upload_successful figure { margin: 0; }
+.upload_successful p { width: 100%; height: auto; display: inline-block; color: #282828; font-size: 16px; line-height: 21px; }
+.upload_successful a,.upload_successful a:link,.upload_successful a:visited { color: #009ad1; font-size: 16px; line-height: 21px; text-decoration: underline; }
+
+
+
+/* CSV Error Modal */
+.csv_error { padding: 30px; }
+.csv_error h3 { color:282828; font-size:20px; line-height: 24px; text-transform: uppercase; text-align: center; }
+.csv_error p { color: #909090; font-size:16px; line-height: 21px; padding-left: 35px; background: url("../images/tick.png") left center no-repeat; margin: 40px 0 20px 0; }
+.csv_error a,.csv_error a:link,.csv_error a:visited { color: #009ad1; font-size:16px; line-height: 21px; padding-left: 35px; background: url("../images/error-icon.png") left center no-repeat; text-decoration:underline; }
+
+
+
+
