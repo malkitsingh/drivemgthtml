@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection" />
+
+
+</head>
+
+<body class="active">
+    <header>
+        <div class="logo-part">
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"></a>
+        </div>
+     </header>
+    <aside class="sidebar">
+        <nav class="menu">
+            <ul class="sidebar-menu" id="sidebar-menu">
+                <li><a href="dashboard.html" class="active waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Dashboard</span></a></li>
+                <li><a href="uni-profile.html" class=" waves-effect waves-dark"><span class="icon-list"></span><span class="txt">University Profile</span></a></li>
+                <li><a href="drive-management.html" class="  waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Drive Management</span></a></li>
+                <li><a href="companies.html" class="waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Companies</span></a></li>
+                <li><a href="students.html" class="  waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Students</span></a></li>
+                <li><a href="manage-role.html" class="waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Manage Users</span></a></li>
+                <li><a href="tasks.html" class="waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Tasks</span></a></li>
+                <li><a href="announcement.html" class="waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Announcements</span></a></li>
+                <li><a href="reports.html" class=" waves-effect waves-dark"><span class="icon-list"></span><span class="txt">Reports</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+	
+	
+	
+	
+	
+    <section class="main-content">
+        <div class="panel anounce-panel">
+			<table>
+  <caption>Example 1</caption>
+  <thead>
+    <tr>
+      <th scope="col">Account</th>
+      <th scope="col">Due Date</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Period</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Account" data-label="">Visa - 3412</td>
+      <td data-label="Due Date">04/01/2016</td>
+      <td data-label="Amount">$1,190</td>
+      <td data-label="Period">03/01/2016 - 03/31/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Account">Visa - 6076</td>
+      <td data-label="Due Date">03/01/2016</td>
+      <td data-label="Amount">$2,443</td>
+      <td data-label="Period">02/01/2016 - 02/29/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Account">Corporate AMEX</td>
+      <td data-label="Due Date">03/01/2016</td>
+      <td data-label="Amount">$1,181</td>
+      <td data-label="Period">02/01/2016 - 02/29/2016</td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Acount">Visa - 3412</td>
+      <td data-label="Due Date">02/01/2016</td>
+      <td data-label="Amount">$842</td>
+      <td data-label="Period">01/01/2016 - 01/31/2016</td>
+    </tr>
+  </tbody>
+</table>
+		</div>
+    </section>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <div id="modal31" class="modal">
+        <a href="javascript:void(0)" class="modal-close  close-btn1"><i class="material-icons">close</i></a>
+        <div class="modal-content">
+            <h4 class="title-note">Add Announcement</h4>
+            <form class="row">
+                <div class="input-field col s12">
+
+                    <input id="to" type="text" class="validate" data-role="materialtags">
+                    <label for="to" class="">Tittle</label>
+                </div>
+
+
+                <div class="input-field col s12">
+                    <input id="Description" type="text" class="validate">
+                    <label for="Description" class="">Description</label>
+                </div>
+                <div class="input-field col s12">
+                    <label class="cust-label">Attachment</label>
+                    <div class="btn browse-btn new-browse">
+                        <span><i class="material-icons"></i> Choose File</span>
+                        <input type="file">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close left waves-effect my-btn save-btn">Submit</a>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('ul.tabs').tabs();
+        });
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+    </script>
+
+</body>
+
+</html>
