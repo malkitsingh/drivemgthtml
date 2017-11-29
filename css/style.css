@@ -25,7 +25,6 @@ a.sign_up,a.sign_up:link,a.sign_up:visited,a.sign_in,a.sign_in:link,a.sign_in:vi
 a.sign_up,a.sign_up:link,a.sign_up:visited { float:left; background:#ffdb4d; color: #282828; }
 a.sign_in,a.sign_in:link,a.sign_in:visited { float:right; color: #0097d5; }
 
-
 .banner { width:100%; height:578px; float:left; margin:0; background:url("../images/backlayer.png"); background-size: cover; background-position: center; box-sizing: border-box; position: relative; padding-bottom:165px; } 
 .banner h1 { color:#fff; font-size:60px; line-height:70px; text-align:center; }
 .banner h5 { color:#fff; font-size:20px; line-height:30px; text-align:center; }
@@ -34,23 +33,25 @@ a.sign_in,a.sign_in:link,a.sign_in:visited { float:right; color: #0097d5; }
 h3.posting_heading { color:#282828; font-size:30px; line-height:36px; }
 .post_form { margin: 20px 0 0 0; } 
 .select_job_post { width: 100%; float:left; background-color: #fff; -webkit-box-shadow: 0 0 7px rgba(0,0,0,.35); -moz-box-shadow: 0 0 7px rgba(0,0,0,.35); box-shadow: 0 0 7px rgba(0,0,0,.35); -moz-box-shadow: 0 0 7px rgba(0,0,0,.35); -o-box-shadow: 0 0 7px rgba(0,0,0,.35); position:relative; }
-.select_job_post select { height:56px; -webkit-appearance: none; -moz-appearance: none; appearance: none; -ms-appearance: none; -o-appearance: none; padding:0 35px 0 10px; background:url("../images/Blacation.png") left 10px center no-repeat,url("../images/select-dropdown.png") right 10px center no-repeat; text-indent:25px; }
+.select_job_post select { height:56px; -webkit-appearance: none; -moz-appearance: none; appearance: none; -ms-appearance: none; -o-appearance: none; padding:0 35px 0 10px; background:url("../images/Blacation.png") left 10px center no-repeat,url("../images/select-dropdown.png") right 10px center no-repeat; text-indent:25px; color:#282828; font-size:16px; line-height:21px; }
 .select_job_post select:hover,.select_job_post select:focus { border-color:transparent; outline-color:transparent; }
+.select_job_post input[type="text"] { height:56px; margin:0; border-color:transparent; padding: 0 160px 0 20px; box-sizing: border-box; color:#282828; font-size:16px; line-height:21px; }
+.select_job_post input[type="text"]::-webkit-input-placeholder { color: #282828; }
+.select_job_post input[type="text"]::-moz-placeholder { color: #282828; }
+.select_job_post input[type="text"]:-ms-input-placeholder { color: #282828; }
+.select_job_post input[type="text"]:-moz-placeholder { color: #282828; }
 
-.select_job_post input[type="text"] { height:56px; margin:0; border-color:transparent; padding: 0 160px 0 20px; box-sizing: border-box; } 
 .select_job_post input[type="submit"],.select_job_post input[type="button"] { width:auto; height:56px; border:2px solid #fff; position: absolute; right:0; top:0; padding:0 20px; text-transform: uppercase; background: #ffdb4d; line-height: 56px; font-size: 16px; color: #282828; } 
 .select_job_post input[type="submit"]:hover,.select_job_post input[type="button"]:hover,.select_job_post input[type="submit"]:focus,.select_job_post input[type="button"]:focus { background:#f4d24b; }
 
-.simple_section { width: 100%; float: left; box-sizing: border-box; text-align: center; padding: 80px 0; counter-reset: section; } 
+.simple_section { width: 100%; float: left; box-sizing: border-box; text-align: center; padding: 80px 0; counter-reset: process; } 
 h2.simple_heading { width: 100%; float: left; font-size: 40px; line-height:45px; margin: 0 0 40px 0; padding: 0; color:#282828; text-align:center; } 
 .simple_each_section { width:100%; float: left; text-align: left; background:url("../images/simple-bg.png") top center no-repeat; padding:70px 0 20px 55px; min-height: 270px; position:relative; } 
-.simple_each_section:before { width:35px; position:absolute; left:0; top:55px; text-align:right; font-size: 60px; line-height:65px; color: #38d034; counter-increment: section; content:counter(section); overflow:hidden; }
-
+.simple_each_section:before { width:35px; position:absolute; left:0; top:55px; text-align:right; font-size: 60px; line-height:65px; color: #38d034; counter-increment: process; content:counter(process); overflow:hidden; }
 
 .simple_each_section span { width:100%; float: left; font-size: 14px; text-transform: uppercase; line-height: 0px; color: #38d034; font-weight:500; }
 .simple_each_section h3 { font-size: 30px; color: #282828; line-height:35px; float: left; width: 100%; margin:10px 0 15px 0; }
 .simple_each_section p { width: 100%; float: left; font-size: 16px; color: #909090; line-height: 21px; } 
-
 
 .trending_section { width:100%; float:left; padding:70px 0 50px 0; background:#fbfcfe; } 
 a.uni-inner-section,a.uni-inner-section:link,a.uni-inner-section:visited { width:100%; float:left; padding:15px; text-align: left; min-height: 100px; margin-bottom:20px; background:#fff; -webkit-box-shadow: 5px 4px 8px rgba(0,0,0,.03); -moz-box-shadow: 5px 4px 8px rgba(0,0,0,.03); box-shadow: 5px 4px 8px rgba(0,0,0,.03); -ms-box-shadow: 5px 4px 8px rgba(0,0,0,.03); -o-box-shadow: 5px 4px 8px rgba(0,0,0,.03); border: solid 1px rgba(237,237,237,.55); }
@@ -61,17 +62,12 @@ span.uni-images {float: left; width: 25%; }
 span.uni-name { margin: 0; line-height: 20px; font-size: 16px; color: #282828; width: 100%; float: left;  }
 span.uni-icons {width: 100%; float: left; font-size: 13px; line-height: 15px; padding:0 0 0 17px; margin-top:5px; color: #888; background:url("../images/location.png") left center no-repeat; }
 
-
-
-
-
 .trust_section { width:100%; float:left; background-color: #4c5e62; padding:60px 0; }
 .trust_section .simple_heading { color:#fff; margin-bottom:80px; }
 .trust_section figure { width:100%; float:left;}
 .trust_section figure img { max-width:100%; position:relative; top:50%; left:50%; -webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%);  }
 
-
-.company-details-section { width: 100%; float: left; padding:70px 0; }
+.company-details-section { width: 100%; float: left; padding:70px 0; background-color: #fbfcfe; -webkit-box-shadow: -1px 3px 18px rgba(0,0,0,.14); -moz-box-shadow: -1px 3px 18px rgba(0,0,0,.14); box-shadow: -1px 3px 18px rgba(0,0,0,.14); -ms-box-shadow: -1px 3px 18px rgba(0,0,0,.14); -o-box-shadow: -1px 3px 18px rgba(0,0,0,.14); }
 .company-each { width:100%; float: left; }
 h4.comp-heading { font-size: 19px; color: #282828; width:100%; float: left; margin:0 0 15px 0; line-height: 21px; border-bottom: 1px solid #ddd; padding-bottom: 12px; }
 ul.comp-list { margin: 0; padding: 0; }
@@ -79,9 +75,6 @@ ul.comp-list li { width:100%; float: left; margin-bottom:7px; }
 ul.comp-list li:last-of-type { margin-bottom:0; }
 ul.comp-list li a,ul.comp-list li a:link,ul.comp-list li a:visited { width:auto; float: left; font-size: 14px; line-height: 21px; color: #9bb0b5; }
 ul.comp-list li a:hover,ul.comp-list li a:focus { color:#039be5; }
-
-
-
 
 ul.social { float: left; margin:15px 0 0 0; padding: 0; width: 100%; }
 ul.social li { float: left; margin-right:5px;}
@@ -93,17 +86,22 @@ ul.social li:nth-of-type(3) { background-color: #007bb6; }
 ul.social li:hover { opacity:0.8; }
 i.fa.fa-twitter,i.fa.fa-facebook,i.fa.fa-linkedin { font-size:18px; color: #fff; position:relative; top:50%; left:50%; -webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); transform:translate(-50%,-50%); -ms-transform:translate(-50%,-50%); -o-transform:translate(-50%,-50%); }
 
-
-
-footer { width: 100%; float: left; text-align: center; background-color: #4c5e62; padding:6px 0;  } 
+footer { width: 100%; float: left; } 
+.footer_bottom { width: 100%; float: left; text-align: center; background-color: #4c5e62; padding:6px 0; }
 footer p { width: 100%; float: left; font-size: 13px; line-height: 15px; color: #9bb0b5; text-align:center; } 
 
+/* Start Preview Job */
+.inner_wrapper { padding:125px 0 55px 0; }
 
+/* > Right Section */
+.posting_section { width:100%; height:auto; float:left; background-color:#f0fdf0; padding:30px 20px; }
+.posting_section h4 { width:100%; height:auto; float:left; color:#282828; font:25px/28px 'Ubuntu'; text-align:center; }
 
-
-
-
-
+ul.posting_list { width:100%; height:auto; float:left; margin-top:25px; overflow:hidden; }
+ul.posting_list li { color:#909090; font:14px/21px 'Ubuntu'; padding-left:25px; margin-bottom:15px; position:relative; }
+ul.posting_list li:before { width:14px; height:14px; position:absolute; content:''; border:2px solid #fbc978; left:0; top:3px;background:url("../images/remove-icon.png") center no-repeat; cursor:pointer; }
+/* ul.posting_list li:after { width:100%; height:100%; position:absolute; content:''; background:#f00; left:25px; top:0; } */
+/* End Preview Job */
 
 
 
