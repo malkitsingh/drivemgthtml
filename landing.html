@@ -59,11 +59,62 @@
 					<form class="row post_form">
 						<div class="col m4">
 							<div class="select_job_post">
-								<select class="browser-default icons">
-									<option value="" disabled selected>Choose your option</option>
-									<option data-icon="images/profile-pic.jpg" class="left circle" value="Jalandhar">Jalandhar</option>
-									<option data-icon="images/profile-pic.jpg" class="left circle" value="Delhi">Delhi</option>
-								</select>
+							<select data-placeholder="Choose your City" class="chosen-select" multiple tabindex="6">
+              <option value=""></option>
+              <optgroup label="NFC EAST">
+                <option>Dallas Cowboys</option>
+                <option>New York Giants</option>
+                <option>Philadelphia Eagles</option>
+                <option>Washington Redskins</option>
+              <optgroup>
+              <optgroup label="NFC NORTH">
+                <option>Chicago Bears</option>
+                <option>Detroit Lions</option>
+                <option>Green Bay Packers</option>
+                <option>Minnesota Vikings</option>
+              </optgroup>
+              <optgroup label="NFC SOUTH">
+                <option>Atlanta Falcons</option>
+                <option>Carolina Panthers</option>
+                <option>New Orleans Saints</option>
+                <option>Tampa Bay Buccaneers</option>
+              </optgroup>
+              <optgroup label="NFC WEST">
+                <option>Arizona Cardinals</option>
+                <option>St. Louis Rams</option>
+                <option>San Francisco 49ers</option>
+                <option>Seattle Seahawks</option>
+              </optgroup>
+              <optgroup label="AFC EAST">
+                <option>Buffalo Bills</option>
+                <option>Miami Dolphins</option>
+                <option>New England Patriots</option>
+                <option>New York Jets</option>
+              </optgroup>
+              <optgroup label="AFC NORTH">
+                <option>Baltimore Ravens</option>
+                <option>Cincinnati Bengals</option>
+                <option>Cleveland Browns</option>
+                <option>Pittsburgh Steelers</option>
+              </optgroup>
+              <optgroup label="AFC SOUTH">
+                <option>Houston Texans</option>
+                <option>Indianapolis Colts</option>
+                <option>Jacksonville Jaguars</option>
+                <option>Tennessee Titans</option>
+              </optgroup>
+              <optgroup label="AFC WEST">
+                <option>Denver Broncos</option>
+                <option>Kansas City Chiefs</option>
+                <option>Oakland Raiders</option>
+                <option>San Diego Chargers</option>
+              </optgroup>
+            </select>
+								<!-- <select class="browser-default icons"> -->
+									<!-- <option value="" disabled selected>Choose your option</option> -->
+									<!-- <option data-icon="images/profile-pic.jpg" class="left circle" value="Jalandhar">Jalandhar</option> -->
+									<!-- <option data-icon="images/profile-pic.jpg" class="left circle" value="Delhi">Delhi</option> -->
+								<!-- </select> -->
 							</div>
 						</div>
 						<div class="col m8">
@@ -364,6 +415,13 @@
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+  $(function() {
+	$('.chosen-select').chosen();
+	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+  });
+</script>
 <script>
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 1) {
