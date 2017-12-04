@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Picubed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="col m3 s4">
+				<a href="#" id="Company_logo">
+					<img src="assets/images/Untitled-1.png" />
+				</a>
+			</div>
+			<div class="col m9 s8">
+				<ul class="header_btn">
+					<li>
+						<a href="javascript:void(0);" class="company_btn">Company</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="university_btn">University</a>
+					</li>
+					<li>
+						<a class='dropdown-button profile_img' href='#' data-activates='profile-img'>
+							<figure>
+								<img class="responsive-img" src="assets/images/profile-pic.jpg" />
+							</figure>
+						</a>
+						<ul id='profile-img' class='dropdown-content'>
+							<li>
+								<a href="javascript:void(0);" class="sign_up">Sign Up</a>
+								<a href="javascript:void(0);" class="sign_in">Sign In</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main_container inner_wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col m7">
+					<form>
+						<div class="row">
+							<div class="col m9 s8">
+								<h2 class="job_detail_heading">Enter Job Details</h2>
+							</div>
+							<div class="col m3 s4">
+								<a href="javascript:void(0);" class="post_job_btn">Post a Project</a>
+							</div>
+							<div class="input-field col s12">
+							  <input id="job_title" type="text" class="validate">
+							  <label for="job_title">Job Title</label>
+							</div>
+							<div class="input-field col s12">
+								<h5 class="job_type_heading">Job Type</h5>
+								<div class="job_type_radio">
+									
+  <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Red</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Yellow</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Green</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test4" disabled="disabled" />
+      <label for="test4">Brown</label>
+    </p>
+  </form>
+        
+								</div>
+								<!-- <div class="job_type_radio"> -->
+									<!-- <p> -->
+										<!-- <input name="colleges11" type="radio" id="colleges1" checked /> -->
+										<!-- <label for="colleges1">Full Time</label> -->
+									<!-- </p> -->
+									<!-- <p> -->
+										<!-- <input name="colleges11" type="radio" id="colleges2" /> -->
+										<!-- <label for="colleges2">Part Time</label> -->
+									<!-- </p> -->
+									<!-- <p> -->
+										<!-- <input name="colleges11" type="radio" id="colleges2" /> -->
+										<!-- <label for="colleges2">Internship</label> -->
+									<!-- </p> -->
+								<!-- </div> -->
+							</div>
+							<div class="input-field col s12">
+								<textarea id="job_description" class="materialize-textarea"></textarea>
+								<label for="job_description">Job Description</label>
+							  </div>
+							<div class="input-field col s12">
+								<h5 class="job_type_heading">Skills Required</h5>
+								<div class="chips chips-placeholder"></div>
+							</div>
+							<div class="input-field col s12">
+							  <input id="job_title" type="text" class="validate">
+							  <label for="job_title">Job Title</label>
+							</div>
+							<div class="input-field col s7">
+							  <input id="search_college" type="text" class="validate">
+							  <label for="search_college">No of positions</label>
+							</div>
+							<div class="full_width">
+								<div class="input-field col s2">
+								  <input id="search_college" type="text" class="validate">
+								  <label for="search_college">CTC</label>
+								</div>
+								<div class="input-field col s5">
+								  <input id="search_college" type="text" class="validate">
+								  <label for="search_college">Enter CTC Detail</label>
+								</div>
+							</div>
+							<div class="input-field col s12">
+								<h5 class="job_type_heading">Job Function</h5>
+								<div class="job_function_outer">
+									<div class="job_function_top">
+										<div class="col m6">
+											<p>
+												<input type="checkbox" class="filled-in" id="function1" checked="checked" />
+												<label for="function1">All Programs</label>
+											</p>
+											<p>
+												<input type="checkbox" class="filled-in" id="function2" />
+												<label for="function2">All Programs</label>
+											</p>
+											<p>
+												<input type="checkbox" class="filled-in" id="function3" />
+												<label for="function3">All Programs</label>
+											</p>
+											<p>
+												<input type="checkbox" class="filled-in" id="function4" />
+												<label for="function4">All Programs</label>
+											</p>
+											<p>
+												<input type="checkbox" class="filled-in" id="function5" />
+												<label for="function5">All Programs</label>
+											</p>
+											<p>
+												<input type="checkbox" class="filled-in" id="discipline1" checked="checked" />
+												<label for="discipline1">All Programs</label>
+											</p>
+										</div>
+									</div>
+									<div class="job_function_bottom">
+										<span>2 of 35 selected</span>
+										<a href="javascript:void(0);">Show only Selected</a>
+									</div>
+								</div>
+							</div>
+							<div class="input-field col s12">
+							  <input id="job_location" type="text" class="validate">
+							  <label for="job_location">Enter Job Location</label>
+							</div>
+							<div class="input-field col s12">
+							  <input type="text" class="datepicker">
+							  <label for="job_location">Tentative date of joining</label>
+							</div>
+							<div class="col s12">
+								<h2 class="job_detail_heading">Enter Employer Details</h2>
+							</div>
+							<div class="input-field col s12">
+							  <input id="emp_name" type="text" class="validate">
+							  <label for="emp_name">Enter the employer name</label>
+							</div>
+							<div class="input-field col s12">
+								<textarea id="description_txt" class="materialize-textarea"></textarea>
+								<label for="description_txt">Description</label>
+							  </div>
+							<div class="input-field col s12">
+							  <input id="emp_website" type="text" class="validate">
+							  <label for="emp_website">Employer Website (optional)</label>
+							</div>
+							<div class="input-field col s12">
+							  <input id="street_address" type="text" class="validate">
+							  <label for="street_address">Street Address</label>
+							</div>
+							<div class="full_width">
+								<div class="input-field col s6">
+								  <input id="city_text" type="text" class="validate">
+								  <label for="city_text">City</label>
+								</div>
+								<div class="input-field col s6">
+								  <select>
+									<option value="" disabled selected>State</option>
+									<option value="1">State</option>
+									<option value="2">State</option>
+									<option value="3">State</option>
+								  </select>
+								  <label>State</label>
+								</div>
+							</div>
+							<div class="full_width">
+								<div class="input-field col s3">
+								  <input id="city_text" type="text" class="validate">
+								  <label for="city_text">Zip</label>
+								</div>
+								<div class="input-field col s9">
+								  <select>
+									<option value="" disabled selected>Country</option>
+									<option value="1">Country</option>
+									<option value="2">Country</option>
+									<option value="3">Country</option>
+								  </select>
+								  <label>Country</label>
+								</div>
+							</div>
+							<div class="input-field col s12">
+							  <input id="phone_no" type="text" class="validate">
+							  <label for="phone_no">Your Phone No</label>
+							</div>
+							<div class="input-field col s12">
+							    <input type="submit" class="continue_btn" value="Continue">
+								<input type="button" class="back_btn" value="Back">
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col m5">
+					<div class="posting_section">
+						<h4>Posting to 24 Colleges</h4>
+						<ul class="posting_list">
+							<li><a href="#">Remove All</a></li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+						</ul>
+						<a href="javascript:void(0);" class="add_more_btn">Add More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="company-details-section">
+			<div class="container">
+				<div class="row">
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Company
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">About</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Our Team</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Blog</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Terms & Conditions</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Privacy Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Product
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Product Users</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Brochure</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Quick Links
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Top Colleges Nationwide</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the Norteast</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the Midwest</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the South</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the West</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading"> Connect </h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Contact Us</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Login</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Career</a>
+								</li>
+							</ul>
+							<ul class="social">
+								<li>
+									<a href="https://twitter.com">
+										<i class="fa fa-twitter" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com">
+										<i class="fa fa-facebook" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com">
+										<i class="fa fa-linkedin" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<p>Copyright © 2017-2018 </p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script>
+$(window).scroll(function () {
+	if ($(this).scrollTop() > 1) {
+		$('header').addClass("sticky");
+	}
+	else {
+		$('header').removeClass("sticky");
+	}
+});
+</script>
+
+<script>
+$('.profile_img').dropdown({
+	hover: true,
+	belowOrigin: true,
+	alignment: 'right'
+});
+$("ul.posting_list li").click(function(){
+    $(this).remove();
+});
+
+$('.chips-placeholder').material_chip({
+    placeholder: 'Add Skills',
+    secondaryPlaceholder: 'Add More Skills',
+  });
+$('.datepicker').pickadate({
+selectMonths: true, // Creates a dropdown to control month
+selectYears: 15, // Creates a dropdown of 15 years to control year,
+today: 'Today',
+clear: 'Clear',
+close: 'Ok',
+closeOnSelect: false // Close upon selecting a date,
+});
+</script>
+</html>

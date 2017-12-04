@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Picubed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="row">
+			<div class="col m3 s4">
+				<a href="#" id="Company_logo">
+					<img src="assets/images/Untitled-1.png" />
+				</a>
+			</div>
+			<div class="col m9 s8">
+				<ul class="header_btn">
+					<li>
+						<a href="javascript:void(0);" class="company_btn">Company</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" class="university_btn">University</a>
+					</li>
+					<li>
+						<a class='dropdown-button profile_img' href='#' data-activates='profile-img'>
+							<figure>
+								<img class="responsive-img" src="assets/images/profile-pic.jpg" />
+							</figure>
+						</a>
+						<ul id='profile-img' class='dropdown-content'>
+							<li>
+								<a href="javascript:void(0);" class="sign_up">Sign Up</a>
+								<a href="javascript:void(0);" class="sign_in">Sign In</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="main_container_select">
+		<aside>
+			<div class="colleges_outer">
+				<form class="search_college_form">
+					 <div class="input-field col s12">
+					  <input id="search_college" type="text" class="validate">
+					  <label for="search_college">Search College</label>
+					</div>
+					<div class="input-field col s12">
+					  <input type="submit" value="Search">
+					</div>
+				</form>
+			</div>
+			<div class="colleges_outer">
+				<h6 class="discipline_heading">Top Colleges</h6>
+				<form class="select_top_college">
+					<p>
+						<input name="colleges" type="radio" id="colleges1" checked />
+						<label for="colleges1">All Colleges</label>
+					</p>
+					<p>
+						<input name="colleges" type="radio" id="colleges2" />
+						<label for="colleges2">Top Colleges Nationwide </label>
+					</p>
+					<p>
+						<input name="colleges" type="radio" id="colleges3" />
+						<label for="colleges3">Top Colleges in the Northeast </label>
+					</p>
+					<p>
+						<input name="colleges" type="radio" id="colleges4" />
+						<label for="colleges4">Top Colleges in the Midwest </label>
+					</p>
+					<p>
+						<input name="colleges" type="radio" id="colleges5" />
+						<label for="colleges5">Top Colleges in the South</label>
+					</p>
+					<p>
+						<input name="colleges" type="radio" id="colleges6" />
+						<label for="colleges6">Top Colleges in the West</label>
+					</p>
+				</form>
+			</div>
+			<div class="colleges_outer">
+				<h6 class="discipline_heading">Programme/discipline</h6>
+				<form class="discipline_programs">
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline1" checked="checked" />
+						<label for="discipline1">All Programs</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline2" />
+						<label for="discipline2">Architecture/Landscaping</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline3" />
+						<label for="discipline3">Business</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline4" />
+						<label for="discipline4">Biotech/Pharmaceuticals</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline5" />
+						<label for="discipline5">Education</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline6" />
+						<label for="discipline6">Hospitality</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline7" />
+						<label for="discipline7">Human Resources/Staffing</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline8" />
+						<label for="discipline8">Insurance</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline9" />
+						<label for="discipline9">Internet and New Media</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline10" />
+						<label for="discipline10">Law/Legal</label>
+					</p>
+					<p>
+						<input type="checkbox" class="filled-in" id="discipline11" />
+						<label for="discipline11">Materials and Construction</label>
+					</p>
+				</form>
+			</div>
+		</aside>
+		<div class="college_container">
+			<div class="row">
+				<div class="col m12">
+					<div class="filters_applied">
+						<h4>Filters Applied:</h4>
+						<div class="chip"> All Colleges
+							<i class="close material-icons">close</i>
+						</div>
+						<div class="chip"> Business
+							<i class="close material-icons">close</i>
+						</div>
+						<div class="chip"> Hospitality
+							<i class="close material-icons">close</i>
+						</div>
+					</div>
+				</div>
+				<div class="col m7">
+					<span class="showing_status">Showing 1 - 20 of 50 Schools</span>
+					<ul class="schools_list">
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+						<li>
+							<figure></figure>
+							<div class="schools_detail">
+								<a href="#" class="add_school"></a>
+								<h3>CBS College of Engineering and Management</h3>
+								<span>Agra, Uttar Pardesh</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col m5">
+					<div class="posting_section">
+						<h4>Posting to 24 Colleges</h4>
+						<ul class="posting_list">
+							<li>
+								<a href="#">Remove All</a>
+							</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+							<li>CBS College of Engineering and Management</li>
+							<li>Balaji Institute of Engineering and Management Studies</li>
+							<li>Allahabad college of engineering and managmeent</li>
+							<li>Academy for technical and management excellent</li>
+						</ul>
+						<a href="javascript:void(0);" class="add_more_btn">Add More</a>
+					</div>
+				</div>
+				<div class="col m12">
+					<a href="#" class="continue_btn">Continue</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="company-details-section">
+			<div class="container">
+				<div class="row">
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Company
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">About</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Our Team</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Blog</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Terms & Conditions</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Privacy Policy</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Product
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Product Users</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Brochure</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading">
+								Quick Links
+							</h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Top Colleges Nationwide</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the Norteast</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the Midwest</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the South</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Top Colleges in the West</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col m3">
+						<div class="company-each">
+							<h4 class="comp-heading"> Connect </h4>
+							<ul class="comp-list">
+								<li>
+									<a href="javascript:void(0);">Contact Us</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Login</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">Career</a>
+								</li>
+							</ul>
+							<ul class="social">
+								<li>
+									<a href="https://twitter.com">
+										<i class="fa fa-twitter" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com">
+										<i class="fa fa-facebook" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com">
+										<i class="fa fa-linkedin" aria-hidden="true" class="icns"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_bottom">
+			<div class="container">
+				<p>Copyright © 2017-2018 </p>
+			</div>
+		</div>
+	</footer>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script>
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("sticky");
+		}
+		else {
+			$('header').removeClass("sticky");
+		}
+	});
+</script>
+
+<script>
+	$('.profile_img').dropdown({
+		hover: true,
+		belowOrigin: true,
+		alignment: 'right'
+	});
+$("ul.posting_list li").click(function () {
+    $(this).remove();
+});
+</script>
+
+</html>
