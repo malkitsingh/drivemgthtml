@@ -85,7 +85,8 @@ ul.chosen-choices li:hover span:before { display:block; }
 .select_job_post input[type="submit"]:hover,.select_job_post input[type="button"]:hover,.select_job_post input[type="submit"]:focus,.select_job_post input[type="button"]:focus { background:#f4d24b; }
 
 
-.select_job_post input:not([type]):focus:not([readonly]), .select_job_post input[type=text]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=password]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=email]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=url]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=time]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=date]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=datetime]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=tel]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=number]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) { border-color:transparent !important; } 
+
+.select_job_post input:not([type]):focus:not([readonly]), .select_job_post input[type=text]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=password]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=email]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=url]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=time]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=date]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=datetime]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=tel]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=number]:not(.browser-default):focus:not([readonly]), .select_job_post input[type=search]:not(.browser-default):focus:not([readonly]),.select_job_post textarea.materialize-textarea:focus:not([readonly]) { border-color:transparent !important; } 
 
 
 
@@ -207,12 +208,17 @@ a.post_job_btn:hover,a.post_job_btn:focus { background:#ffdb4d; }
 h5.job_type_heading { width:100%; height:auto; float:left; color:#909090; font-size:16px; line-height:21px; margin-bottom:10px; }
 
 .job_type_radio { width:100%; height:auto; float:left; }
-.job_type_radio p { width:auto; height:auto; float:left; }
-.job_type_radio p label { -webkit-transform: translateY(0); -moz-transform: translateY(0); transform: translateY(0); -ms-transform: translateY(0); -o-transform: translateY(0); cursor:pointer; }
+.job_type_radio p { width:auto; height:auto; float:left; margin:0; }
+.job_type_radio label { -webkit-transform: translateY(0) !important; -moz-transform: translateY(0) !important; transform: translateY(0) !important; -ms-transform: translateY(0) !important; -o-transform: translateY(0) !important; cursor:pointer !important; padding:0 15px 0 25px !important; left:0 !important; pointer-events: auto; color:#282828 !important; font-size:16px; }
+
+.job_type_radio [type="radio"]:not(:checked) + label { color:#909090 !important; }
+.job_type_radio [type="radio"].with-gap:checked + label:before { border:2px solid #5a5a5a !important; }
+
 
 .job_function_outer { width:100%; height:auto; float:left; border:1px solid #909090; position:relative; margin-bottom:10px; }
-.job_function_top { width:100%; height:auto; max-height:200px; overflow-y:auto; float:left; padding:15px 15px 0 15px; }
-
+.job_function_top { width:100%; height:auto; max-height:210px; overflow-y:auto; float:left; padding:7px; }
+.job_function_top p { width:100%; height:auto; float:left; margin:0 0 5px 0; }
+.job_function_top label { -webkit-transform: translateY(0) !important; -moz-transform: translateY(0) !important; transform: translateY(0) !important; -ms-transform: translateY(0) !important; -o-transform: translateY(0) !important; cursor:pointer !important; padding:0 0 0 25px !important; left:0 !important; pointer-events: auto; color:#909090 !important; font-size:13px; line-height:25px; }
 
 .job_function_bottom {width:100%; height:auto; float:left; padding:7px 20px; background:#f8f8f8; }
 .job_function_bottom span { color:#909090; font-size:14px; line-height:18px; }
@@ -258,15 +264,25 @@ input[type="button"].back_btn:hover,.back_btn:hover,input[type="button"].back_bt
 a.send_btn,a.send_btn:link,a.send_btn:visited { width:auto; height:46px; float:right; background:#ffdb4d; padding:0 30px; margin-top:20px; color:#282828; font-size:16px; line-height:46px; border:0; outline:0; border-bottom:2px solid #f7d345; }
 a.send_btn:hover,a.send_btn:focus { background:#f7d345; }
 
+.job_detail_form { width:100%; height:auto; float:left; }
+.job_detail_form label { color:#282828; }
+
+.select_all_checkbox { float:right; }
+.select_all_checkbox label { -webkit-transform: translateY(0) !important; -moz-transform: translateY(0) !important; transform: translateY(0) !important; -ms-transform: translateY(0) !important; -o-transform: translateY(0) !important; cursor:pointer !important; padding:0 0 0 25px !important; left:0 !important; pointer-events: auto; color:#282828 !important; font-size:13px; line-height:24px; font-weight:500; }
 
 
+select.select_state { width:100% !important; min-height:43px !important; float:left !important; display:block !important; pointer-events: auto !important; opacity:1 !important; padding:0; border:0; outline:0; border-bottom:1px solid #9e9e9e !important; -webkit-appearance:none; -moz-appearance:none; appearance:none; -ms-appearance:none; -o-appearance:none; background:url("../images/select-down.png") right center no-repeat; padding-right:20px; position:relative; }
+select.select_state:focus { border:0; outline:0; }
 
 
+select.select_state option {
+background-repeat:no-repeat;
+background-position:bottom left;
+padding-left:30px;
+}
 
-
-
-
-
+.paddingR0 { padding-right:0 !important; }
+.paddingL0 { padding-left:0 !important; }
 
 
 
