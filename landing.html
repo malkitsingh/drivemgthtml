@@ -35,7 +35,7 @@
 						</a>
 						<ul id='profile-img' class='dropdown-content'>
 							<li>
-								<a href="javascript:void(0);" class="sign_up">Sign Up</a>
+								<a href="#modal1" class="sign_up modal-trigger">Sign Up</a>
 								<a href="javascript:void(0);" class="sign_in">Sign In</a>
 							</li>
 						</ul>
@@ -55,64 +55,66 @@
 			<div class="container">
 				<div class="start_posting_form">
 					<h3 class="posting_heading"> Start Posting Jobs/Projects! </h3>
-					<form class="row post_form">
+					<form class="row post_form" action="select-college.html">
 						<div class="col m4">
 							<div class="select_job_post">
-							<select data-placeholder="Choose your City" class="chosen-select" multiple tabindex="6">
-              <option value=""></option>
-              <optgroup label="NFC EAST">
-                <option>Dallas Cowboys</option>
-                <option>New York Giants</option>
-                <option>Philadelphia Eagles</option>
-                <option>Washington Redskins</option>
-              <optgroup>
-              <optgroup label="NFC NORTH">
-                <option>Chicago Bears</option>
-                <option>Detroit Lions</option>
-                <option>Green Bay Packers</option>
-                <option>Minnesota Vikings</option>
-              </optgroup>
-              <optgroup label="NFC SOUTH">
-                <option>Atlanta Falcons</option>
-                <option>Carolina Panthers</option>
-                <option>New Orleans Saints</option>
-                <option>Tampa Bay Buccaneers</option>
-              </optgroup>
-              <optgroup label="NFC WEST">
-                <option>Arizona Cardinals</option>
-                <option>St. Louis Rams</option>
-                <option>San Francisco 49ers</option>
-                <option>Seattle Seahawks</option>
-              </optgroup>
-              <optgroup label="AFC EAST">
-                <option>Buffalo Bills</option>
-                <option>Miami Dolphins</option>
-                <option>New England Patriots</option>
-                <option>New York Jets</option>
-              </optgroup>
-              <optgroup label="AFC NORTH">
-                <option>Baltimore Ravens</option>
-                <option>Cincinnati Bengals</option>
-                <option>Cleveland Browns</option>
-                <option>Pittsburgh Steelers</option>
-              </optgroup>
-              <optgroup label="AFC SOUTH">
-                <option>Houston Texans</option>
-                <option>Indianapolis Colts</option>
-                <option>Jacksonville Jaguars</option>
-                <option>Tennessee Titans</option>
-              </optgroup>
-              <optgroup label="AFC WEST">
-                <option>Denver Broncos</option>
-                <option>Kansas City Chiefs</option>
-                <option>Oakland Raiders</option>
-                <option>San Diego Chargers</option>
-              </optgroup>
-            </select>
+								<select data-placeholder="Choose your City" class="chosen-select" multiple tabindex="6">
+									<option value=""></option>
+									<optgroup label="NFC EAST">
+										<option>Dallas Cowboys</option>
+										<option>New York Giants</option>
+										<option>Philadelphia Eagles</option>
+										<option>Washington Redskins</option>
+										<optgroup>
+											<optgroup label="NFC NORTH">
+												<option>Chicago Bears</option>
+												<option>Detroit Lions</option>
+												<option>Green Bay Packers</option>
+												<option>Minnesota Vikings</option>
+											</optgroup>
+											<optgroup label="NFC SOUTH">
+												<option>Atlanta Falcons</option>
+												<option>Carolina Panthers</option>
+												<option>New Orleans Saints</option>
+												<option>Tampa Bay Buccaneers</option>
+											</optgroup>
+											<optgroup label="NFC WEST">
+												<option>Arizona Cardinals</option>
+												<option>St. Louis Rams</option>
+												<option>San Francisco 49ers</option>
+												<option>Seattle Seahawks</option>
+											</optgroup>
+											<optgroup label="AFC EAST">
+												<option>Buffalo Bills</option>
+												<option>Miami Dolphins</option>
+												<option>New England Patriots</option>
+												<option>New York Jets</option>
+											</optgroup>
+											<optgroup label="AFC NORTH">
+												<option>Baltimore Ravens</option>
+												<option>Cincinnati Bengals</option>
+												<option>Cleveland Browns</option>
+												<option>Pittsburgh Steelers</option>
+											</optgroup>
+											<optgroup label="AFC SOUTH">
+												<option>Houston Texans</option>
+												<option>Indianapolis Colts</option>
+												<option>Jacksonville Jaguars</option>
+												<option>Tennessee Titans</option>
+											</optgroup>
+											<optgroup label="AFC WEST">
+												<option>Denver Broncos</option>
+												<option>Kansas City Chiefs</option>
+												<option>Oakland Raiders</option>
+												<option>San Diego Chargers</option>
+											</optgroup>
+											</optgroup>
+											</optgroup>
+								</select>
 								<!-- <select class="browser-default icons"> -->
-									<!-- <option value="" disabled selected>Choose your option</option> -->
-									<!-- <option data-icon="assets/images/profile-pic.jpg" class="left circle" value="Jalandhar">Jalandhar</option> -->
-									<!-- <option data-icon="assets/images/profile-pic.jpg" class="left circle" value="Delhi">Delhi</option> -->
+								<!-- <option value="" disabled selected>Choose your option</option> -->
+								<!-- <option data-icon="assets/images/profile-pic.jpg" class="left circle" value="Jalandhar">Jalandhar</option> -->
+								<!-- <option data-icon="assets/images/profile-pic.jpg" class="left circle" value="Delhi">Delhi</option> -->
 								<!-- </select> -->
 							</div>
 						</div>
@@ -411,32 +413,76 @@
 			</div>
 		</div>
 	</footer>
+
+<!-- Modal Sign Up -->
+<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+		<div class="signup_content">
+			<h2>Sign Up</h2>
+			<div class="row">
+				<div class="col s6">
+					<a href="#" class="linkedin_btn"> <figure><img src="assets/images/linkedin-icon.png" width="26" height="26"></figure> Sign up via LinkedIn</a>
+				</div>
+				<div class="col s6">
+					<a href="#" class="google_btn"> <figure><img src="assets/images/google-icon.png" width="26" height="26"></figure> Sign up via google</a>
+				</div>
+			</div>
+			<div class="or_section">
+				<span>OR</span>
+			</div>
+			<form class="signup_form">
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input id="email_text" type="email" class="validate">
+				  <label for="email_text">Email</label>
+				</div>
+				<div class="input-field col s12">
+				  <input id="password_text" type="password" class="validate">
+				  <label for="password_text">Password</label>
+				</div>
+				<div class="input-field col s12">
+				  <input id="mobile_no" type="text" class="validate">
+				  <label for="mobile_no">Mobile Number</label>
+				</div>
+				<div class="input-field col s12">
+				  <input type="submit" value="Sign Up">
+				</div>
+			  </div>
+			</form>
+		</div>
+    </div>
+    <div class="modal-footer signup_footer">
+		<p class="already_account">Already have an account? <a href="#!" class="modal-close">Login Now</a> </p>
+    </div>
+  </div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
 <script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
 <script>
-  $(function() {
-	$('.chosen-select').chosen();
-	$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
-  });
-</script>
-<script>
-$(window).scroll(function () {
-	if ($(this).scrollTop() > 1) {
-		$('header').addClass("sticky");
-	}
-	else {
-		$('header').removeClass("sticky");
-	}
-});
+	$(function () {
+		$('.chosen-select').chosen();
+		$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("sticky");
+		}
+		else {
+			$('header').removeClass("sticky");
+		}
+	});
+
+	$('.profile_img').dropdown({
+		hover: true,
+		belowOrigin: true,
+		alignment: 'right'
+	});
+	
+	$(document).ready(function(){
+		$('.modal').modal();
+	});
 </script>
 
-<script>
-$('.profile_img').dropdown({
-	hover: true,
-	belowOrigin: true,
-	alignment: 'right'
-});
-</script>
 </html>
