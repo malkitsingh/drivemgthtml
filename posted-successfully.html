@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Picubed</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link type="text/css" rel="stylesheet" href="assets/css/materialize.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="assets/css/style.css" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+</head>
+
+<body class="signin_outer">
+	<div class="posted_successfully">
+		<figure><img src="assets/images/successfully-icon.png" width="88" height="88"></figure>
+		<h3>Your Job/Project has been posted successfully!</h3>
+	</div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<script src="http://harvesthq.github.io/chosen/chosen.jquery.js"></script>
+<script>
+	$(function () {
+		$('.chosen-select').chosen();
+		$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
+	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('header').addClass("sticky");
+		}
+		else {
+			$('header').removeClass("sticky");
+		}
+	});
+
+	$('.profile_img').dropdown({
+		hover: true,
+		belowOrigin: true,
+		alignment: 'right'
+	});
+	
+	$(document).ready(function(){
+		$('.modal').modal();
+	});
+</script>
+
+</html>

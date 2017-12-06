@@ -35,7 +35,7 @@
 						</a>
 						<ul id='profile-img' class='dropdown-content'>
 							<li>
-								<a href="javascript:void(0);" class="sign_up">Sign Up</a>
+								<a href="#signup" class="sign_up modal-trigger">Sign Up</a>
 								<a href="javascript:void(0);" class="sign_in">Sign In</a>
 							</li>
 						</ul>
@@ -94,7 +94,7 @@
 								</div>
 								<div class="full_width">
 									<div class="col s7">
-										<div class="input-field col s2">
+										<div class="input-field col s2 paddingL0">
 											<select class="select_state">
 												<option value="" disabled selected>CTC</option>
 												<option value="">CTC</option>
@@ -466,6 +466,48 @@
 			</div>
 		</div>
 	</footer>
+
+<!-- Modal Sign Up -->
+<div id="signup" class="modal modal-fixed-footer">
+    <div class="modal-content">
+		<div class="signup_content">
+			<h2>Sign Up</h2>
+			<div class="row">
+				<div class="col s6">
+					<a href="#" class="linkedin_btn"> <figure><img src="assets/images/linkedin-icon.png" width="26" height="26"></figure> Sign up via LinkedIn</a>
+				</div>
+				<div class="col s6">
+					<a href="#" class="google_btn"> <figure><img src="assets/images/google-icon.png" width="26" height="26"></figure> Sign up via google</a>
+				</div>
+			</div>
+			<div class="or_section">
+				<span>OR</span>
+			</div>
+			<form class="signup_form">
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input id="email_text" type="email" class="validate">
+				  <label for="email_text">Email</label>
+				</div>
+				<div class="input-field col s12">
+				  <input id="password_text" type="password" class="validate">
+				  <label for="password_text">Password</label>
+				</div>
+				<div class="input-field col s12">
+				  <input id="mobile_no" type="text" class="validate">
+				  <label for="mobile_no">Mobile Number</label>
+				</div>
+				<div class="input-field col s12">
+				  <input type="submit" value="Sign Up">
+				</div>
+			  </div>
+			</form>
+		</div>
+    </div>
+    <div class="modal-footer signup_footer">
+		<p class="already_account">Already have an account? <a href="#!" class="modal-close">Login Now</a> </p>
+    </div>
+</div>
 </body>
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/js/materialize.min.js"></script>
@@ -501,6 +543,9 @@
 		clear: 'Clear',
 		close: 'Ok',
 		closeOnSelect: false // Close upon selecting a date,
+	});
+	$(document).ready(function(){
+		$('.modal').modal();
 	});
 </script>
 
