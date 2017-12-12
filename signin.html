@@ -64,15 +64,6 @@
 		$('.chosen-select-deselect').chosen({ allow_single_deselect: true });
 	});
 
-	$(window).scroll(function () {
-		if ($(this).scrollTop() > 1) {
-			$('header').addClass("sticky");
-		}
-		else {
-			$('header').removeClass("sticky");
-		}
-	});
-
 	$('.profile_img').dropdown({
 		hover: true,
 		belowOrigin: true,
