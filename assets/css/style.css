@@ -652,6 +652,7 @@ ul.drop-down {
     display: block;
     padding: 5px 20px;
     margin-left: 10px;
+	visibility:visible;
 }
 .batch-year 
 {
@@ -1424,7 +1425,7 @@ a.close-btn {
     margin-left: 10px;
 } */
 .timeline-content .my-btn.save-btn.right {
-    margin: 0;
+    margin: 0; visibility:visible;
 }
 .year-select span.caret {
     color: #909090;
@@ -2381,7 +2382,7 @@ span.time-left {
     margin-top: -10px;
 }
 .sidebar-footer .my-btn {
-    margin: 0 !important;
+    margin: 0 !important;visibility:visible;
 }
 .sidebar-footer {
     float: left;

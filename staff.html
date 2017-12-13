@@ -124,7 +124,7 @@
                     <span class="count">1250</span>
                 </h4>
                 <div class="tooltip4">
-                    <span class="add-more">+</span>
+                    <span class="add-more modal-trigger" href="#createRoleSidebar">+</span>
                     <span class="tooltiptext">Add Staff</span>
                 </div>
                 <ul class="icons-list">
@@ -786,6 +786,103 @@
 
     </div>
     <div class="custom-overlay sidebar-overlay"></div>
+    <div id="createRoleSidebar" class="sidebar-toggle">
+        <div class="header-bar">
+            <h4>Create Role</h4>
+            <a href="javascript:void(0)" class="close" (click)="refresh()">
+                <i class="material-icons">close</i>
+              </a>
+        </div>
+        <div class="sidebar-body nice-scroll">
+            <div class="sidebar-body-inner">
+                <form class="row  stream-side-cont" [formGroup]="universityRoleForm">
+                    <div class="input-field col s12">
+                        <input id="user_id" type="text" class="validate" formControlName="name">
+                        <!--[(ngModel)]="moduleAccessForm.universityRole.name">-->
+                        <label for="user_id" class="">Enter Role Name</label>
+                        <span *ngIf="emptyRoleName && !universityRoleForm.controls.name.valid" class="error-msg">* please enter role name</span>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="user_id2" type="text" class="validate" formControlName="description">
+                        <!-- [(ngModel)]="moduleAccessForm.universityRole.description">-->
+                        <label for="user_id2" class="">Description</label>
+                        <span *ngIf="emptyRoleDescription && !universityRoleForm.controls.description.valid" class="error-msg">* please enter role description</span>
+
+                    </div>
+                </form>
+                <div>
+                    <div class="create_roll_outer">
+                        <label>University</label>
+                        <select [(ngModel)]="moduleAccessForm.University">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                      <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Drive</label>
+                        <select [(ngModel)]="moduleAccessForm.Drive">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Companies</label>
+                        <select [(ngModel)]="moduleAccessForm.Companies">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Students</label>
+                        <select [(ngModel)]="moduleAccessForm.Students">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Roles</label>
+                        <select [(ngModel)]="moduleAccessForm.Roles">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Announcements</label>
+                        <select [(ngModel)]="moduleAccessForm.Announcements">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+                    <div class="create_roll_outer">
+                        <label>Reports</label>
+                        <select [(ngModel)]="moduleAccessForm.Reports" name="reports">
+                      <option  value="2">View</option>
+                      <option  value="1">Edit</option>
+                      <option  value="3">Cannot View</option>
+                    <option  value="4">Create only</option></select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="sidebar-footer">
+                <button type="submit" class="my-btn waves-effect waves-light submit-btn save-btn" (click)="create()">Submit</button>
+                <button type="submit" class="my-btn waves-effect waves-light back-btn" (click)="create_other()">Submit & Add Another</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
@@ -803,5 +900,10 @@
     $(document).ready(function () {
         $('select').material_select();
     });
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+
 </script>
+
 </html>
