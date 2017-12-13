@@ -9834,3 +9834,8 @@ a.submit_btn,a.submit_btn:link,a.submit_btn:visited { min-width:155px; height: 4
 a.submit_btn:hover,a.submit_btn:focus { background-color:#f7d345; }
 a.submit_add_btn,a.submit_add_btn:link,a.submit_add_btn:visited { min-width:225px; height: 46px; float:left; background-color:transparent;  border:2px solid #ffdb4d; padding:0 30px; color:#282828; font-size:16px; line-height:46px; text-align:center; }
 a.submit_add_btn:hover,a.submit_add_btn:focus { background-color:#ffdb4d; }
+
+
+
+.landscaping_outer { width:100%; height:auto; float:left; padding:10px; border:1px solid #f4f4f4; margin-top:10px; }
+.landscaping_outer span { width:100%; height:auto; float:left; }
