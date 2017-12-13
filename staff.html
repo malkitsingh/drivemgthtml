@@ -124,7 +124,7 @@
                     <span class="count">1250</span>
                 </h4>
                 <div class="tooltip4">
-                    <span class="add-more modal-trigger" href="#createRoleSidebar">+</span>
+                    <span class="add-more button-collapse" data-activates="add_element">+</span>
                     <span class="tooltiptext">Add Staff</span>
                 </div>
                 <ul class="icons-list">
@@ -695,69 +695,50 @@
 
 
     </section>
-    <div class="sidebar-toggle">
-        <div class="header-bar">
+    <div id="add_element" class="side-nav">
+        <div class="side_nav_header">
             <h4>Add Staff</h4>
-            <a href="javascript:void(0)" class="close">
-                <i class="material-icons">close</i>
-            </a>
+            <a href="javascript:void(0)" class="close close_side_nav"><i class="material-icons">close</i></a>
         </div>
-        <div class="sidebar-body nice-scroll">
-
-            <form class="row hide school-side-cont">
-                <div class="input-field col s12">
-                    <input id="school_name" type="text" class="validate">
-                    <label for="school_name" class="">School Name</label>
+        <div class="side_nav_body nice-scroll">
+            <form>
+                <div class="input-field">
+                    <input id="name" type="text">
+                    <label for="name">Name</label>
                 </div>
-                <div class="input-field col s12">
-                    <input id="school_abbr" type="text" class="validate">
-                    <label for="school_abbr" class="">School Abbreviation
-                        <span> (Optional)</span>
-                    </label>
+                <div class="input-field">
+                    <input id="designation" type="text">
+                    <label for="designation">Designation</label>
                 </div>
-            </form>
-            <form class="row staff-side-cont">
-                <div class="input-field col s12">
-                    <input id="name" type="text" class="validate">
-                    <label for="name" class="">Name</label>
-                    <span class="error-msg">Enter Your Name</span>
+                <div class="input-field">
+                    <input id="email" type="email">
+                    <label for="email">Email</label>
                 </div>
-                <div class="input-field col s12">
-                    <input id="Designation" type="text" class="validate">
-                    <label for="Designation" class="">Designation</label>
-                    <span class="error-msg">Enter Designation</span>
+                <div class="input-field">
+                    <input id="contact_no" type="text">
+                    <label for="contact_no">Contact No.</label>
                 </div>
-                <div class="input-field col s12">
-                    <input id="email" type="text" class="validate">
-                    <label for="email" class="">Email</label>
-                    <span class="error-msg">Enter Your Email</span>
-                </div>
-
-                <div class="input-field col s12">
-                    <input id="phone_no" type="text" class="validate">
-                    <label for="phone_no" class="">Contact No.</label>
-                    <span class="error-msg">Enter Contact No</span>
-                </div>
-                <div class="input-field col s12">
+                <div class="input-field">
                     <select>
                         <option value="" disabled selected>Add Role</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
                     </select>
                 </div>
 
-
-
             </form>
-
         </div>
-        <div class="sidebar-footer">
-            <button type="submit" class="my-btn waves-effect waves-light submit-btn save-btn">Submit</button>
-            <button type="submit" class="my-btn waves-effect waves-light back-btn">Submit &amp; Add Another</button>
-
+        <div class="side_nav_footer">
+            <a href="javascript:void(0);" class="submit_btn">Submit</a>
+            <a href="javascript:void(0);" class="submit_add_btn">Submit & Add Another</a>
         </div>
     </div>
+
+
+
+
+
     <div id="modal1" class="modal">
         <a href="javascript:void(0)" class="modal-close  close-btn1">
             <i class="material-icons">close</i>
@@ -786,103 +767,6 @@
 
     </div>
     <div class="custom-overlay sidebar-overlay"></div>
-    <div id="createRoleSidebar" class="sidebar-toggle">
-        <div class="header-bar">
-            <h4>Create Role</h4>
-            <a href="javascript:void(0)" class="close" (click)="refresh()">
-                <i class="material-icons">close</i>
-              </a>
-        </div>
-        <div class="sidebar-body nice-scroll">
-            <div class="sidebar-body-inner">
-                <form class="row  stream-side-cont" [formGroup]="universityRoleForm">
-                    <div class="input-field col s12">
-                        <input id="user_id" type="text" class="validate" formControlName="name">
-                        <!--[(ngModel)]="moduleAccessForm.universityRole.name">-->
-                        <label for="user_id" class="">Enter Role Name</label>
-                        <span *ngIf="emptyRoleName && !universityRoleForm.controls.name.valid" class="error-msg">* please enter role name</span>
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="user_id2" type="text" class="validate" formControlName="description">
-                        <!-- [(ngModel)]="moduleAccessForm.universityRole.description">-->
-                        <label for="user_id2" class="">Description</label>
-                        <span *ngIf="emptyRoleDescription && !universityRoleForm.controls.description.valid" class="error-msg">* please enter role description</span>
-
-                    </div>
-                </form>
-                <div>
-                    <div class="create_roll_outer">
-                        <label>University</label>
-                        <select [(ngModel)]="moduleAccessForm.University">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                      <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Drive</label>
-                        <select [(ngModel)]="moduleAccessForm.Drive">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Companies</label>
-                        <select [(ngModel)]="moduleAccessForm.Companies">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Students</label>
-                        <select [(ngModel)]="moduleAccessForm.Students">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Roles</label>
-                        <select [(ngModel)]="moduleAccessForm.Roles">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Announcements</label>
-                        <select [(ngModel)]="moduleAccessForm.Announcements">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-                    <div class="create_roll_outer">
-                        <label>Reports</label>
-                        <select [(ngModel)]="moduleAccessForm.Reports" name="reports">
-                      <option  value="2">View</option>
-                      <option  value="1">Edit</option>
-                      <option  value="3">Cannot View</option>
-                    <option  value="4">Create only</option></select>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="sidebar-footer">
-                <button type="submit" class="my-btn waves-effect waves-light submit-btn save-btn" (click)="create()">Submit</button>
-                <button type="submit" class="my-btn waves-effect waves-light back-btn" (click)="create_other()">Submit & Add Another</button>
-
-            </div>
-
-
-        </div>
-    </div>
-
-
-
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
@@ -897,11 +781,14 @@
 
 </body>
 <script>
-    $(document).ready(function () {
-        $('select').material_select();
+    $('select').material_select();
+    $('.modal').modal();
+    $('.button-collapse').sideNav({
+        menuWidth: 456,
+        edge: 'right'
     });
-    $(document).ready(function () {
-        $('.modal').modal();
+    $('.close_side_nav').click(function () {
+        $(this).sideNav('hide');
     });
 
 </script>

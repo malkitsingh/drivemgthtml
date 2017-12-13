@@ -522,22 +522,22 @@ float: right;
 }
 .tabs.uni-profile-tab li a.active span i {border-color: #eaeaea}
 .tabs.uni-profile-tab li a span i {
-    border: 2px solid #ffdb4d;
-    color: #282828;
-    padding: 7px 3px;
-    width: 35px;
-    border-radius: 5px;
-    height: 35px;
-    font-size: 18px;
+border: 2px solid #ffdb4d;
+color: #282828;
+padding: 7px 3px;
+width: 35px;
+border-radius: 5px;
+height: 35px;
+font-size: 18px;
 }
 .selected-stu h3 {
-    float: left;
-    width: 100%;
-    color: #25cd18;
-    font-size: 40px;
-    margin: 0;
+float: left;
+width: 100%;
+color: #25cd18;
+font-size: 40px;
+margin: 0;
 }
-.year-select { width:auto; height:25px; float:left; display:block; margin:0; padding:0; }
+.year-select { width:auto; height:25px; float:left;  margin:0; padding:0; }
 .year-select input.select-dropdown {
     width: 90px;
     margin: 0;
@@ -1053,7 +1053,7 @@ button.my-btn.save-btn {
     font-size: 16px;
      border: 2px solid #ffdb4d;
     padding: 8px 10px;
-    background: #ffdb4d;
+    background: #ffdb4d; visibility:visible;
 }
 button.next-btn.my-btn {
     display: block;
@@ -2884,7 +2884,7 @@ h5.sub-title {
     font-size: 16px;
     margin: 20px 0 10px 0;
     color: #282828;
-	font-weight:600;
+	font-weight:bold; text-transform:uppercase;
 }
 .drive-content .student-sec.extra-pad .custom-table tr td:first-child, .drive-content .student-sec.extra-pad .custom-table tr th:first-child{padding-left: 20px}
 .profile-fields.stu-profile-fields {
@@ -9815,3 +9815,22 @@ a.forgot_password_link:hover,a.forgot_password_link:focus { text-decoration:unde
 .panel.panel_inactive .coordinator-info-head { background:#fdf6f2; }
 
 .selected_batch { width:auto; height:24px; float:left; background-color:#fff; border:solid 1px #ececec; color:#282828; font-size:14px; line-height:24px; padding:0 10px; }
+
+/* Sidebar */
+.side-nav { height:100vh; overflow:hidden; }
+
+.side_nav_header { width:100%; height:70px; float:left; background-color: #4c5d62; background-image: -webkit-linear-gradient(left, #0097d6, #00a7b2); background-image: -moz-linear-gradient(left, #0097d6, #00a7b2); background-image: -o-linear-gradient(left, #0097d6, #00a7b2); background-image: -ms-linear-gradient(left, #0097d6, #00a7b2); background-image: linear-gradient(to right, #0097d6, #00a7b2); padding:22px 30px; position:absolute; left:0; top:0; }
+.side_nav_header h4 { width:90%; height:auto; float:left; color:#fafcfe; font-size:20px; line-height:24px; text-transform:uppercase; }
+.side_nav_header a,.side_nav_header a:link,.side_nav_header a:visited { float:right; color:#ffdb4d; }
+.side_nav_header .material-icons { font-size:30px; line-height:24px; }
+
+.side_nav_footer { width:100%; height:90px; float:left; background-color:#fafcfe; /*background-color:#f00;*/  border-top:1px solid #f5f7f9; position:absolute; left:0; bottom:0; padding:20px 30px; }
+
+.side_nav_body { width:100%; height:calc(100% - 120px); float:left; margin-top:80px; padding:20px 30px; overflow-y:auto; }
+
+
+
+a.submit_btn,a.submit_btn:link,a.submit_btn:visited { min-width:155px; height: 46px; float:left; background-color: #ffdb4d;  border-bottom:2px solid #f7d345; padding:0 30px; margin-right:10px; color:#282828; font-size:16px; line-height:46px; text-align:center; }
+a.submit_btn:hover,a.submit_btn:focus { background-color:#f7d345; }
+a.submit_add_btn,a.submit_add_btn:link,a.submit_add_btn:visited { min-width:225px; height: 46px; float:left; background-color:transparent;  border:2px solid #ffdb4d; padding:0 30px; color:#282828; font-size:16px; line-height:46px; text-align:center; }
+a.submit_add_btn:hover,a.submit_add_btn:focus { background-color:#ffdb4d; }
