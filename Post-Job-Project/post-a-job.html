@@ -84,8 +84,8 @@
 								</div>
 								<div class="full_width">
 									<div class="col s7">
-										<div class="input-field col s2 paddingL0">
-											<select class="select_state">
+										<div class="input-field col s2 paddingLR0">
+											<select>
 												<option value="" disabled selected>CTC</option>
 												<option value="">CTC</option>
 											</select>
@@ -286,7 +286,7 @@
 								<label for="city_text">City</label>
 							</div>
 							<div class="input-field col s6">
-								<select class="select_state">
+								<select>
 										<option value="" disabled selected>State</option>
 										<option value="1">State1</option>
 										<option value="2">State2</option>
@@ -300,7 +300,7 @@
 								<label for="city_text">Zip</label>
 							</div>
 							<div class="input-field col s9">
-								<select class="select_state">
+								<select>
 										<option value="" disabled selected>Country</option>
 										<option value="1">Country1</option>
 										<option value="2">Country2</option>
@@ -352,6 +352,10 @@
     clear: 'Clear',
     close: 'Ok',
     closeOnSelect: false
+  });
+  
+  $(document).ready(function() {
+    $('select').material_select();
   });
 
 </script>
