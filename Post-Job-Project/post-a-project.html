@@ -83,10 +83,10 @@
 								<div class="full_width">
 									<div class="input-field col s7">
 										<select>
-										  <option value="" disabled selected>Project Duration</option>
-										  <option value="1">Option 1</option>
-										  <option value="2">Option 2</option>
-										  <option value="3">Option 3</option>
+											<option value="" disabled selected>Project Duration</option>
+											<option value="1">Option 1</option>
+											<option value="2">Option 2</option>
+											<option value="3">Option 3</option>
 										</select>
 									</div>
 								</div>
@@ -263,18 +263,18 @@
 		placeholder: 'Skills Required',
 		secondaryPlaceholder: 'Add More Skills',
 	});
-	 $('.datepicker').pickadate({
-    selectMonths: true,
-    selectYears: 15,
-    today: 'Today',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false
-  });
-  
-   $(document).ready(function() {
-    $('select').material_select();
-  });
+	$('.datepicker').pickadate({
+		selectMonths: true,
+		selectYears: 15,
+		today: 'Today',
+		clear: 'Clear',
+		close: 'Ok',
+		closeOnSelect: false
+	});
+
+	$(document).ready(function () {
+		$('select').material_select();
+	});
 
 </script>
 
