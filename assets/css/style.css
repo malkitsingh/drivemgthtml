@@ -9907,3 +9907,113 @@ p.posted_contact_detail span { color:#282828; font-size:16px; line-height:21px; 
 .card.job_cards { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; }
 
 
+.search_college { width: 100%; height: auto; float: left; background-color: #f9fbfd; -webkit-box-shadow: 0 6px 5px rgba(0,0,0,.05); -moz-box-shadow: 0 6px 5px rgba(0,0,0,.05); box-shadow: 0 6px 5px rgba(0,0,0,.05); -ms-box-shadow: 0 6px 5px rgba(0,0,0,.05); -o-box-shadow: 0 6px 5px rgba(0,0,0,.05); padding: 20px 10px 10px 10px; box-sizing: border-box; }
+.search_college form { width: 100%; height: auto; float: left; margin-bottom: 20px; }
+.location_outer { width: 100%; height: auto; float: left; background-color: #fff; border: solid 1px #909090; }
+.location_outer input { width: 100%; height: 42px; float: left; background-color: #fff; padding: 0 20px 0 50px !important; border: 0 !important; outline: 0; box-sizing: border-box !important; margin: 0 !important; }
+.location_outer input:focus { border: 0 !important; box-shadow: 0 0 0 0 #26a69a !important; }
+.location_outer input:first-of-type { width: 70%; border-right: solid 1px #f1f1f1 !important; background: url('../images/search.png') left 16px center no-repeat #fff; }
+.location_outer input:last-of-type { width: 30%; background: url('../images/location.png') left 18px center no-repeat #fff; }
+.search_college form input[type="submit"],.search_college form input[type="button"] { min-width: 90px; width: 100%; height:44px; float: right; background-color: #ffdb4d; border-bottom: 2px solid #f7d345; padding: 0 20px; color: #282828; font-size:16px; line-height: 44px; border: 0; outline: 0; }
+.search_college form input[type="submit"]:hover,.search_college form input[type="button"]:hover,.search_college form input[type="submit"]:focus,.search_college form input[type="button"]:focus { background: #f7d345; }
+
+
+.college_outer { width: 100%; height: auto; float: left; background: #fff; padding: 15px; box-sizing: border-box; }
+span.all_colleges {  }
+span.all_colleges input { float: right; }
+span.all_colleges label { padding-left: 0; padding-right: 35px; }
+
+span.all_colleges [type="checkbox"]+label:before,span.all_colleges [type="checkbox"]:not(.filled-in)+label:after { left: inherit; right: 0; top: 2px; }
+span.all_colleges [type="checkbox"]:checked+label:before { left: inherit; top: -3px; right: 17px; }
+
+a.colleges_link,a.colleges_link:link,a.colleges_link:visited { width: 100%; height: auto; float: left; color: #009acf; font-size: 14px; line-height: 28px; }
+
+.college_tags { margin-top: 20px; }
+.college_tags .chip { width: auto; height: 24px; float: left; -webkit-border-radius: 13px; -moz-border-radius: 13px; border-radius: 13px; -ms-border-radius: 13px; -o-border-radius: 13px; background-color: #f9fbfd; border: 1px solid #25cd18; color: #282828; font-size: 13px; line-height: 22px; padding: 0 8px 0 12px; }
+.college_tags .chip .close { color: #f00; font-size: 15px; line-height: 23px; font-weight: 600; }
+
+
+
+.posting_main { width: 100%; height: auto; float: left; margin-top: 50px; }
+.posting_main [class*="col s5"] { padding-right: 0; }
+.posting_main [class*="col s7"] { padding-left: 0; }
+.posting_outer { width: 100%; height: 500px; float:left; background-color: #fff; -webkit-box-shadow: -9px 11px 11px rgba(0,0,0,.05); -moz-box-shadow: -9px 11px 11px rgba(0,0,0,.05); box-shadow: -9px 11px 11px rgba(0,0,0,.05); -ms-box-shadow: -9px 11px 11px rgba(0,0,0,.05); -o-box-shadow: -9px 11px 11px rgba(0,0,0,.05); border: solid 1px #25cd18; padding: 30px 20px; overflow-y:auto;  }
+.posting_outer h3 { width: 100%; height: auto; float:left; color: #282828; font-size:25px; line-height:28px; text-align: center; }
+.posting_outer ul { width: 100%; height: auto; float:left; margin-top: 30px; }
+.posting_outer ul li { width: 100%; height: auto; float:left; padding-left: 25px; box-sizing: border-box; color: #909090; font-size: 14px; line-height: 21px; margin-bottom: 10px; position: relative; }
+.posting_outer ul li:before { width: 14px; height: 14px; position: absolute; left: 0; top: 3px; content: ''; background: url('../images/minus-post-icon.png') center no-repeat; }
+.posting_outer ul li:last-of-type { margin-bottom: 0; }
+
+.posting_outer ul li a,.posting_outer ul li a:link,.posting_outer ul li a:visited { width: auto; height: auto; float:left; color: #009acf; font-size: 14px; line-height: 21px; }
+
+.school_list { width: 100%; height: auto; float: left; background-color: #fff; -webkit-box-shadow: 5px 4px 8px rgba(0,0,0,.03); -moz-box-shadow: 5px 4px 8px rgba(0,0,0,.03); box-shadow: 5px 4px 8px rgba(0,0,0,.03); -ms-box-shadow: 5px 4px 8px rgba(0,0,0,.03); -o-box-shadow: 5px 4px 8px rgba(0,0,0,.03); border: solid 1px rgba(237,237,237,.55); padding: 20px; position: relative; margin-bottom: 10px; }
+.school_list:last-of-type { margin-bottom: 0; }
+.school_list figure { width: 50px; height: 50px; float: left; border:1px solid #eaeaea; position: relative; margin-right: 20px !important; }
+.school_list figure img { position: absolute; max-width: 100%; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+.school_content { width: 76%; height: auto; float: left; }
+.school_list h5 { width: 100%; height: auto; float: left; color: #282828; font-size: 16px; line-height: 21px; font-weight: 600; }
+.school_list p { width: 100%; height: auto; float: left; color: #909090; font-size: 14px; line-height: 21px; padding-left: 20px; background: url('../images/school-location.png') left top 3px no-repeat; }
+.school_list a,.school_list a:link,.school_list a:visited { width:28px; height: 28px; float: right; border: 1px solid #ffb64d; -webkit-border-radius:3px; -moz-border-radius:3px; border-radius:3px; -ms-border-radius:3px; -o-border-radius:3px; position: relative; margin: 0 0 0 20px; }
+.school_list a img { max-width: 100%; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+
+.school_list_show { width: 100%; height: auto; float: left; margin-bottom: 10px; }
+
+.number_school { width: auto; max-width: 50%; height: auto; float: left; color: #909090; font-size:14px; line-height: 21px; }
+
+.skill_chip .chip { width: auto; height: 26px; float:left; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; background-color: #f2f2f2; font-size: 13px; line-height: 26px; color: #282828; background-color: #f2f2f2;}
+.skill_chip .chip i {  float: right; font-size: 13px; line-height: 26px; color:#fc3333; }
+.skill_chip .input { height: 2rem !important; }
+
+
+
+.back_set_btn { width: auto; height: 46px; float: left; border: 3px solid #fddc4c; padding: 0 20px 0 40px; background: url("../images/back-arrow.png") left 10px center no-repeat #fff; color: #282828; font-size: 16px; line-height: 42px; }
+.back_set_btn:hover,.back_set_btn:focus { background:url('../images/back-arrow.png') left 10px center no-repeat #fddc4c; }
+
+
+
+.continue_set_btn {width: auto; height: 46px; float: right; border: 0; outline: 0; border: 3px solid #ffdb4d; padding: 0 40px 0 20px; box-sizing: border-box; color: #282828; font-size: 16px; line-height: 42px; background: url("../images/continue-arrow.png") right 20px center no-repeat #ffdb4d; text-transform: capitalize;}
+.continue_set_btn:hover,.continue_set_btn:focus { background: url("../images/continue-arrow.png") right 20px center no-repeat #fff; }
+
+.job_function_select { width: auto; min-width: 110px; max-width: 49%; height: auto; float: right; }
+
+.job_function_select label { top: 0; line-height: 20px; }
+
+
+/**/
+.enter_detail_section { width: 100%; height: auto; float: left; background-color: #fafcfe; -webkit-box-shadow: 0 0 20px rgba(0,0,0,.03); -moz-box-shadow: 0 0 20px rgba(0,0,0,.03); box-shadow: 0 0 20px rgba(0,0,0,.03); -ms-box-shadow: 0 0 20px rgba(0,0,0,.03); padding: 20px; border: 1px solid #f2f2f2; margin-bottom: 50px; }
+.enter_detail_section input { font-size: 16px; color: #282828; }
+.enter_detail_section .input-field,.step-content { text-align: left; }
+
+/* > Preview & Send Tab */
+.company_heading { width: 100%; height: auto; float: left; color: #282828; font-size:20px; line-height:25px; border-bottom: 1px solid #e8ecee; padding-bottom: 10px; margin-bottom: 20px; }
+
+ul.job_type_detail { width: 100%; height: auto; float: left; background: #fff; padding: 20px; margin: 20px 0 50px 0; }
+ul.job_type_detail li { width: 32%; height: auto; float: left; margin:0 2% 30px 0; }
+ul.job_type_detail li:nth-of-type(3n) { margin-right: 0; }
+ul.job_type_detail li:last-of-type { margin-bottom: 0; }
+ul.job_type_detail li h6 { width: 100%; height: auto; float: left; color: #909090; font-size:14px; line-height:21px; }
+ul.job_type_detail li p { width: 100%; height: auto; float: left; color: #282828; font-size:15px; line-height:21px; }
+
+h4.designation_heading { width: auto; height: auto; float: left; color: #909090; font-size:15px; line-height:21px; }
+p.designation_text {width: auto; height: auto; float: left; color: #282828; font-size:15px; line-height:21px; font-weight:600; }
+
+h5.description_heading { width: 100%; height: auto; float: left; color: #909090; font-size:14px; line-height:21px; margin:20px 0 10px 0; }
+p.description_text { width: 100%; height: auto; float: left; color: #282828; font-size:15px; line-height:21px; }
+
+.company_info { width: 100%; height: auto; float: left; }
+.company_info figure { width: 60px; height: 60px; float: left; background: #4c5d62; position: relative; }
+.company_info figure img { max-width: 100%; position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+.company_info_detail { width: 90%; height: auto; float: right; }
+.company_info_detail h4 { width: 100%; height: auto; float: left; color: #282828; font-size:16px; line-height:21px; font-weight: 600; }
+.company_info_detail > p { width: 100%; height: auto; float: left; color: #282828; font-size:14px; line-height:21px; margin: 10px 0 25px 0 !important; }
+.company_info_detail .full_width h6 { width: auto; height: auto; float: left; color: #909090; font-size:14px; line-height:25px; margin-right: 5px; }
+.company_info_detail .full_width p { width: auto; height: auto; float: left; color: #282828; font-size:14px; line-height:25px; }
+.company_info_detail .full_width p a,.company_info_detail .full_width p a:link,.company_info_detail .full_width p a:visited { color: #282828; font-size:14px; line-height:25px; }
+.company_info_detail .full_width p a:hover,.company_info_detail .full_width p a:focus { text-decoration: underline; }
+
+.custom_msg { width: 100%; height: auto; float: left; }
+.custom_msg .company_heading { margin: 0; border: 0; }
+.custom_msg .company_heading span { color: #909090; font-size:16px; }
+.custom_msg textarea { width: 100%; height: 172px; float: left; resize: none; padding: 20px; border: 1px solid #bcbcbd; color: #909090; font-size: 14px; line-height: 21px; }
+.send_btn { min-width: 99px; width:auto; height: 46px; float: right; background-color: #ffdb4d; border: 0; outline: 0; border-bottom: 2px solid #f7d345; margin-top: 20px; color: #282828; font-size:16px; line-height: 46px; padding: 0 20px;  }
+.send_btn:hover,.send_btn:focus { background: #f7d345; }
