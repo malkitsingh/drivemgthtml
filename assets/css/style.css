@@ -9606,7 +9606,7 @@ a.add_more_btn:hover,a.add_more_btn:focus { color:#039be5; }
 
 /* Select College */
 .main_container_select { width:100%; height:auto; float:left; padding:70px 0 0 262px; box-sizing:border-box; position:relative;  background:#f9fbfd; }
-aside.college_aside { width:262px; height:100%; float:left; background:#f9fbfd; position:absolute; left:0; top:0; padding:95px 15px 15px 15px; }
+aside.college_aside { width:262px; height:100%; float:left; background:#f9fbfd; position:absolute; left:0; top:0; padding:95px 15px 15px 15px; overflow:hidden; }
 .college_container { width:100%; height:auto; float:left; padding:30px 20px; background:#fff; box-sizing:border-box; }
 
 .filters_applied { width:100%; height:auto; float:left; background:#f9fbfd; margin-bottom:65px; padding:25px; box-sizing:border-box; }
@@ -9634,7 +9634,7 @@ a.continue_btn:hover,a.continue_btn:focus,input[type="submit"].continue_btn:hove
 
 .colleges_outer { width:100%; height:auto; float:left; margin-bottom:40px; }
 
-form.select_top_college,form.discipline_programs { width:100%; height:auto; float:left; }
+form.select_top_college,form.discipline_programs { width:100%; height:auto; float:left; max-height:300px; overflow:hidden; overflow-y:auto; }
 form.select_top_college label { width:100%; height:auto !important; color:#009acf; font-size:14px; line-height:21px; padding:0 25px 0 5px !important; }
 form.select_top_college label:before { display:none; }
 form.select_top_college label:after { height:17px; background-color:transparent !important; border:0 !important; left:inherit !important; background:url("../images/checked.png") center no-repeat; right:0; top:50%; margin-top:-8.5px; }
@@ -9850,45 +9850,28 @@ a.submit_add_btn:hover,a.submit_add_btn:focus { background-color:#ffdb4d; }
 .tabs.job_project_tabs li a,.tabs.job_project_tabs li a:link,.tabs.job_project_tabs li a:visited { color:#282828; font-size:16px; line-height:40px; }
 .tabs.job_project_tabs li a.active { font-weight:bold; }
 .tabs.job_project_tabs li a em { color:#f00; font-style:normal; }
-
 a.project_job_btn,a.project_job_btn:link,a.project_job_btn:visited { width:auto; min-width:97px; height:35px; float:right; background-color:#ffdb4d; border:solid 2px #ffdb4d; color:#282828; font-size:14px; line-height:35px; margin-left:10px; padding:0 15px; text-align:center; }
-
 a.project_job_btn:hover,a.project_job_btn:focus { background-color:transparent; }
-
-
-
-
 .posted_date_outer { width:100%; height:auto; float:left; }
-
-p.posted_date_text { width:auto; height:auto; float:right; color:#909090; font-size:14px; line-height:21px; font-style:italic; }
+p.posted_date_text {width:auto;height:auto;float:right; color:#909090; font-size:14px; line-height:21px; font-style:italic; }
 p.posted_date_text span { color:#40d025; font-size:14px; line-height:21px; font-style:normal; }
 p.posted_date_text a,p.posted_date_text a:link,p.posted_date_text a:visited { color:#0099d2; font-size:14px; line-height:21px; font-style:italic; text-decoration:underline; }
-
 p.posted_date_text a:hover,p.posted_date_text a:focus { text-decoration:none; }
-
 .software_dev_outer { width:100%; height:auto; float:left; background-color:#fff; -webkit-box-shadow:7px 6px 10px rgba(0,0,0,.06); -moz-box-shadow:7px 6px 10px rgba(0,0,0,.06); box-shadow:7px 6px 10px rgba(0,0,0,.06); -ms-box-shadow:7px 6px 10px rgba(0,0,0,.06); -o-box-shadow:7px 6px 10px rgba(0,0,0,.06); border:solid 1px rgba(237,237,237,.55); margin:10px 0 25px 0; } 
 .software_dev_heading { width:100%; min-height:44px; float:left; background-color: #4c5d62; padding:11px 20px; }
 .software_dev_heading h3 { max-width:75%; height:auto; float:left; color:#fff; font-size:20px; line-height:21px; }
 .software_dev_heading span { width:24%; height:auto; float:right; color:#fff; font-size:20px; line-height:21px; text-align:right; }
-
 a.post_load_more,a.post_load_more:link,a.post_load_more:visited { width:100%; height: 42px; float:left; background-color: #f9fbfd; color:#c5c5c5; font-size:16px; line-height:42px; font-style:italic; text-align:center; text-transform:uppercase; margin-top:10px; } 
 a.post_load_more:hover,a.post_load_more:focus { background:#eff3f6; }
-
-
 .software_dev_content { width:100%; height:auto; float:left; padding:20px; box-sizing:border-box; background:#fff; }
-
 p.dev_soft_text { width:100%; height:auto; float:left; color:#909090; font-size:16px; line-height:21px; }
 span.job_expires_detail { width:auto; height:auto; display:inline-block; color:#4c5d62; font-size:10px; line-height:21px; background:#ffeded; padding:0 10px; position:relative; top:-2px; }
 p.dev_soft_text a,p.dev_soft_text a:link,p.dev_soft_text a:visited { width:auto; height:auto; display:inline-block; color:#0799d1; font-size:16px; line-height:21px; text-transform:uppercase; text-decoration:underline; font-weight:600; }
 p.dev_soft_text a:hover,p.dev_soft_text a:focus { text-decoration:none; }
-
-
 h5.project_heading { width:100%; height:auto; float:left; color:#282828; font-size:16px; line-height:21px; margin-top:30px; font-weight:600; }
-
 .posted_list_outer { width:100%; height:auto; float:left; padding-left:30px; box-sizing:border-box; } 
 .posted_list { width:100%; height:auto; min-height:90px; float:left; padding:20px 20px 20px 100px; background-color: #f9fbfd; border:1px solid #f4f4f4; box-sizing:border-box; margin-top:10px; position:relative; } 
 .posted_list:hover { background-color: #fff; -webkit-box-shadow: 7px 6px 10px rgba(0,0,0,.06), inset 0 0 7px rgba(255,255,255,.35); -moz-box-shadow: 7px 6px 10px rgba(0,0,0,.06), inset 0 0 7px rgba(255,255,255,.35); box-shadow: 7px 6px 10px rgba(0,0,0,.06), inset 0 0 7px rgba(255,255,255,.35);  -ms-box-shadow: 7px 6px 10px rgba(0,0,0,.06), inset 0 0 7px rgba(255,255,255,.35); -o-box-shadow: 7px 6px 10px rgba(0,0,0,.06), inset 0 0 7px rgba(255,255,255,.35); }
-
 .posted_list figure { width:90px; min-height:90px; float:left; position:absolute; left:0; top:0; margin:0; padding:5px; }
 .posted_list figure img { position: absolute; max-width: 100%; left: 50%; top: 50%; -webkit-transform: translate(-50%,-50%); -moz-transform: translate(-50%,-50%); transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -o-transform: translate(-50%,-50%); } 
 h3.posted_title { width:79%; height:auto; float:left; color:#282828; font-size:20px; line-height:24px; text-transform:uppercase; }
@@ -9896,17 +9879,13 @@ span.status_approved,span.status_pending { width:20%; height:auto; float:left; f
 span.status_approved { color:#25cd18; }
 span.status_pending { color:#f00; }
 p.posted_job_text { width:100%; height:auto; float:left; color:#909090; font-size:16px; line-height:21px; padding-left:25px; box-sizing:border-box; background:url("../images/pin-point.png") left top no-repeat; margin:10px 0 20px 0; }
-
 p.posted_contact_detail { width:100%; height:auto; float:left; color:#909090; font-size:16px; line-height:21px; padding-left:25px; box-sizing:border-box; background:url("../images/contact-person-icon.png") left top no-repeat; }
 p.posted_contact_detail span { color:#282828; font-size:16px; line-height:21px; border-right:1px solid #ebebeb; padding-right:10px; margin-right:10px; }
 
 /* Post a Job */
 
 .steps-part.job_detail_step { background:#f2fafd; padding:10px 20px; margin:15px 0; }
-
 .card.job_cards { -webkit-box-shadow:none; -moz-box-shadow:none; box-shadow:none; -ms-box-shadow:none; -o-box-shadow:none; }
-
-
 .search_college { width: 100%; height: auto; float: left; background-color: #f9fbfd; -webkit-box-shadow: 0 6px 5px rgba(0,0,0,.05); -moz-box-shadow: 0 6px 5px rgba(0,0,0,.05); box-shadow: 0 6px 5px rgba(0,0,0,.05); -ms-box-shadow: 0 6px 5px rgba(0,0,0,.05); -o-box-shadow: 0 6px 5px rgba(0,0,0,.05); padding: 20px 10px 10px 10px; box-sizing: border-box; }
 .search_college form { width: 100%; height: auto; float: left; margin-bottom: 20px; }
 .location_outer { width: 100%; height: auto; float: left; background-color: #fff; border: solid 1px #909090; }
