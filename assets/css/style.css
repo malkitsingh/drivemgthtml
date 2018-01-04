@@ -9607,7 +9607,7 @@ a.add_more_btn:hover,a.add_more_btn:focus { color:#039be5; }
 /* Select College */
 .main_container_select { width:100%; height:auto; float:left; padding:70px 0 0 262px; box-sizing:border-box; position:relative;  background:#f9fbfd; }
 aside.college_aside { width:262px; height:100%; float:left; background:#f9fbfd; position:absolute; left:0; top:0; padding:95px 15px 15px 15px; overflow:hidden; }
-.college_container { width:100%; height:auto; float:left; padding:30px 20px; background:#fff; box-sizing:border-box; }
+.college_container { width:100%; height:auto; min-height:900px; float:left; padding:30px 20px; background:#fff; box-sizing:border-box; }
 
 .filters_applied { width:100%; height:auto; float:left; background:#f9fbfd; margin-bottom:65px; padding:25px; box-sizing:border-box; }
 .filters_applied h4 { width:auto; height:auto; float:left; color:#282828; font-size:16px; line-height:26px; margin-right:10px; }
