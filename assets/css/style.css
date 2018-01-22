@@ -9655,12 +9655,7 @@ a.post_job_btn:hover,a.post_job_btn:focus { background:#ffdb4d; }
 
 h5.job_type_heading { width:100%; height:auto; float:left; color:#909090; font-size:16px; line-height:21px; margin-bottom:10px; }
 
-.job_type_radio { width:100%; height:auto; float:left; margin-bottom:10px; }
-.job_type_radio p { width:auto; height:auto; float:left; margin:0; }
-.job_type_radio label { -webkit-transform: translateY(0) !important; -moz-transform: translateY(0) !important; transform: translateY(0) !important; -ms-transform: translateY(0) !important; -o-transform: translateY(0) !important; cursor:pointer !important; padding:0 15px 0 25px !important; left:0 !important; pointer-events: auto; color:#282828 !important; font-size:16px; }
 
-.job_type_radio [type="radio"]:not(:checked) + label { color:#909090 !important; }
-.job_type_radio [type="radio"].with-gap:checked + label:before { border:2px solid #5a5a5a !important; }
 
 
 .job_function_outer { width:100%; height:auto; float:left; border:1px solid #909090; position:relative; margin-bottom:10px; }
@@ -9732,6 +9727,8 @@ select.select_state option { background-repeat:no-repeat; background-position:bo
 
 .select_state.select_location { padding-left:25px; background:url("../images/location.png") left 6px center no-repeat,url("../images/select-down.png") right center no-repeat; }
 
+/* SignUp */
+
 .signup_content { width:100%; height:auto; float:left; padding:0 15px 0 15px; }
 .signup_content h2 { width:100%; height:auto; float:left; text-align:center; color:#282828; font-size:40px; line-height:45px; margin-bottom:20px; }
 
@@ -9763,7 +9760,10 @@ p.already_account a:hover,p.already_account a:focus { text-decoration:none; }
 .modal-footer.signup_footer { width:100%; float:left; background:#fbfcfe; padding:10px; border:0; }
 .modal.modal-fixed-footer .modal-footer.signup_footer { border:0; }
 
-#signup { top:10px !important; height:85% !important; }
+#signup { top:10px !important; /*height:85% !important;*/ width:90%; }
+
+.signup_left { width:100%; height: 100%; float:left; background: #f9fbfd; padding:10px; box-sizing: border-box; position: relative; }
+.signup_left img { max-width:100%; width:auto; height:auto; float:left; position: absolute; left:0; right:0; top:0; bottom:0; margin: auto; }
 
 /* Sign In */
 .company_logo { width:100%; height:auto; float:left; }
