@@ -9705,7 +9705,7 @@ input[type="button"].back_btn:hover,.back_btn:hover,input[type="button"].back_bt
 
 
 
-a.send_btn,a.send_btn:link,a.send_btn:visited { width:auto; height:46px; float:right; background:#ffdb4d; padding:0 30px; margin-top:20px; color:#282828; font-size:16px; line-height:46px; border:0; outline:0; border-bottom:2px solid #f7d345; }
+a.send_btn,a.send_btn:link,a.send_btn:visited { width:auto; height:46px; float:right; background:#ffdb4d; padding:0 30px; margin-top:20px; color:#282828; font-size:16px; line-height:46px; border:0; outline:0; border-bottom:2px solid #f7d345;  text-align:center; }
 a.send_btn:hover,a.send_btn:focus { background:#f7d345; }
 
 .job_detail_form { width:100%; height:auto; float:left; }
