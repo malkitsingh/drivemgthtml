@@ -9794,6 +9794,11 @@ a.forgot_password_link:hover,a.forgot_password_link:focus { text-decoration:unde
 .mobile_verification_inner h3 { color:#282828; font-size:20px; line-height:26px; }
 .mobile_verification_inner h3 span { color:#32cc2e; font-size:20px; line-height:26px; }
 
+
+.mobile_verification_inner.job_posted span.uni-icons { width: 100%; float: left; font-size: 15px; line-height: 21px; margin-top: 10px; color: #888; background:none; padding:0; }
+.mobile_verification_inner.job_posted a,.mobile_verification_inner.job_posted a:link,.mobile_verification_inner.job_posted a:visited { float:none; display:inline-block; }
+
+
 .verification_note { width:100%; height:auto; float:left; }
 .verification_note p span { color:#282828; font-size:13px; line-height:21px; }
 .verification_note p { color:#909090; font-size:13px; line-height:21px; }
